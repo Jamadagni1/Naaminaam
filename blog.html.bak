@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js?v=debug" defer></script>
+    <script src="navbar_fix.js?v=capture_fix"></script>
+    <script>
+        (() => {
+            const preferredLang = localStorage.getItem("language") || "en";
+            document.documentElement.lang = preferredLang;
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Naamin - The Heart of Naming</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Google Fonts: Inter, Lora, Poppins (Standard site fonts) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* SITE-WIDE THEME VARIABLES */
+            --accent-primary: #8224E3;
+            /* Standard Purple */
+            --accent-secondary: #BB6BD9;
+            --accent-gradient: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+            --accent-glow: rgba(130, 36, 227, 0.4);
+            --text-dark: #333333;
+            --text-medium: #6B7280;
+            --border-color-light: rgba(0, 0, 0, 0.1);
+            --bg-card-light: rgba(255, 255, 255, 0.9);
+            --header-height: 70px;
+            --transition-smooth: all 0.3s ease-in-out;
+            --box-shadow-soft: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+            /* Blog Content Variables */
+            --bg-page: #f8f9ff;
+            --bg-gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedff 100%);
+            --radius-lg: 24px;
+            --shadow-premium: 0 12px 30px rgba(92, 103, 242, 0.05);
+            --shadow-hover: 0 20px 40px rgba(92, 103, 242, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-dark);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: var(--header-height);
+        }
+
+        /* NAVBAR CSS */
+        .navbar {
+            width: 100%;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: var(--bg-card-light);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color-light);
+        }
+
+        .navbar .logo {
+            font-family: 'Lora', serif;
+            font-weight: 900;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .navbar .logo .logo-in {
+            color: var(--accent-primary);
+            font-weight: 900;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .navbar .nav-links li {
+            position: relative;
+        }
+
+        .navbar .nav-links a {
+            display: inline-block;
+            padding: 10px 12px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 6px;
+            transition: var(--transition-smooth);
+        }
+
+        .navbar .nav-links a:hover {
+            color: var(--accent-primary);
+        }
+
+        .dropdown .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #ffffff;
+            min-width: 200px;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow-soft);
+            padding: 8px 0;
+            list-style: none;
+            /* Removed the dots */
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+            transition: var(--transition-smooth);
+            border: 1px solid var(--border-color-light);
+            z-index: 1500;
+            display: none;
+        }
+
+        .dropdown.open .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            display: block;
+        }
+
+        .dropdown-menu a {
+            padding: 10px 14px;
+            display: block;
+            color: var(--text-dark);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .dropdown-menu a:hover {
+            background: rgba(130, 36, 227, 0.05);
+            color: var(--accent-primary);
+        }
+
+        .dropdown-toggle .arrow {
+            font-size: 0.7rem;
+            margin-left: 4px;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .btn-fav {
+            background: transparent;
+            color: var(--text-dark);
+        }
+
+        .btn-login {
+            background: transparent;
+            border: 1.5px solid var(--border-color-light);
+            color: var(--text-dark);
+        }
+
+        .btn-login:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        .btn-signup {
+            background: var(--accent-primary);
+            color: #fff;
+            border: 1.5px solid var(--accent-primary);
+            box-shadow: 0 8px 25px var(--accent-glow);
+        }
+
+        .btn-signup:hover {
+            filter: brightness(.95);
+            transform: translateY(-1px);
+        }
+
+        /* Hamburger button */
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            width: 100%;
+            height: calc(100vh - var(--header-height));
+            background: #fff;
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .mobile-menu.open {
+            display: block;
+            animation: slideInDown 0.3s ease;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-10px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .mobile-nav-links a {
+            display: block;
+            padding: 14px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .mobile-actions {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .mobile-btn {
+            width: 100%;
+            justify-content: center;
+            padding: 12px;
+        }
+
+        /* 
+           BLOG CONTENT CSS 
+        */
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 80px 24px;
+            flex: 1;
+        }
+
+        header.blog-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        header.blog-header h1 {
+            font-family: 'Lora', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        header.blog-header p {
+            color: var(--text-medium);
+            font-size: 1.25rem;
+        }
+
+        /* Blog Card Styles */
+        .blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .blog-card {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 50px;
+            box-shadow: var(--shadow-premium);
+            border: 1px solid var(--border-color-light);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .blog-date {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-primary);
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .blog-title {
+            font-family: 'Lora', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.25;
+            color: var(--text-dark);
+        }
+
+        .blog-excerpt {
+            color: var(--text-medium);
+            font-size: 1.15rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            /* Standard property */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .blog-full-content {
+            display: none;
+            opacity: 0;
+            color: var(--text-dark);
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+        }
+
+        .blog-card.expanded .blog-excerpt {
+            display: none;
+        }
+
+        .blog-card.expanded .blog-full-content {
+            display: block;
+            opacity: 1;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .read-more-btn {
+            background: var(--accent-primary);
+            color: #ffffff;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px var(--accent-glow);
+        }
+
+        .read-more-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px var(--accent-glow);
+        }
+
+        /* 
+           FOOTER CSS 
+        */
+        footer {
+            background: var(--text-dark);
+            padding: 60px 40px 40px;
+            margin-top: auto;
+            border-top: 5px solid transparent;
+            border-image: var(--accent-gradient) 1;
+            text-align: center;
+            color: var(--text-medium);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+            text-align: left;
+        }
+
+        .footer-grid h3 {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* Standard property */
+            -webkit-text-fill-color: transparent;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-grid a,
+        .footer-grid p {
+            color: var(--text-medium);
+            transition: var(--transition-smooth);
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .footer-grid a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .copyrights {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        /* FLOATING BUTTONS */
+        .scroll-to-top-btn,
+        .whatsapp-float {
+            position: fixed;
+            right: 30px;
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .scroll-to-top-btn {
+            bottom: 30px;
+            background: var(--accent-gradient);
+            color: #fff;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px var(--accent-glow);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-to-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+            bottom: 95px;
+        }
+
+        .whatsapp-float {
+            bottom: 30px;
+            color: #25d366;
+            font-size: 3rem;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 1000px) {
+
+            .navbar .nav-links.desktop-only,
+            .navbar .nav-actions.desktop-only {
+                display: none;
+            }
+
+            .hamburger-menu {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 20px;
+            }
+
+            header.blog-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .blog-card {
+                padding: 35px;
+            }
+
+            .blog-title {
+                font-size: 1.8rem;
+            }
+
+            .footer-grid {
+                text-align: center;
+            }
+
+            .footer-grid a:hover {
+                transform: none;
+            }
+
+            /* Mobile Dropdown Styles */
+            .mobile-dropdown {
+                position: relative;
+            }
+
+            .mobile-dropdown-toggle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .mobile-dropdown-toggle .arrow {
+                font-size: 0.8rem;
+                transition: transform 0.3s ease;
+            }
+
+            .mobile-dropdown.open .mobile-dropdown-toggle .arrow {
+                transform: rotate(180deg);
+                color: var(--accent-primary);
+            }
+
+            .mobile-dropdown-menu {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+                background: rgba(130, 36, 227, 0.03);
+            }
+
+            .mobile-dropdown.open .mobile-dropdown-menu {
+                max-height: 1000px;
+                transition: max-height 0.5s ease-in;
+            }
+
+            .mobile-dropdown-menu li {
+                border-bottom: none;
+            }
+
+            .mobile-dropdown-menu a {
+                padding-left: 50px;
+                font-size: 1rem;
+                font-weight: 500;
+                color: var(--text-medium);
+            }
+
+            .mobile-dropdown-menu a:hover {
+                color: var(--accent-primary);
+                background: rgba(130, 36, 227, 0.05);
+            }
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+            color: #fff;
+        }
+
+        .whatsapp-float .whatsapp-icon {
+            font-size: 1.8rem;
+            margin-right: 0;
+            margin-top: 1px;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">Naam<span
+                    class="logo-in">in</span></a></div>
+
+        <ul class="nav-links desktop-only">
+            <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+            <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
+            <li><a href="parents-mix.html" data-en="Parents to Child" data-hi="माता-पिता से बच्चे तक">Parents to
+                    Child</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-en="More" data-hi="अधिक">More<span class="arrow">▼</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="popular-names.html" data-en="Popular Names" data-hi="लोकप्रिय नाम">Popular Names</a>
+                    </li>
+                    <li><a href="unique-names.html" data-en="Unique Names" data-hi="अद्वितीय नाम">Unique Names</a></li>
+                    <li><a href="famous-personalities.html" data-en="Famous Personalities"
+                            data-hi="प्रसिद्ध हस्तियां">Famous Personalities</a></li>
+                    <li><a href="more/motto-for-everything/index.html" data-en="Motto Generator"
+                            data-hi="आदर्श वाक्य जनरेटर">Motto Generator</a></li>
+                    <li><a href="more/zodiac-finder/index.html" data-en="Zodiac Finder" data-hi="राशि चक्र खोजक">Zodiac
+                            Finder</a></li>
+                    <li><a href="product.html" data-en="Products" data-hi="उत्पाद">Products</a></li>
+                    <li><a href="services.html" data-en="Services" data-hi="सेवाएं">Services</a></li>
+                    <li><a href="pricing.html" data-en="Aura" data-hi="आभा">Aura</a></li>
+                    <li><a href="careers.html" data-en="Careers" data-hi="करियर">Careers</a></li>
+                    <li><a href="blog.html" data-en="Blog" data-hi="ब्लॉग">Blog</a></li>
+                    <li><a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="nav-actions desktop-only">
+            <button id="language-toggle" class="btn btn-login"
+                style="font-size:12px; padding:6px 10px;">ENG/HIN</button>
+            <button id="fav-view-btn" class="btn btn-fav">
+                <i class="fas fa-heart"></i>
+                <span id="fav-count">0</span>
+            </button>
+            <a href="login.html" class="btn btn-login">Log in</a>
+            <a href="signup.html" class="btn btn-signup">Sign up</a>
+        </div>
+
+        <button class="hamburger-menu mobile-only" id="hamburger-menu"
+            style="z-index: 10000; position: relative; cursor: pointer;">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+                <li><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a></li>
+                <li><a href="parents-mix.html" data-en="Parents to Child" data-hi="माता-पिता से बच्चे तक">Parents to
+                        Child</a></li>
+
+                <!-- Mobile Dropdown -->
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle" data-en="More" data-hi="अधिक">More<span
+                            class="arrow">▼</span></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="popular-names.html" data-en="Popular Names" data-hi="लोकप्रिय नाम">Popular
+                                Names</a></li>
+                        <li><a href="unique-names.html" data-en="Unique Names" data-hi="अद्वितीय नाम">Unique Names</a>
+                        </li>
+                        <li><a href="famous-personalities.html" data-en="Famous Personalities"
+                                data-hi="प्रसिद्ध हस्तियां">Famous Personalities</a></li>
+                        <li><a href="more/motto-for-everything/index.html" data-en="Motto Generator"
+                                data-hi="आदर्श वाक्य जनरेटर">Motto Generator</a></li>
+                        <li><a href="more/zodiac-finder/index.html" data-en="Zodiac Finder"
+                                data-hi="राशि चक्र खोजक">Zodiac Finder</a></li>
+                        <li><a href="product.html" data-en="Products" data-hi="उत्पाद">Products</a></li>
+
+                        <li><a href="services.html" data-en="Services" data-hi="सेवाएं">Services</a></li>
+                        <li><a href="pricing.html" data-en="Aura" data-hi="आभा">Aura</a></li>
+                        <li><a href="careers.html" data-en="Careers" data-hi="करियर">Careers</a></li>
+                        <li><a href="blog.html" data-en="Blog" data-hi="ब्लॉग">Blog</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mobile-actions">
+                <button id="language-toggle-mobile" class="btn mobile-btn btn-login">ENG/HIN</button>
+                <a href="login.html" class="btn btn-login mobile-btn">Log in</a>
+                <a href="signup.html" class="btn btn-signup mobile-btn">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container">
+        <header class="blog-header">
+            <h1 data-en="Naamin Blog" data-hi="नामिन ब्लॉग">Naamin Blog</h1>
+            <p data-en="Thoughtful stories about identity and the power of names."
+                data-hi="पहचान और नामों की शक्ति के बारे में विचारशील कहानियाँ।">Thoughtful stories about identity and
+                the power of names.</p>
+        </header>
+
+        <div class="blog-list">
+
+            <article class="blog-card" id="blog-1">
+                <span class="blog-date">Monday, Jan 27, 2026</span>
+                <h2 class="blog-title" data-en="Why Naming Is More Important Than You Think"
+                    data-hi="नामकरण आपकी सोच से भी अधिक महत्वपूर्ण क्यों है">Why Naming Is More Important Than You Think
+                </h2>
+                <div class="blog-excerpt">
+                    A name is the first gift a parent gives to a child—and it lasts a lifetime.
+                    Names shape identity, influence confidence, and often reflect culture, values, and dreams.
+                    Choosing the right name is more than just liking how it sounds.
+                </div>
+                <div class="blog-full-content">
+                    A name carries emotional, social, and cultural meaning. From childhood introductions to professional
+                    life, a name becomes a personal brand. Studies suggest that names can influence first impressions,
+                    self-esteem, and even career opportunities.<br><br>
+                    In many cultures, names are chosen based on tradition, astrology, or family history, while modern
+                    parents often look for uniqueness and global appeal. With the rise of digital identity, a name now
+                    also represents how someone appears online.<br><br>
+                    That’s why choosing a name deserves thought, research, and sometimes even guidance—because it’s not
+                    just a label, it’s a lifelong identity.
+                </div>
+                <button class="read-more-btn" onclick="toggleReadMore('blog-1')">
+                    <span class="btn-text">Read More</span>
+                </button>
+            </article>
+
+            <article class="blog-card" id="blog-2">
+                <span class="blog-date">Saturday, Jan 24, 2026</span>
+                <h2 class="blog-title" data-en="How a Name Shapes Personality and Perception"
+                    data-hi="एक नाम व्यक्तित्व और धारणा को कैसे आकार देता है">How a Name Shapes Personality and
+                    Perception</h2>
+                <div class="blog-excerpt">
+                    Ever noticed how certain names feel strong, soft, modern, or traditional?
+                    A name often creates expectations before a person even speaks.
+                    This silent influence plays a bigger role than most people realize.
+                </div>
+                <div class="blog-full-content">
+                    Names affect how others perceive us—teachers, employers, friends, and even strangers. Psychological
+                    studies show that people subconsciously associate names with traits like intelligence, friendliness,
+                    or leadership.<br><br>
+                    For example, classic names are often linked with trust and stability, while modern or rare names
+                    suggest creativity and individuality. This doesn’t define a person—but it does influence first
+                    impressions.<br><br>
+                    Understanding this helps parents choose names that align with the values and qualities they hope
+                    their child will carry forward.
+                </div>
+                <button class="read-more-btn" onclick="toggleReadMore('blog-2')">
+                    <span class="btn-text">Read More</span>
+                </button>
+            </article>
+
+            <article class="blog-card" id="blog-3">
+                <span class="blog-date">Thursday, Jan 22, 2026</span>
+                <h2 class="blog-title" data-en="Traditional vs Modern Baby Names: What Should You Choose?"
+                    data-hi="पारंपरिक बनाम आधुनिक शिशुओं के नाम: आपको क्या चुनना चाहिए?">Traditional vs Modern Baby
+                    Names: What Should You Choose?</h2>
+                <div class="blog-excerpt">
+                    Some parents love timeless traditional names, while others want something fresh and modern.
+                    Both choices have their own charm, meaning, and impact.
+                    So how do you decide what’s right?
+                </div>
+                <div class="blog-full-content">
+                    Traditional names often carry deep cultural roots, family legacy, and historical meaning. They
+                    provide a sense of continuity and belonging. Modern names, on the other hand, stand out and reflect
+                    individuality and changing times.<br><br>
+                    Today, many parents look for a balance—names that feel modern but still respect tradition. This
+                    fusion creates names that are unique yet meaningful.<br><br>
+                    The best choice is the one that resonates emotionally with you and aligns with your family’s values
+                    and future vision.
+                </div>
+                <button class="read-more-btn" onclick="toggleReadMore('blog-3')">
+                    <span class="btn-text">Read More</span>
+                </button>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- SITE FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3>
+                <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+                <a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a>
+                <a href="services.html" data-en="Services" data-hi="सेवाएं">Services</a>
+                <a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a>
+            </div>
+            <div>
+                <h3 data-en="Our Services" data-hi="हमारी सेवाएं">Our Services</h3>
+                <a href="services.html#consultation" data-en="Name Consultation" data-hi="नाम परामर्श">Name Consultation</a>
+                <a href="services.html#vedic" data-en="Vedic Guidance" data-hi="वैदिक मार्गदर्शन">Vedic Guidance</a>
+                <a href="services.html#posters" data-en="Name Posters" data-hi="नाम पोस्टर">Name Posters</a>
+            </div>
+            <div>
+                <h3 data-en="Follow Us" data-hi="हमें फॉलो करें">Follow Us</h3>
+                <a href="https://www.linkedin.com/company/naamin/" target="_blank">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <div>
+                <h3 data-en="Contact" data-hi="संपर्क">Contact</h3>
+                <a href="tel:+919413678955">+91 94136 78955</a>
+                <a href="mailto:naamin.com@gmail.com">naamin.com@gmail.com</a>
+                <p data-en="Hyderabad, Telangana, India" data-hi="हैदराबाद, तेलंगाना, भारत">Hyderabad, Telangana, India
+                </p>
+            </div>
+        </div>
+        <p class="copyrights" data-en="© 2025 Naamin. All rights reserved."
+            data-hi="© २०२५ नामिन। सभी अधिकार सुरक्षित।">© 2025 Naamin. All rights reserved.</p>
+    </footer>
+
+    <!-- FLOATING ACTIONS -->
+    <a href="https://wa.me/9413678955?text=Hello" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Toggle Blog Content
+        function toggleReadMore(cardId) {
+            const card = document.getElementById(cardId);
+            const btnText = card.querySelector('.btn-text');
+            const isExpanded = card.classList.contains('expanded');
+
+            if (isExpanded) {
+                card.classList.remove('expanded');
+                btnText.textContent = 'Read More';
+                card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                card.classList.add('expanded');
+                btnText.textContent = 'Read Less';
+            }
+        }
+
+        // Navbar & Scroll Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const scrollBtn = document.getElementById('scrollToTopBtn');
+
+            // Toggle Mobile Menu - Removed to prevent conflict with script.js
+
+            // Scroll to Top
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollBtn.classList.add('show');
+                } else {
+                    scrollBtn.classList.remove('show');
+                }
+            });
+            scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+            // Dropdown logic (Desktop)
+            document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+                toggle.addEventListener('click', (e) => {
+                    e.preventDefault(); e.stopPropagation();
+                    const li = toggle.closest('.dropdown');
+                    if (li) li.classList.toggle('open');
+                });
+            });
+
+            // Mobile Dropdown Logic
+            document.querySelectorAll('.mobile-dropdown-toggle').forEach(toggle => {
+                toggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const li = toggle.closest('.mobile-dropdown');
+                    if (li) li.classList.toggle('open');
+                });
+            });
+
+            // Close everything on outside click
+            document.addEventListener('click', (e) => {
+                document.querySelectorAll('.dropdown.open').forEach(d => {
+                    if (!d.contains(e.target)) d.classList.remove('open');
+                });
+                if (mobileMenu && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    mobileMenu.classList.remove('open');
+                    const icon = hamburger.querySelector('i');
+                    if (icon) icon.className = 'fas fa-bars';
+                }
+            });
+
+            // Language and translation handled by script.js
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="navbar-auth.js"></script>
+</body>
+
+</html>

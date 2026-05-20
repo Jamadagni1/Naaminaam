@@ -1,0 +1,426 @@
+:root {
+  --more-accent: #6c2bd9;
+  --more-accent-soft: rgba(108, 43, 217, 0.14);
+  --more-surface: rgba(255, 255, 255, 0.92);
+  --more-border: rgba(108, 43, 217, 0.16);
+  --more-shadow: 0 20px 44px rgba(39, 19, 77, 0.14);
+}
+
+body.more-unified-ui {
+  background:
+    radial-gradient(1200px 520px at 14% 0%, rgba(108, 43, 217, 0.18), transparent 62%),
+    radial-gradient(1100px 520px at 82% 0%, rgba(32, 125, 255, 0.14), transparent 60%),
+    radial-gradient(900px 520px at 50% 18%, rgba(236, 72, 153, 0.06), transparent 64%),
+    linear-gradient(120deg, #fdfbff 0%, #eef2ff 52%, #ffffff 100%);
+  background-attachment: fixed;
+  color: #241f33;
+}
+
+.more-unified-ui main {
+  padding-inline: clamp(14px, 2.5vw, 26px);
+  padding-bottom: 36px;
+}
+
+.more-unified-ui .hero-section,
+.more-unified-ui .brandgen-hero,
+.more-unified-ui .motto-hero,
+.more-unified-ui .zodiac-hero,
+.more-unified-ui .domain-hero {
+  margin: clamp(12px, 2.2vw, 24px) auto 20px;
+  max-width: 1280px;
+  border-radius: 24px;
+  border: 1px solid var(--more-border);
+  background:
+    linear-gradient(135deg, rgba(193, 132, 243, 0.94), rgba(108, 43, 217, 0.95)),
+    linear-gradient(135deg, #c184f3, #6c2bd9);
+  box-shadow: var(--more-shadow);
+  padding: clamp(24px, 4vw, 44px);
+  color: #fff;
+}
+
+.more-unified-ui .page-title,
+.more-unified-ui .premium-title,
+.more-unified-ui .domain-hero h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.more-unified-ui .page-subtitle,
+.more-unified-ui .section-subtitle,
+.more-unified-ui .tagline,
+.more-unified-ui .update-text,
+.more-unified-ui .domain-hero p {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 900px;
+}
+
+.more-unified-ui .filters-section,
+.more-unified-ui .motto-container,
+.more-unified-ui .zodiac-container,
+.more-unified-ui .domain-service-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.more-unified-ui .filters-container,
+.more-unified-ui .motto-card,
+.more-unified-ui .zodiac-card,
+.more-unified-ui .domain-card,
+.more-unified-ui .results-content,
+.more-unified-ui .result-box,
+.more-unified-ui .traits-box,
+.more-unified-ui .disclaimer-box {
+  background: var(--more-surface);
+  border: 1px solid var(--more-border);
+  border-radius: 28px;
+  box-shadow: var(--more-shadow);
+  backdrop-filter: blur(4px);
+}
+
+.more-unified-ui .filters-container,
+.more-unified-ui .motto-card,
+.more-unified-ui .zodiac-card,
+.more-unified-ui .domain-card,
+.more-unified-ui .results-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.more-unified-ui .filters-container::before,
+.more-unified-ui .motto-card::before,
+.more-unified-ui .zodiac-card::before,
+.more-unified-ui .domain-card::before,
+.more-unified-ui .results-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(108, 43, 217, 0.12), transparent 58%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.more-unified-ui .filter-group,
+.more-unified-ui .input-group {
+  gap: 8px;
+}
+
+.more-unified-ui .search-input,
+.more-unified-ui .filter-select,
+.more-unified-ui input[type="text"],
+.more-unified-ui input[type="search"],
+.more-unified-ui select,
+.more-unified-ui textarea {
+  border-radius: 14px;
+  border: 1px solid rgba(122, 53, 232, 0.22);
+  background: #fff;
+  color: #241f33;
+  -webkit-text-fill-color: #241f33;
+  caret-color: var(--more-accent);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.more-unified-ui input::placeholder,
+.more-unified-ui textarea::placeholder {
+  color: rgba(36, 31, 51, 0.54);
+  opacity: 1;
+}
+
+.more-unified-ui input[type="text"],
+.more-unified-ui input[type="search"],
+.more-unified-ui select,
+.more-unified-ui textarea,
+.more-unified-ui button {
+  min-width: 0;
+}
+
+.more-unified-ui .search-input:focus-within,
+.more-unified-ui .filter-select:focus,
+.more-unified-ui input:focus,
+.more-unified-ui select:focus,
+.more-unified-ui textarea:focus {
+  border-color: var(--more-accent);
+  box-shadow: 0 0 0 3px var(--more-accent-soft);
+  outline: none;
+}
+
+/* Fix select dropdown arrow */
+.more-unified-ui select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236c2bd9' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+/* Keep composite search controls as a single outer field (no nested inner box). */
+.more-unified-ui .search-input input,
+.more-unified-ui .search-input input[type="text"],
+.more-unified-ui .search-input input[type="search"] {
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  outline: none;
+}
+
+.more-unified-ui .filter-pill,
+.more-unified-ui .btn-generate,
+.more-unified-ui .domain-cta {
+  border-radius: 999px;
+}
+
+.more-unified-ui .filter-pill.active,
+.more-unified-ui .btn-generate,
+.more-unified-ui .domain-cta.btn-signup {
+  background: linear-gradient(135deg, #c184f3, #6c2bd9);
+  color: #fff;
+  border-color: transparent;
+}
+
+.more-unified-ui .btn-generate:hover,
+.more-unified-ui .domain-cta.btn-signup:hover {
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+}
+
+.more-unified-ui .domain-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  color: #fff;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 900px) {
+  .more-unified-ui .hero-section,
+  .more-unified-ui .brandgen-hero,
+  .more-unified-ui .motto-hero,
+  .more-unified-ui .zodiac-hero,
+  .more-unified-ui .domain-hero {
+    border-radius: 18px;
+    padding: 20px 16px;
+  }
+
+  .more-unified-ui .filters-container,
+  .more-unified-ui .motto-card,
+  .more-unified-ui .zodiac-card,
+  .more-unified-ui .domain-card {
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .more-unified-ui main {
+    padding-inline: 10px;
+    padding-bottom: 24px;
+  }
+
+  body.more-unified-ui {
+    background-attachment: scroll;
+  }
+
+  .more-unified-ui .hero-section,
+  .more-unified-ui .brandgen-hero,
+  .more-unified-ui .motto-hero,
+  .more-unified-ui .zodiac-hero,
+  .more-unified-ui .domain-hero {
+    margin: 10px auto 14px;
+    padding: 16px 12px;
+    border-radius: 14px;
+  }
+
+  .more-unified-ui .filters-container,
+  .more-unified-ui .motto-card,
+  .more-unified-ui .zodiac-card,
+  .more-unified-ui .domain-card,
+  .more-unified-ui .results-content,
+  .more-unified-ui .result-box,
+  .more-unified-ui .traits-box,
+  .more-unified-ui .disclaimer-box {
+    border-radius: 18px;
+    padding: 14px !important;
+  }
+
+  .more-unified-ui .btn-generate,
+  .more-unified-ui .domain-cta,
+  .more-unified-ui button[type="submit"] {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .more-unified-ui .search-input,
+  .more-unified-ui .filter-select,
+  .more-unified-ui input[type="text"],
+  .more-unified-ui input[type="search"],
+  .more-unified-ui select,
+  .more-unified-ui textarea {
+    font-size: 16px;
+  }
+}
+
+/* More pages use the common fixed header; keep it compact and avoid cramped desktop nav. */
+body.more-unified-ui .navbar {
+  height: var(--header-height, 72px);
+  padding-inline: clamp(14px, 2vw, 28px);
+}
+
+body.more-unified-ui .navbar .logo {
+  font-size: clamp(1.45rem, 1.7vw, 1.85rem);
+  white-space: nowrap;
+}
+
+body.more-unified-ui .navbar .nav-links {
+  gap: clamp(4px, 0.7vw, 10px);
+}
+
+body.more-unified-ui .navbar .nav-links a {
+  padding-inline: clamp(8px, 0.75vw, 12px);
+  white-space: nowrap;
+}
+
+body.more-unified-ui .nav-actions {
+  gap: 8px;
+  margin-left: 8px;
+}
+
+body.more-unified-ui #global-google-translate-nav-slot select {
+  min-width: 150px;
+  min-height: 42px;
+  font-weight: 700;
+}
+
+@media (max-width: 1180px) {
+  body.more-unified-ui .desktop-only {
+    display: none !important;
+  }
+
+  body.more-unified-ui .mobile-only {
+    display: flex !important;
+  }
+
+  body.more-unified-ui .mobile-menu {
+    display: flex !important;
+    position: fixed !important;
+    top: var(--header-height, 64px) !important;
+    right: 0 !important;
+    left: auto !important;
+    width: min(88vw, 360px) !important;
+    max-width: 360px !important;
+    height: calc(100dvh - var(--header-height, 64px)) !important;
+    padding-bottom: max(16px, env(safe-area-inset-bottom)) !important;
+    border-radius: 22px 0 0 22px !important;
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.9), rgba(243, 236, 255, 0.78)) !important;
+    -webkit-backdrop-filter: blur(18px) saturate(140%) !important;
+    backdrop-filter: blur(18px) saturate(140%) !important;
+    box-shadow: -16px 0 36px rgba(33, 24, 60, 0.22) !important;
+    transform: translateX(112%) !important;
+    transition: transform 0.32s ease !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    z-index: 1301 !important;
+  }
+
+  body.more-unified-ui .mobile-menu.open {
+    transform: translateX(0) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  body.more-unified-ui .navbar {
+    padding-inline: 12px !important;
+  }
+
+  body.more-unified-ui .navbar .logo {
+    font-size: 1.45rem;
+  }
+
+  body.more-unified-ui .mobile-header-actions .btn-fav {
+    min-width: 42px;
+    padding-inline: 10px;
+  }
+
+  body.more-unified-ui .hamburger-menu {
+    min-width: 42px;
+    min-height: 42px;
+    justify-content: center;
+  }
+}
+
+/* Keep the common header readable on very narrow phones. */
+@media (max-width: 480px) {
+  body.more-unified-ui .navbar {
+    height: 58px;
+    gap: 4px;
+    padding-inline: 6px !important;
+  }
+
+  body.more-unified-ui .nav-brand-cluster {
+    flex: 0 0 auto;
+  }
+
+  body.more-unified-ui .navbar .logo {
+    max-width: none;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: nowrap;
+    font-size: clamp(1.2rem, 7vw, 1.45rem);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+
+  body.more-unified-ui .mobile-header-actions {
+    gap: 4px;
+    margin-left: auto;
+  }
+
+  body.more-unified-ui .mobile-header-actions .btn-fav {
+    width: 36px;
+    min-width: 36px;
+    min-height: 34px;
+    padding-inline: 6px;
+    border-radius: 8px;
+    gap: 2px;
+  }
+
+  body.more-unified-ui .mobile-header-actions .btn-fav i {
+    font-size: 0.9rem;
+  }
+
+  body.more-unified-ui .mobile-header-actions .btn-fav span {
+    font-size: 0.7rem;
+    min-width: 14px;
+  }
+
+  body.more-unified-ui #global-google-translate-nav-slot {
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  body.more-unified-ui #global-google-translate-nav-slot select {
+    width: clamp(76px, 29vw, 104px);
+    min-width: 0;
+    min-height: 34px;
+    padding: 7px 22px 7px 8px;
+    border-radius: 8px;
+    font-size: 0.68rem;
+  }
+
+  body.more-unified-ui .hamburger-menu {
+    width: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 6px !important;
+    justify-content: center;
+    border: 1px solid rgba(108, 43, 217, 0.28);
+    border-radius: 8px;
+  }
+}

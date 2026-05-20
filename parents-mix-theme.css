@@ -1,0 +1,934 @@
+/* ===================================
+   PARENTS MIX PAGE - PINK THEME (#e91e63)
+   Soft, clean, modern baby-naming UI
+   =================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Merriweather:ital,wght@0,400;1,400&display=swap');
+
+/* Custom Pink Theme Variables */
+:root {
+    --pink-primary: #6C2BD9;
+    --pink-light: #C184F3;
+    --pink-lighter: #F3E9FF;
+    --pink-dark: #4B1E9E;
+    --pink-gradient: linear-gradient(135deg, #C184F3 0%, #6C2BD9 100%);
+    --pink-glow: rgba(108, 43, 217, 0.25);
+    --pink-soft-bg: rgba(108, 43, 217, 0.06);
+    --pink-text: #1F1B2E;
+    --pink-text-muted: #5C566E;
+    --pink-accent: #E2B558;
+}
+
+/* Main Section Styling */
+#parents-mix {
+    background: linear-gradient(180deg, #ffffff 0%, #F8F2FF 50%, #ffffff 100%);
+    min-height: 100vh;
+    padding: 80px 20px 60px;
+}
+
+#parents-mix h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--pink-primary);
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--pink-text-muted);
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Input Card */
+.parents-input-card {
+    background: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(233, 30, 99, 0.15);
+    max-width: 800px;
+    margin: 0 auto 40px;
+    border: 2px solid var(--pink-lighter);
+}
+
+.input-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 0;
+}
+
+.input-group label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--pink-dark);
+}
+
+.input-group label i {
+    margin-right: 8px;
+    color: var(--pink-primary);
+}
+
+.name-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: 2px solid var(--pink-lighter);
+    border-radius: 15px;
+    background: #fff;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.name-input:focus {
+    outline: none;
+    border-color: var(--pink-primary);
+    box-shadow: 0 0 0 4px var(--pink-glow);
+}
+
+.name-input::placeholder {
+    color: #aaa;
+}
+
+.plus-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-primary);
+    font-size: 2rem;
+    padding-top: 35px;
+}
+
+/* Gender Selection */
+.gender-selection {
+    margin-bottom: 35px;
+}
+
+.gender-label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--pink-dark);
+    text-align: center;
+}
+
+.gender-label i {
+    margin-right: 8px;
+    color: var(--pink-primary);
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gender-btn {
+    flex: 1;
+    max-width: 200px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--pink-lighter);
+    background: white;
+    color: #666;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.gender-btn i {
+    font-size: 1.1rem;
+}
+
+.gender-btn:hover {
+    background: var(--pink-soft-bg);
+    border-color: var(--pink-light);
+}
+
+.gender-btn.active {
+    background: var(--pink-gradient);
+    color: white;
+    border-color: var(--pink-primary);
+    box-shadow: 0 5px 15px var(--pink-glow);
+}
+
+/* Generate Button */
+.generate-button {
+    width: 100%;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: var(--pink-gradient);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px var(--pink-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.generate-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px var(--pink-glow);
+}
+
+.generate-button:active {
+    transform: translateY(0);
+}
+
+.generate-button i {
+    font-size: 1.3rem;
+}
+
+/* Loading State */
+.loading-state {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 5px solid var(--pink-lighter);
+    border-top-color: var(--pink-primary);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.loading-state p {
+    font-size: 1.1rem;
+    color: var(--pink-dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Results Section */
+.mix-results {
+    margin-top: 60px;
+    animation: fadeIn 0.6s ease;
+}
+
+.results-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.results-header h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--pink-primary);
+    margin-bottom: 10px;
+    font-family: 'Lora', serif;
+}
+
+.results-header h2 i {
+    color: var(--pink-light);
+    margin-right: 10px;
+}
+
+.results-subtitle {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+}
+
+.results-subtitle span {
+    font-weight: 700;
+    color: var(--pink-primary);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.result-card {
+    background: white;
+    border: 2px solid var(--pink-lighter);
+    border-radius: 18px;
+    padding: 18px;
+    text-align: left;
+    transition: all 0.3s ease;
+    position: relative;
+    animation: slideUp 0.5s ease backwards;
+    cursor: pointer;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--pink-primary);
+    box-shadow: 0 10px 30px var(--pink-glow);
+}
+
+.result-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--pink-primary);
+    margin-bottom: 6px;
+    font-family: 'Lora', serif;
+}
+
+.result-meaning {
+    font-size: 0.88rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+.result-gender {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--pink-soft-bg);
+    color: var(--pink-dark);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.result-gender i {
+    margin-right: 5px;
+}
+
+.copy-name-btn {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 2px solid var(--pink-lighter);
+    color: var(--pink-primary);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.copy-name-btn:hover {
+    background: var(--pink-gradient);
+    color: white;
+    border-color: var(--pink-primary);
+}
+
+.copy-name-btn.copied {
+    background: #4caf50;
+    border-color: #4caf50;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #parents-mix h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .parents-input-card {
+        padding: 25px 20px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .input-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .plus-divider {
+        padding-top: 0;
+        transform: none;
+        margin: 10px 0;
+    }
+
+    .gender-options {
+        flex-direction: column;
+    }
+
+    .gender-btn {
+        max-width: 100%;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .parents-input-card {
+        border-radius: 20px;
+        padding: 20px 15px;
+    }
+
+    .result-card {
+        padding: 20px;
+    }
+
+    .result-name {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===================================
+   NAME DETAIL MODAL
+   =================================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 25px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(233, 30, 99, 0.3);
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--pink-lighter);
+    color: var(--pink-primary);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-modal-btn:hover {
+    background: var(--pink-primary);
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Detail View Styling */
+.detail-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--pink-lighter);
+}
+
+.detail-name {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--pink-primary);
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+}
+
+.detail-pronunciation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.pronounce-btn {
+    background: var(--pink-gradient);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pronounce-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px var(--pink-glow);
+}
+
+.pronunciation-guide {
+    font-size: 1.1rem;
+    color: #666;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+
+.detail-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--pink-soft-bg);
+    border-radius: 15px;
+    border-left: 4px solid var(--pink-primary);
+}
+
+.detail-section h3 {
+    font-size: 1.4rem;
+    color: var(--pink-dark);
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-section h3 i {
+    color: var(--pink-primary);
+}
+
+.detail-section p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-label {
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-value {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.parent-info {
+    grid-column: 1 / -1;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.parent-info .info-label i {
+    color: var(--pink-primary);
+    font-size: 1.2rem;
+}
+
+.personality-text {
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid var(--pink-lighter);
+    background: white;
+    color: var(--pink-primary);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-btn:hover {
+    background: var(--pink-gradient);
+    color: white;
+    border-color: var(--pink-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px var(--pink-glow);
+}
+
+.action-btn i {
+    font-size: 1.2rem;
+}
+
+/* View Details Button in Cards */
+.view-details-btn {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 2px solid var(--pink-lighter);
+    color: var(--pink-primary);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.view-details-btn:hover {
+    background: var(--pink-gradient);
+    color: white;
+    border-color: var(--pink-primary);
+}
+
+/* Mobile Modal Responsiveness */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 25px 20px;
+        max-height: 95vh;
+    }
+
+    .detail-name {
+        font-size: 2.2rem;
+    }
+
+    .detail-pronunciation {
+        flex-direction: column;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-actions {
+        flex-direction: column;
+    }
+
+    .action-btn {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .detail-name {
+        font-size: 1.8rem;
+    }
+
+    .detail-section {
+        padding: 15px;
+    }
+
+    .close-modal-btn {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 420px) {
+    #parents-mix {
+        padding: 74px 10px 26px;
+    }
+
+    #parents-mix h1 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .parents-input-card {
+        padding: 14px 12px;
+        border-radius: 14px;
+    }
+
+    .name-input,
+    .gender-btn,
+    .generate-button {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .result-card {
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .result-name {
+        font-size: 1.2rem;
+    }
+
+    .modal-content {
+        width: calc(100% - 16px);
+        padding: 16px 12px;
+        border-radius: 14px;
+    }
+
+    .detail-section {
+        padding: 12px;
+    }
+}
+
+/* Like button styling */
+.like-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #ddd;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.like-btn:hover {
+    transform: scale(1.2);
+}
+
+.like-btn.liked {
+    color: var(--pink-primary);
+    animation: heartBeat 0.5s ease;
+}
+
+@keyframes heartBeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    75% {
+        transform: scale(1.25);
+    }
+}
+
+.copy-name-btn {
+    padding: 8px;
+    font-size: 0.85rem;
+}
+
+/* Enhanced Typography with Different Fonts */
+
+/* Main heading - Elegant serif */
+#parents-mix h1 {
+    font-family: 'Playfair Display', 'Lora', serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Subtitle - Modern sans-serif */
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* Input labels - Clean sans-serif */
+.input-group label,
+.gender-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Input fields - Readable sans-serif */
+.name-input {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* Gender buttons - Bold sans-serif */
+.gender-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Generate button - Strong sans-serif */
+.generate-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Results header - Elegant serif */
+.results-header h2 {
+    font-family: 'Playfair Display', 'Lora', serif;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+/* Results subtitle - Light sans-serif */
+.results-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Name cards - Baby name in decorative font */
+.result-name {
+    font-family: 'Playfair Display', 'Lora', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Gender badge - Clean sans-serif */
+.result-gender {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+/* Meaning text - Readable serif */
+.result-meaning {
+    font-family: 'Merriweather', 'Georgia', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* Loading text - Modern sans-serif */
+.loading-state p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+

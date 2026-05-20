@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (() => {
+      const preferredLang = localStorage.getItem("language") || "en";
+      document.documentElement.lang = preferredLang;
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Announcement Card Maker - Naamin</title>
+  <meta name="description" content="Create a minimal black & white announcement card and download it as an image." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=ui-20260519-script-fit" />
+  <script src="js/common-layout.js?v=footer-static-social-20260516a" defer></script>
+  <script src="js/global-language-fab.js?v=langfab-20260519c" defer></script>
+
+  <style>
+    .ac-shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 96px 16px 60px;
+    }
+
+    .ac-hero h1 {
+      margin: 0 0 10px;
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 4.2vw, 46px);
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
+    }
+
+    .ac-hero p {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--text-medium);
+    }
+
+    .ac-grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .ac-panel {
+      background: var(--bg-card-light);
+      border: 1px solid var(--border-color-light);
+      border-radius: 22px;
+      box-shadow: var(--box-shadow-soft);
+      padding: 16px;
+    }
+
+    .ac-form {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ac-row {
+      display: grid;
+      gap: 6px;
+    }
+
+    .ac-row label {
+      font-weight: 800;
+      color: var(--text-dark);
+      font-size: 0.95rem;
+    }
+
+    .ac-row input,
+    .ac-row textarea,
+    .ac-row select {
+      width: 100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(31, 27, 46, 0.14);
+      outline: none;
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--text-dark);
+      font-family: var(--font-primary);
+      font-size: 14px;
+    }
+
+    .ac-row textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .ac-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ac-actions .btn {
+      min-width: 170px;
+      justify-content: center;
+    }
+
+    .ac-status {
+      margin: 0;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .ac-preview-wrap {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ac-canvas {
+      width: 100%;
+      border-radius: 22px;
+      border: 1px solid rgba(31, 27, 46, 0.14);
+      background: #fff;
+      box-shadow: 0 18px 34px rgba(31, 27, 46, 0.08);
+    }
+
+    .ac-hint {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .ac-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body data-theme="light">
+  <nav class="navbar"></nav>
+
+  <main class="ac-shell">
+    <header class="ac-hero">
+      <h1 data-en="Announcement Card Maker" data-hi="Announcement Card Maker">Announcement Card Maker</h1>
+      <p data-en="Minimal black & white card like the classic print style. Upload a baby photo (optional) and download PNG."
+        data-hi="Minimal black & white card like the classic print style. Upload a baby photo (optional) and download PNG.">
+        Minimal black & white card like the classic print style. Upload a baby photo (optional) and download PNG.
+      </p>
+    </header>
+
+    <section class="ac-grid" aria-label="Announcement card maker">
+      <div class="ac-panel">
+        <form class="ac-form" id="ac-form">
+          <div class="ac-row">
+            <label for="ac-title" data-en="Header icon" data-hi="Header icon">Header icon</label>
+            <select id="ac-title">
+              <option value="heart" selected data-en="Heart" data-hi="Heart">Heart</option>
+              <option value="star" data-en="Star" data-hi="Star">Star</option>
+              <option value="none" data-en="None" data-hi="None">None</option>
+            </select>
+          </div>
+
+          <div class="ac-row">
+            <label for="ac-line1" data-en="Line 1" data-hi="Line 1">Line 1</label>
+            <textarea id="ac-line1">With abundant happiness and hearts full of love, we’re delighted to share that we welcomed our baby into this world.</textarea>
+          </div>
+
+          <div class="ac-row">
+            <label for="ac-line2" data-en="Line 2" data-hi="Line 2">Line 2</label>
+            <input id="ac-line2" type="text" value="Baby Name (optional) • Date" />
+          </div>
+
+          <div class="ac-row">
+            <label for="ac-line3" data-en="Line 3" data-hi="Line 3">Line 3</label>
+            <textarea id="ac-line3">We seek your blessings and good wishes during this beautiful time. Thank you for your love and support.</textarea>
+          </div>
+
+          <div class="ac-row">
+            <label for="ac-signoff" data-en="Sign-off" data-hi="Sign-off">Sign-off</label>
+            <input id="ac-signoff" type="text" value="With love," />
+          </div>
+
+          <div class="ac-row">
+            <label for="ac-names" data-en="Names" data-hi="Names">Names</label>
+            <input id="ac-names" type="text" value="Parent 1 & Parent 2" />
+          </div>
+
+          <div class="ac-row">
+            <label for="ac-photo" data-en="Baby photo (optional)" data-hi="Baby photo (optional)">Baby photo (optional)</label>
+            <input id="ac-photo" type="file" accept="image/*" />
+          </div>
+
+          <div class="ac-actions">
+            <button id="ac-download" class="btn btn-signup" type="button"><i class="fas fa-download"></i> Download PNG</button>
+            <p class="ac-status" id="ac-status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="ac-preview-wrap">
+        <div class="ac-panel">
+          <canvas id="ac-canvas" class="ac-canvas" width="1200" height="1500" aria-label="Preview canvas"></canvas>
+          <p class="ac-hint" data-en="Tip: Edit text, upload photo if you want, then download."
+            data-hi="Tip: Edit text, upload photo if you want, then download.">
+            Tip: Edit text, upload photo if you want, then download.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <script src="js/announcement-card-maker.js?v=ac-20260502a" defer></script>
+
+  <a href="https://wa.me/9413678955?text=Hello" class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+  </a>
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+</body>
+
+</html>

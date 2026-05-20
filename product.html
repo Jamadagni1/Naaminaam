@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (() => {
+            const preferredLang = localStorage.getItem("language") || "en";
+            document.documentElement.lang = preferredLang;
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Naamin</title>
+    <meta name="description" content="Our products: posters, announcement kits, brand identity assets, and name report bundles." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css?v=ui-20260519-script-fit">
+    <style>
+        :root {
+            --product-accent: var(--accent-primary);
+            --product-surface: rgba(255, 255, 255, 0.92);
+            --product-border: rgba(108, 43, 217, 0.18);
+            --product-shadow: 0 18px 40px rgba(31, 27, 46, 0.1);
+            --product-shadow-strong: 0 24px 48px rgba(31, 27, 46, 0.15);
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background:
+                radial-gradient(circle at 12% 10%, rgba(214, 226, 255, 0.4), transparent 34%),
+                radial-gradient(circle at 88% 18%, rgba(255, 227, 199, 0.38), transparent 36%),
+                linear-gradient(180deg, #f7f8fc 0%, #f6f4ef 52%, #f5f6fa 100%);
+            color: var(--text-medium);
+            overflow-x: hidden;
+        }
+
+        .product-page {
+            padding-top: 96px;
+            min-height: 100vh;
+        }
+
+        /* Hero Styling */
+        .product-hero {
+            padding: 86px 20px 34px;
+            text-align: center;
+            position: relative;
+            max-width: 1160px;
+            margin: 14px auto 0;
+            border-radius: 26px;
+            border: 1px solid rgba(108, 43, 217, 0.26);
+            background: radial-gradient(circle at 20% 15%, rgba(130, 36, 227, 0.22), transparent 55%),
+                radial-gradient(circle at 80% 10%, rgba(108, 43, 217, 0.18), transparent 52%),
+                linear-gradient(140deg, rgba(248, 245, 255, 0.96), rgba(238, 232, 255, 0.92));
+            box-shadow: var(--product-shadow);
+        }
+
+        .product-hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2.6rem, 5.6vw, 4.2rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            padding-block: 0.08em 0.14em;
+            background: linear-gradient(135deg, #291a52 0%, #6C2BD9 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
+            line-height: 1.18;
+            overflow-wrap: anywhere;
+            overflow: visible;
+        }
+
+        html:not([lang="en"]) .product-hero h1 {
+            font-size: clamp(2rem, 4.6vw, 3.6rem);
+            letter-spacing: 0;
+            line-height: 1.32;
+            padding-block: 0.14em 0.2em;
+        }
+
+        .product-hero p {
+            font-size: 1.08rem;
+            color: var(--text-medium);
+            max-width: 760px;
+            margin: 0 auto;
+            font-weight: 500;
+            line-height: 1.72;
+            overflow: visible;
+        }
+
+        html:not([lang="en"]) .product-hero p {
+            line-height: 1.9;
+        }
+
+        /* Grid & Cards */
+        .product-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 26px;
+            padding: 26px 26px 62px;
+        }
+
+        .product-card {
+            background: var(--product-surface);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--product-border);
+            box-shadow: var(--product-shadow);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 45%, rgba(108, 43, 217, 0.06) 100%);
+            pointer-events: none;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--product-shadow-strong);
+            border-color: rgba(108, 43, 217, 0.3);
+        }
+
+        .product-image {
+            height: 380px;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(160deg, #ffffff 0%, #f9f5ff 100%);
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 14px;
+            box-shadow: 0 12px 24px rgba(35, 22, 63, 0.14);
+            transition: transform 0.8s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.06);
+        }
+
+        .product-card.frame-style .product-image {
+            background: linear-gradient(140deg, #f7f2ff 0%, #fff8ee 100%);
+            padding: 12px;
+        }
+
+        .product-card.frame-style .product-image img {
+            object-fit: contain;
+            border-radius: 14px;
+            box-shadow: 0 12px 24px rgba(35, 22, 63, 0.14);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent-gradient);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 2;
+            box-shadow: 0 6px 15px rgba(108, 43, 217, 0.32);
+            max-width: calc(100% - 40px);
+            line-height: 1.15;
+            text-align: center;
+            white-space: normal;
+            overflow-wrap: anywhere;
+        }
+
+        html:not([lang="en"]) .product-badge {
+            font-size: clamp(0.58rem, 1vw, 0.72rem);
+            padding: 8px 12px;
+        }
+
+        .product-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Product copy hidden for now because the text does not match the frame images. */
+        .product-content h2,
+        .product-content p,
+        .product-content .original-price {
+            display: none;
+        }
+
+        .product-content .price-tag {
+            margin-top: 4px;
+        }
+
+        .product-content h2 {
+            font-family: var(--font-serif);
+            font-size: 1.7rem;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .product-content p {
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 24px;
+            font-size: 0.97rem;
+        }
+
+        .price-tag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .product-price {
+            font-size: 1.9rem;
+            font-weight: 900;
+            color: var(--accent-primary);
+            font-family: var(--font-primary);
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #b5afc7;
+            font-size: 1.2rem;
+        }
+
+        .btn-order {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 30px;
+            background: var(--accent-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 100px;
+            font-weight: 800;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 11px 24px rgba(108, 43, 217, 0.26);
+        }
+
+        .btn-order:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 33px rgba(108, 43, 217, 0.4);
+            filter: brightness(1.02);
+        }
+
+        .btn-order i {
+            font-size: 1.2rem;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .float-decoration {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.32;
+            pointer-events: none;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-hero {
+                padding-top: 80px;
+            }
+
+            .product-grid {
+                padding: 40px 20px;
+                gap: 30px;
+            }
+
+            .product-content {
+                padding: 30px;
+            }
+
+            .product-image {
+                height: 300px;
+            }
+        }
+
+    </style>
+
+    <script src="js/common-layout.js?v=footer-static-social-20260516a"></script>
+</head>
+
+<body data-theme="light">
+    <nav class="navbar">
+        <div class="nav-brand-cluster">
+        <a href="/index.html" class="navbar-back-home" aria-label="Back to home">
+            <span class="navbar-back-icon" aria-hidden="true">&larr;</span>
+            <span class="navbar-back-label">Home</span>
+        </a>
+        <div class="logo">Naam<span class="logo-in">in</span></div>
+    </div>
+        <ul class="nav-links desktop-only">
+            <li><a href="index.html" data-en="Home" data-hi="Home">Home</a></li>
+            <li><a href="about.html" data-en="About" data-hi="About">About</a></li>
+            <li><a href="parents-mix.html" data-en="Parents to Child" data-hi="Parents to Child">Parents to Child</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-en="More" data-hi="More">More<span class="arrow">&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="popular-names.html" data-en="Popular Names" data-hi="Popular Names">Popular Names</a>
+                    </li>
+                    <li><a href="unique-names.html" data-en="Unique Names" data-hi="Unique Names">Unique Names</a></li>
+                    <li><a href="famous-personalities.html" data-en="Famous Personalities"
+                            data-hi="Famous Personalities">Famous Personalities</a></li>
+                    <li><a href="more/motto-for-everything/index.html" data-en="Motto Creator"
+                            data-hi="Motto Creator">Motto Creator</a></li>
+                    <li><a href="more/zodiac-finder/index.html" data-en="Zodiac Finder" data-hi="Zodiac Finder">Zodiac
+                            Finder</a></li>
+                    <li><a href="product.html" class="active" data-en="Our Products" data-hi="Our Products">Our Products</a></li>
+                    <li><a href="services.html" data-en="Services" data-hi="Services">Services</a></li>
+                    <li><a href="careers.html" data-en="Careers" data-hi="Careers">Careers</a></li>
+                    <li><a href="blog.html" data-en="Blog" data-hi="Blog">Blog</a></li>
+                    <li><a href="contact.html" data-en="Contact" data-hi="Contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-actions desktop-only">
+            <button id="language-toggle" class="btn btn-login btn-lang" title="Toggle language">ENG/HIN</button>
+            <button id="fav-view-btn" class="btn btn-fav" title="Wishlist">
+                <i class="fa-solid fa-heart"></i>
+                <span id="fav-count">0</span>
+            </button>
+            <a href="login.html" class="btn btn-login notranslate" translate="no" lang="en" data-en="Log in" data-hi="लॉग इन">Log in</a>
+            <a href="signup.html" class="btn btn-signup notranslate" translate="no" lang="en" data-en="Sign up" data-hi="साइन अप">Sign up</a>
+        </div>
+
+        <button class="hamburger-menu mobile-only" id="hamburger-menu" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" data-en="Home" data-hi="Home">Home</a></li>
+                <li><a href="about.html" data-en="About" data-hi="About">About</a></li>
+                <li><a href="parents-mix.html" data-en="Parents to Child" data-hi="Parents to Child">Parents to
+                        Child</a></li>
+
+                <!-- Mobile Dropdown -->
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle" data-en="More" data-hi="More">More<span class="arrow">&#9662;</span></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="popular-names.html" data-en="Popular Names" data-hi="Popular Names">Popular
+                                Names</a></li>
+                        <li><a href="unique-names.html" data-en="Unique Names" data-hi="Unique Names">Unique Names</a>
+                        </li>
+                        <li><a href="famous-personalities.html" data-en="Famous Personalities"
+                                data-hi="Famous Personalities">Famous Personalities</a></li>
+                        <li><a href="more/motto-for-everything/index.html" data-en="Motto Creator"
+                                data-hi="Motto Creator">Motto Creator</a></li>
+                        <li><a href="more/zodiac-finder/index.html" data-en="Zodiac Finder"
+                                data-hi="Zodiac Finder">Zodiac Finder</a></li>
+                        <li><a href="product.html" class="active" data-en="Our Products" data-hi="Our Products">Our Products</a></li>
+
+                        <li><a href="services.html" data-en="Services" data-hi="Services">Services</a></li>
+                        <li><a href="careers.html" data-en="Careers" data-hi="Careers">Careers</a></li>
+                        <li><a href="blog.html" data-en="Blog" data-hi="Blog">Blog</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-hi="Contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+                <button id="language-toggle-mobile" class="btn mobile-btn btn-login btn-lang">ENG/HIN</button>
+                <button id="fav-view-btn-mobile" class="btn btn-fav mobile-btn" aria-label="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span id="fav-count-mobile">0</span>
+                </button>
+                <a href="login.html" class="btn btn-login mobile-btn notranslate" translate="no" lang="en" data-en="Log in" data-hi="लॉग इन">Log in</a>
+                <a href="signup.html" class="btn btn-signup mobile-btn notranslate" translate="no" lang="en" data-en="Sign up" data-hi="साइन अप">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="product-page">
+        <!-- Decorative background elements -->
+        <div class="float-decoration" style="top: 15%; left: 5%; font-size: 3rem; color: #8224E3;">&#10024;</div>
+        <div class="float-decoration" style="top: 45%; right: 8%; font-size: 2rem; color: #fbbf24;">&#127775;</div>
+        <div class="float-decoration" style="bottom: 10%; left: 10%; font-size: 2.5rem; color: #6c5ce7;">&#128171;</div>
+
+                                <div class="product-hero">
+            <h1 data-en="Our Products" data-hi="Our Products">Our Products</h1>
+            <p data-en="Posters, announcement kits, brand identity assets, and report bundles &mdash; crafted for families, founders, and institutions."
+                data-hi="Posters, announcement kits, brand identity assets, and report bundles &mdash; crafted for families, founders, and institutions.">
+                Posters, announcement kits, brand identity assets, and report bundles &mdash; crafted for families, founders, and institutions.</p>
+        </div>
+
+        <section class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card frame-style">
+                <span class="product-badge">Top Seller</span>
+                <div class="product-image">
+                    <img src="IMG1.jpeg" alt="Signature Name Frame">
+                </div>
+                <div class="product-content">
+                    <!--
+                    <h2 data-en="Signature Name Poster" data-hi="Signature Name Poster">Signature Name Poster</h2>
+                    <p data-en="A premium poster for baby names or brand launches with meaning, story, and highlights."
+                        data-hi="A premium poster for baby names or brand launches with meaning, story, and highlights.">
+                        A premium poster for baby names or brand launches with meaning, story, and highlights.</p>
+                    -->
+                    <div class="price-tag">
+                        <span class="original-price">&#8377;2499</span>
+                        <span class="product-price">&#8377;1999</span>
+                    </div>
+                    <a href="https://wa.me/9413678955?text=I'm interested in the Signature Name Poster (V1)"
+                        class="btn-order">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-en="Order Now" data-hi="Order Now">Order Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <span class="product-badge">New Arrival</span>
+                <div class="product-image">
+                    <img src="IMG2.jpeg" alt="Personalized Name Frame 2">
+                </div>
+                <div class="product-content">
+                    <!--
+                    <h2 data-en="Announcement & Launch Card" data-hi="Announcement & Launch Card">Announcement & Launch Card</h2>
+                    <p data-en="Clean, modern typography for baby announcements, brand launches, and social reveals."
+                        data-hi="Clean, modern typography for baby announcements, brand launches, and social reveals.">
+                        Clean, modern typography for baby announcements, brand launches, and social reveals.</p>
+                    -->
+                    <div class="price-tag">
+                        <span class="original-price">&#8377;2499</span>
+                        <span class="product-price">&#8377;1999</span>
+                    </div>
+                    <a href="https://wa.me/9413678955?text=I'm interested in the Announcement & Launch Card (V2)"
+                        class="btn-order">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-en="Order Now" data-hi="Order Now">Order Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <span class="product-badge">Limited Edition</span>
+                <div class="product-image">
+                    <img src="IMG3.jpeg" alt="Personalized Name Frame 3">
+                </div>
+                <div class="product-content">
+                    <!--
+                    <h2 data-en="Name Report Bundle" data-hi="Name Report Bundle">Name Report Bundle</h2>
+                    <p data-en="Includes name report highlights, pronunciation notes, and design-ready visuals."
+                        data-hi="Includes name report highlights, pronunciation notes, and design-ready visuals.">
+                        Includes name report highlights, pronunciation notes, and design-ready visuals.</p>
+                    -->
+                    <div class="price-tag">
+                        <span class="original-price">&#8377;2499</span>
+                        <span class="product-price">&#8377;1999</span>
+                    </div>
+                    <a href="https://wa.me/9413678955?text=I'm interested in the Vedic Name Poster (V3)"
+                        class="btn-order">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-en="Order Now" data-hi="Order Now">Order Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMG4.jpeg" alt="Personalized Name Frame 4">
+                </div>
+                <div class="product-content">
+                    <!--
+                    <h2 data-en="Brand Identity Kit" data-hi="Brand Identity Kit">Brand Identity Kit</h2>
+                    <p data-en="A refined kit with logo wordmark, color palette, and name story snapshots."
+                        data-hi="A refined kit with logo wordmark, color palette, and name story snapshots.">
+                        A refined kit with logo wordmark, color palette, and name story snapshots.</p>
+                    -->
+                    <div class="price-tag">
+                        <span class="original-price">&#8377;2499</span>
+                        <span class="product-price">&#8377;1999</span>
+                    </div>
+                    <a href="https://wa.me/9413678955?text=I'm interested in the Brand Identity Kit (V4)"
+                        class="btn-order">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-en="Order Now" data-hi="Order Now">Order Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="IMG5.jpeg" alt="Personalized Name Frame 5">
+                </div>
+                <div class="product-content">
+                    <!--
+                    <h2 data-en="Institution Starter Pack" data-hi="Institution Starter Pack">Institution Starter Pack</h2>
+                    <p data-en="A professional naming deck with mission, values, and stakeholder-ready slides."
+                        data-hi="A professional naming deck with mission, values, and stakeholder-ready slides.">
+                        A professional naming deck with mission, values, and stakeholder-ready slides.</p>
+                    -->
+                    <div class="price-tag">
+                        <span class="original-price">&#8377;2499</span>
+                        <span class="product-price">&#8377;1999</span>
+                    </div>
+                    <a href="https://wa.me/9413678955?text=I'm interested in the Institution Starter Pack (V5)"
+                        class="btn-order">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-en="Order Now" data-hi="Order Now">Order Now</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3 data-en="Quick Links" data-hi="Quick Links">Quick Links</h3><a href="index.html" data-en="Home"
+                    data-hi="Home">Home</a><a href="about.html" data-en="About" data-hi="About">About</a><a
+                    href="services.html" data-en="Services" data-hi="Services">Services</a><a href="contact.html"
+                    data-en="Contact" data-hi="Contact">Contact</a>
+            </div>
+            <div>
+                <h3 data-en="Our Services" data-hi="Our Services">Our Services</h3><a href="services.html#consultation"
+                    data-en="Name Consultation" data-hi="Name Consultation">Name Consultation</a><a href="services.html#vedic"
+                    data-en="Vedic Guidance" data-hi="Vedic Guidance">Vedic Guidance</a><a href="services.html#posters"
+                    data-en="Our Products" data-hi="Our Products">Our Products</a>
+            </div>
+            <div>
+                <h3 data-en="Follow Us" data-hi="Follow Us">Follow Us</h3>
+                <div class="footer-social-icons" aria-label="Social links">
+                    <a class="social-icon-link" href="https://www.linkedin.com/company/naamin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://www.instagram.com/naamin.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://www.facebook.com/naamin.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://x.com/naamin_com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" title="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 data-en="Contact" data-hi="Contact">Contact</h3>
+                <p><a href="tel:+919413678955">+91 94136 78955</a></p>
+                <p><a href="mailto:naamin.com@gmail.com">naamin.com@gmail.com</a></p>
+                <p data-en="Hyderabad, Telangana, India" data-hi="Hyderabad, Telangana, India">Hyderabad, Telangana, India
+                </p>
+            </div>
+        </div>
+        <p class="copyrights" data-en="(c) 2025 Naamin. All rights reserved."
+            data-hi="(c) 2025 Naamin. All rights reserved.">(c) 2025 Naamin. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/9413678955?text=Hello" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+        <script src="script.js?v=perf-20260516-translate-fix" defer></script>
+    <script src="navbar_fix.js?v=capture_fix"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="navbar-auth.js?v=navauth-20260404a"></script>
+    <script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "all 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
+            observer.observe(card);
+        });
+    </script>
+  <script src="js/global-language-fab.js?v=langfab-20260519c"></script>
+</body>
+
+</html>

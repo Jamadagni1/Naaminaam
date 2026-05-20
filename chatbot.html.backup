@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <script>
+        (() => {
+            const preferredLang = localStorage.getItem("language") || "en";
+            document.documentElement.lang = preferredLang;
+        })();
+    </script>
+    <style>body { visibility: hidden; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naamin AI - Chatbot</title>
+    <meta name="description" content="Chat with Naamin AI for naming solutions and analysis." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Parent container relative hona chahiye taaki overlay iske andar fit ho */
+        .content-wrapper {
+            position: relative; 
+            overflow: hidden; /* Ensure overlay doesn't spill out */
+        }
+
+        /* Overlay jo screen ko block karega */
+        #coming-soon-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.65); /* Thoda safed transparent background */
+            backdrop-filter: blur(4px); /* Piche ka content dhundhla dikhega */
+            z-index: 1000; /* Sabse upar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: not-allowed; /* Click nahi karne dega */
+            border-radius: 12px; /* Agar wrapper rounded hai to ye bhi rounded hoga */
+        }
+
+        /* Typing Text Animation */
+        .coming-soon-text span {
+            display: inline-block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            border-right: 4px solid #ff6b6b; /* Cursor ka color */
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+        }
+
+        /* Dark Mode support ke liye */
+        [data-theme="dark"] #coming-soon-overlay {
+            background: rgba(0, 0, 0, 0.7); /* Dark transparent */
+        }
+        [data-theme="dark"] .coming-soon-text span {
+            color: #fff;
+        }
+
+        /* Keyframes */
+        @keyframes typing {
+            0% { width: 0 }
+            50% { width: 280px; } /* Text ki lambai ke hisab se adjust karein */
+            90% { width: 280px; }
+            100% { width: 0; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #ff6b6b }
+        }
+    </style>
+</head>
+<body data-theme="light">
+
+<div id="three-canvas-container"></div>
+
+<nav class="navbar">
+    <div class="logo">Naam<span class="logo-in">in</span></div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="chatbot.html">Naamin AI</a></li>
+
+        <!-- Dropdown -->
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">
+                More<span class="arrow">▼</span>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Aura</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="nav-actions">
+        <button id="language-toggle" class="btn" style="font-size:12px; padding:6px 10px;" title="Toggle language">ENG/HIN</button>
+        <button id="fav-view-btn" class="btn btn-fav" title="Wishlist">
+            <i class="fas fa-heart"></i>
+            <span id="fav-count">0</span>
+        </button>
+        <a href="login.html" class="btn btn-login">Log in</a>
+        <a href="signup.html" class="btn btn-signup">Sign up</a>
+    </div>
+</nav>
+
+<main>
+    <section id="chatbot-section">
+        <div class="content-wrapper">
+            
+            <div id="coming-soon-overlay">
+                <div class="coming-soon-text">
+                    <span>Coming Soon.........</span>
+                </div>
+            </div>
+            <div class="chatbox" id="chatbox"></div>
+
+            <div class="button-group" id="menuButtons">
+                <button data-category="name_analysis" data-hi="मेरे नाम का विश्लेषण करें" data-en="Analyze My Name"><i class="fas fa-pen-nib"></i> <span class="btn-text">मेरे नाम का विश्लेषण करें</span></button>
+                <button data-category="baby" data-hi="शिशु का नाम सुझाएं" data-en="Suggest a Baby Name"><i class="fas fa-baby"></i> <span class="btn-text">शिशु का नाम सुझाएं</span></button>
+                <button data-category="brand" data-hi="कंपनी का नाम सुझाएं" data-en="Suggest a Company Name"><i class="fas fa-building"></i> <span class="btn-text">कंपनी का नाम सुझाएं</span></button>
+                <button data-category="motto" data-hi="एक मोटो बनाएं" data-en="Create a Motto"><i class="fas fa-lightbulb"></i> <span class="btn-text">एक मोटो बनाएं</span></button>
+                <button data-category="astrology" data-hi="राशिफल जानें" data-en="Know Horoscope"><i class="fas fa-om"></i> <span class="btn-text">राशिफल जानें</span></button>
+            </div>
+
+            <div class="button-group" id="contextualButtons">
+                 <button id="resetChatBtn"><i class="fas fa-arrow-left"></i> <span class="btn-text" data-en="Back to Menu" data-hi="मेनू पर वापस जाएं">Back to Menu</span></button>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="यहाँ अपना सवाल पूछें..." autocomplete="off">
+                <button id="sendBtn" aria-label="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div><h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3><a href="index.html" data-en="Home" data-hi="होम">Home</a><a href="about.html" data-en="About" data-hi="हमारे बारे में">About</a><a href="services.html" data-en="Services" data-hi="सेवाएं">Services</a><a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a></div>
+        <div><h3 data-en="Our Services" data-hi="हमारी सेवाएं">Our Services</h3><a href="services.html" data-en="Baby Naming" data-hi="शिशु नामकरण">Baby Naming</a><a href="services.html" data-en="Company Naming" data-hi="कंपनी नामकरण">Company Naming</a><a href="services.html" data-en="Motto Creation" data-hi="उद्घोष निर्माण">Motto Creation</a></div>
+        <div><h3 data-en="Follow Us" data-hi="हमें फॉलो करें">Follow Us</h3><p><a href="https://www.linkedin.com/company/naamin/" target="_blank" rel="noopener">LinkedIn</a></p><p><a href="#" target="_blank" rel="noopener">Instagram</a></p><p><a href="#" target="_blank" rel="noopener">Facebook</a></p></div>
+        <div><h3 data-en="Contact" data-hi="संपर्क">Contact</h3><p><a href="tel:+919413678955">+91 94136 78955</a></p><p><a href="mailto:naamin.com@gmail.com">naamin.com@gmail.com</a></p><p data-en="Hyderabad, Telangana, India" data-hi="हैदराबाद, तेलंगाना, भारत">Hyderabad, Telangana, India</p></div>
+    </div>
+    <p class="copyrights" data-en="© 2025 Naamin. All rights reserved." data-hi="© २०२५ नामिन। सभी अधिकार सुरक्षित।">© 2025 Naamin. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/9413678955" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+</a>
+</a>
+<button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js" type="module"></script>
+
+</body>
+</html>

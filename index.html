@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naamin | Naming Service Platform</title>
+
+    <style>
+        body.preloader-active {
+            overflow: hidden;
+        }
+
+        body.preloader-active > *:not(#naamin-preloader):not(script) {
+            visibility: hidden !important;
+        }
+
+        #naamin-preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f1eef8;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    </noscript>
+
+    <link rel="stylesheet" href="style.css?v=ui-20260519-script-fit">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="poster-styles.css?v=ui-20260330d">
+    <style>
+        .poster-preview {
+            margin-top: 12px;
+            display: grid;
+            gap: 10px;
+        }
+
+        .poster-preview img {
+            width: 100%;
+            max-height: 220px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 1px solid rgba(31, 27, 46, 0.12);
+            background: #fff;
+        }
+
+        .poster-preview .btn {
+            width: fit-content;
+        }
+    </style>
+    <script src="preloader.js?v=perf-20260330e" defer></script>
+    <script src="script.js?v=name-finder-translated-meanings-20260516d" defer></script>
+    <script src="js/home-trending.js?v=home-20260502a" defer></script>
+
+
+    <script>
+        (() => {
+            const preferredLang = localStorage.getItem("language") || "en";
+            document.documentElement.lang = preferredLang;
+        })();
+    </script>
+    <script src="js/common-layout.js?v=footer-static-social-20260516a" defer></script>
+    <script src="js/global-language-fab.js?v=langfab-20260519c" defer></script>
+</head>
+
+<body class="preloader-active home-page" data-theme="light" style="visibility: visible !important; opacity: 1 !important;">
+
+    <div id="naamin-preloader" aria-hidden="false">
+  <div class="naamin-inner">
+    <div class="naamin-logo" aria-hidden="true">
+      <span class="logo-letter">N</span>
+      <span class="logo-letter">a</span>
+      <span class="logo-letter">a</span>
+      <span class="logo-letter">m</span>
+      <span class="logo-letter i-wrap logo-in">
+        <span class="i-base">i</span>
+        <span class="i-dot" aria-hidden="true"></span>
+      </span>
+      <span class="logo-letter logo-in">n</span>
+    </div>
+
+    <div class="preloader-bar" aria-hidden="true">
+      <div class="preloader-progress"></div>
+    </div>
+  </div>
+</div>
+
+    <nav class="navbar" aria-label="Main navigation"></nav>
+
+    <main class="layout-shell">
+        <div class="layout-main">
+            <div class="scrolling-banner" aria-label="Free services announcement">
+                <div class="scrolling-track">
+                    <div class="scrolling-item"><i class="fas fa-star"></i> Naming-related services are free. Please feel free to contact us.</div>
+                    <div class="scrolling-item"><i class="fas fa-star"></i> Naming-related services are free. Please feel free to contact us.</div>
+                    <div class="scrolling-item"><i class="fas fa-star"></i> Naming-related services are free. Please feel free to contact us.</div>
+                    <div class="scrolling-item"><i class="fas fa-star"></i> Naming-related services are free. Please feel free to contact us.</div>
+                </div>
+            </div>
+
+            <section id="hero-ethnic" class="hero-ethnic">
+                <div id="calendar" aria-hidden="true"></div>
+                <button type="button" class="hero-panchang-fab" id="hero-panchang-fab" aria-expanded="false">
+                    <i class="fas fa-calendar-days" aria-hidden="true"></i>
+                    <span id="hero-panchang-fab-label" data-en="Calendar" data-hi="कैलेंडर">Calendar</span>
+                </button>
+                <button type="button" class="hero-panchang-overlay" id="hero-panchang-overlay" aria-hidden="true" tabindex="-1"></button>
+                <div class="hero-panchang-widget" id="hero-panchang-widget" aria-label="Calendar">
+                    <h3 class="hero-panchang-title" data-en="Today’s Panchang" data-hi="आज का पंचांग">Today’s Panchang</h3>
+                    <div class="hero-panchang-grid">
+                        <div class="hero-panchang-item">
+                            <span class="hero-panchang-label" data-en="Date" data-hi="तारीख">Date</span>
+                            <strong id="panchang-date">--</strong>
+                        </div>
+                        <div class="hero-panchang-item">
+                            <span class="hero-panchang-label" data-en="Day" data-hi="दिन">Day</span>
+                            <strong id="panchang-day">--</strong>
+                        </div>
+                        <div class="hero-panchang-item">
+                            <span class="hero-panchang-label" data-en="Month" data-hi="महीना">Month</span>
+                            <strong id="panchang-month">--</strong>
+                        </div>
+                        <div class="hero-panchang-item">
+                            <span class="hero-panchang-label" data-en="Year" data-hi="वर्ष">Year</span>
+                            <strong id="panchang-year">--</strong>
+                        </div>
+                        <div class="hero-panchang-item">
+                            <span class="hero-panchang-label" data-en="Tithi" data-hi="तिथि">Tithi</span>
+                            <strong id="panchang-tithi">--</strong>
+                        </div>
+                        <div class="hero-panchang-item">
+                            <span class="hero-panchang-label" data-en="Samvat" data-hi="संवत">Samvat</span>
+                            <strong id="panchang-samvat">--</strong>
+                        </div>
+                    </div>
+                    <p class="hero-panchang-updated" id="panchang-updated">--</p>
+                </div>
+                <div class="hero-media">
+                    <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata">
+                        <source src="assets/baby-name-hero.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="hero-eyebrow">NAAMIN NAMING STUDIO</span>
+                    <h1>Naming for Babies, Brands & Bold Ideas</h1>
+                    <p>From newborn names to startups, companies, institutions, domains, and mottos &mdash; we craft identities that feel timeless.</p>
+                    <div class="hero-actions">
+                        <button type="button" class="btn btn-signup hero-cta" id="open-search-modal-btn" data-open-search-modal="true" data-en="Start Name Search" data-hi="नाम खोज शुरू करें">
+                            <i class="fas fa-magnifying-glass" aria-hidden="true"></i> Start Name Search
+                        </button>
+                        <button type="button" class="btn btn-login hero-secondary hero-report-cta" id="open-report-modal-btn" data-en="See Name Report" data-hi="नाम रिपोर्ट देखें">
+                            <i class="fas fa-file-lines" aria-hidden="true"></i> See Name Report
+                        </button>
+                        <a href="#greeting-studio" class="btn btn-login hero-secondary hero-cardstudio-cta" data-en="Card Studio" data-hi="Card Studio">
+                            <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> Card Studio
+                        </a>
+                        <a href="video-gallery.html" class="btn btn-login hero-secondary hero-video-cta" data-en="Video Gallery" data-hi="Video Gallery">
+                            <i class="fas fa-circle-play" aria-hidden="true"></i> Video Gallery
+                        </a>
+                        <a href="product.html" class="btn btn-login hero-secondary hero-products-cta" data-en="Our Products" data-hi="Our Products">
+                            <i class="fas fa-bag-shopping" aria-hidden="true"></i> Our Products
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-trending" aria-label="Trending names">
+                <div class="content-wrapper">
+                    <div class="section-header-center">
+                        <h2 data-en="Trending Names" data-hi="ट्रेंडिंग नाम">Trending Names</h2>
+                        <p class="section-subtitle"
+                            data-en="Based on what visitors view and save on Naamin (on this device)."
+                            data-hi="Naamin पर लोग क्या देखते और सेव करते हैं (इस डिवाइस पर) उसके आधार पर।">
+                            Based on what visitors view and save on Naamin (on this device).
+                        </p>
+                    </div>
+                    <div id="home-trending-wrap"></div>
+                </div>
+            </section>
+
+            <section class="home-proof" aria-label="Naamin trust highlights">
+                <div class="content-wrapper">
+                    <div class="section-header-center">
+                        <h2 data-en="Trusted by Families, Founders, and Teams" data-hi="परिवारों, फाउंडर्स और टीमों का भरोसा">Trusted by Families, Founders, and Teams</h2>
+                        <p class="section-subtitle"
+                            data-en="From first shortlist to final name, we keep clarity, originality, and launch-readiness in every recommendation."
+                            data-hi="पहली शॉर्टलिस्ट से अंतिम नाम तक, हर सुझाव में स्पष्टता, मौलिकता और लॉन्च-रेडिनेस रखते हैं।">
+                            From first shortlist to final name, we keep clarity, originality, and launch-readiness in every recommendation.
+                        </p>
+                    </div>
+                    <div class="proof-grid">
+                        <article class="proof-card">
+                            <div class="proof-number">1,00,000+</div>
+                            <h3 data-en="Names Screened" data-hi="नामों की समीक्षा">Names Screened</h3>
+                            <p data-en="A broad, practical base across baby, brand, company, and institution naming."
+                                data-hi="बेबी, ब्रांड, कंपनी और संस्थान नामकरण में विस्तृत और व्यावहारिक आधार।">
+                                A broad, practical base across baby, brand, company, and institution naming.
+                            </p>
+                        </article>
+                        <article class="proof-card">
+                            <div class="proof-number">50+</div>
+                            <h3 data-en="Verified Sources" data-hi="सत्यापित स्रोत">Verified Sources</h3>
+                            <p data-en="Meaning, linguistic roots, and usage context are validated before recommendations."
+                                data-hi="सुझाव देने से पहले अर्थ, भाषाई मूल और उपयोग संदर्भ को सत्यापित किया जाता है।">
+                                Meaning, linguistic roots, and usage context are validated before recommendations.
+                            </p>
+                        </article>
+                        <article class="proof-card">
+                            <div class="proof-number">96%</div>
+                            <h3 data-en="Shortlist Satisfaction" data-hi="शॉर्टलिस्ट संतुष्टि">Shortlist Satisfaction</h3>
+                            <p data-en="Clients usually find a final-fit direction within the first curated shortlist."
+                                data-hi="ज़्यादातर क्लाइंट पहली क्यूरेटेड शॉर्टलिस्ट में ही सही दिशा पा लेते हैं।">
+                                Clients usually find a final-fit direction within the first curated shortlist.
+                            </p>
+                        </article>
+                        <article class="proof-card">
+                            <div class="proof-number">24h</div>
+                            <h3 data-en="First Draft Reports" data-hi="पहला ड्राफ्ट रिपोर्ट">First Draft Reports</h3>
+                            <p data-en="Name Report drafts begin fast so teams and families can move without delays."
+                                data-hi="नेम रिपोर्ट ड्राफ्ट तेजी से शुरू होते हैं ताकि परिवार और टीमें बिना देरी आगे बढ़ सकें।">
+                                Name Report drafts begin fast so teams and families can move without delays.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-journeys" aria-label="Choose your journey">
+                <div class="content-wrapper">
+                    <div class="section-header-center">
+                        <h2 data-en="Choose Your Naming Journey" data-hi="अपनी नेमिंग यात्रा चुनें">Choose Your Naming Journey</h2>
+                        <p class="section-subtitle"
+                            data-en="Pick your route and get recommendations designed for your exact context."
+                            data-hi="अपना रूट चुनें और अपने सही संदर्भ के लिए तैयार सुझाव पाएं।">
+                            Pick your route and get recommendations designed for your exact context.
+                        </p>
+                    </div>
+                    <div class="journey-grid">
+                        <article class="journey-card">
+                            <span class="journey-tag" data-en="Family Route" data-hi="फैमिली रूट">Family Route</span>
+                            <h3 data-en="For Babies & Families" data-hi="बेबी और परिवार के लिए">For Babies & Families</h3>
+                            <p data-en="Meaning-rich names, sibling harmony, and pronunciation confidence."
+                                data-hi="अर्थपूर्ण नाम, सिब्लिंग तालमेल और उच्चारण में आत्मविश्वास।">
+                                Meaning-rich names, sibling harmony, and pronunciation confidence.
+                            </p>
+                            <a href="#" class="journey-link" data-open-search-modal="true" data-en="Explore Baby Names" data-hi="बेबी नाम देखें">Explore Baby Names</a>
+                        </article>
+                        <article class="journey-card">
+                            <span class="journey-tag" data-en="Business Route" data-hi="बिजनेस रूट">Business Route</span>
+                            <h3 data-en="For Startups & Brands" data-hi="स्टार्टअप और ब्रांड के लिए">For Startups & Brands</h3>
+                            <p data-en="Distinct names built for positioning, recall, and market presence."
+                                data-hi="पोजिशनिंग, रिकॉल और मार्केट प्रेजेंस के लिए बने विशिष्ट नाम।">
+                                Distinct names built for positioning, recall, and market presence.
+                            </p>
+                            <a href="services.html" class="journey-link" data-en="Explore Brand Naming" data-hi="ब्रांड नेमिंग देखें">Explore Brand Naming</a>
+                        </article>
+                        <article class="journey-card">
+                            <span class="journey-tag" data-en="Digital Route" data-hi="डिजिटल रूट">Digital Route</span>
+                            <h3 data-en="For Domains & Mottos" data-hi="डोमेन और मोटो के लिए">For Domains & Mottos</h3>
+                            <p data-en="Domain-friendly options with one-line identity statements."
+                                data-hi="डोमेन-फ्रेंडली विकल्प और एक-पंक्ति पहचान कथन।">
+                                Domain-friendly options with one-line identity statements.
+                            </p>
+                            <a href="more/domain-name-creator/index.html" class="journey-link" data-en="Explore Domain Naming" data-hi="डोमेन नेमिंग देखें">Explore Domain Naming</a>
+                        </article>
+                        <article class="journey-card">
+                            <span class="journey-tag" data-en="Decision Route" data-hi="डिसीजन रूट">Decision Route</span>
+                            <h3 data-en="For Premium Name Reports" data-hi="प्रीमियम नाम रिपोर्ट के लिए">For Premium Name Reports</h3>
+                            <p data-en="Get a polished PDF with meaning, origin, numerology, and strategic notes."
+                                data-hi="अर्थ, उत्पत्ति, अंकशास्त्र और रणनीतिक नोट्स के साथ पॉलिश्ड पीडीएफ पाएं।">
+                                Get a polished PDF with meaning, origin, numerology, and strategic notes.
+                            </p>
+                            <a href="name-report.html" class="journey-link" data-en="Explore Name Reports" data-hi="नाम रिपोर्ट देखें">Explore Name Reports</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="baby-showcase">
+                <div class="content-wrapper">
+                    <div class="section-header-center">
+                        <h2 data-en="Naming Inspiration" data-hi="Naming Inspiration">Naming Inspiration</h2>
+                        <p class="section-subtitle"
+                            data-en="Discover beautiful name ideas for every journey â€” families, founders, and institutions."
+                            data-hi="Discover beautiful name ideas for every journey — families, founders, and institutions.">
+                            Discover beautiful name ideas for every journey â€” families, founders, and institutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="baby-carousel-container">
+                    <button class="carousel-nav carousel-prev" type="button" aria-label="Previous babies">&#10094;</button>
+                    <button class="carousel-nav carousel-next" type="button" aria-label="Next babies">&#10095;</button>
+
+                    <div class="baby-carousel" aria-label="Baby inspiration carousel">
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aabha_1768672098297.png" alt="Baby Aarav"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Aarav</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Peaceful</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Sanskrit</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Calm</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aajna_1768672114695.png" alt="Baby Ananya"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Ananya</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Unique</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Sanskrit</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Bright</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aakanksha_1768672167983.png" alt="Baby Vihaan"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Vihaan</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Dawn</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Sanskrit</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Energetic</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aakriti_1768672196713.png" alt="Baby Saanvi"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Saanvi</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Goddess Lakshmi</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Indian</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Grace</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aamrapali_1768672211667.png" alt="Baby Rohan"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Rohan</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Ascending</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Sanskrit</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Brave</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aaradhya_1768672228626.png" alt="Baby Prisha"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Prisha</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Beloved</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Indian</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Kind</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aarti_1768672131352.png" alt="Baby Arjun"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Arjun</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Bright</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Sanskrit</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Focus</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_aditi_1768672149752.png" alt="Baby Diya"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Diya</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Light</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Indian</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Warm</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_adya_1768672262082.png" alt="Baby Kavya"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Kavya</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Poetry</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Sanskrit</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Creative</div>
+                            </div>
+                        </article>
+
+                        <article class="baby-card">
+                            <div class="baby-image-wrapper">
+                                <img class="baby-image" src="baby_ahalya_1768672245206.png" alt="Baby Aditya"
+                                    loading="lazy" decoding="async">
+                            </div>
+                            <div class="baby-info">
+                                <div class="baby-name">Aditya</div>
+                                <div class="baby-meaning"><i class="fas fa-heart"></i> Sun</div>
+                                <div class="baby-origin"><i class="fas fa-globe"></i> Sanskrit</div>
+                                <div class="baby-trait"><i class="fas fa-sun"></i> Leader</div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="carousel-dots" aria-label="Carousel dots"></div>
+                </div>
+            </section>
+  
+        <section id="name-finder" class="section">
+            <div class="content-wrapper">
+                <h2 data-en="Name Finder" data-hi="Name Finder">Name Finder</h2>
+
+                <div class="gender-selector" role="tablist" aria-label="Select gender">
+                    <button class="gender-btn active-boy" type="button" data-gender="Boy" data-en="Boy"
+                        data-hi="Boy">Boy</button>
+                    <button class="gender-btn" type="button" data-gender="Girl" data-en="Girl" data-hi="Girl">Girl</button>
+                </div>
+
+                <div class="alphabet-selector" aria-label="Alphabet selector"></div>
+
+                <div class="name-list-container">
+                    <div class="name-list" aria-label="Names list"></div>
+                </div>
+
+                <div class="name-details-container" style="display:none;">
+                    <button class="back-btn" type="button" data-en="Back to list" data-hi="Back to list">Back to
+                        list</button>
+                    <div class="name-details" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose" class="section">
+            <div class="content-wrapper">
+                <h2 data-en="Why Creators Choose Naamin" data-hi="Why Creators Choose Naamin">Why Creators Choose Naamin</h2>
+                <div class="services-grid">
+                    <div class="service-card"><i class="fa-solid fa-baby"></i>
+                        <h3 data-en="Baby & Family Naming" data-hi="Baby & Family Naming">Baby & Family Naming</h3>
+                        <p data-en="Meaning-rich baby names, sibling sets, and family voting â€” crafted with care."
+                            data-hi="Meaning-rich baby names, sibling sets, and family voting — crafted with care.">Meaning-rich baby names, sibling sets, and family voting â€” crafted with care.</p>
+                    </div>
+                    <div class="service-card"><i class="fa-solid fa-rocket"></i>
+                        <h3 data-en="Startup & Brand Naming" data-hi="Startup & Brand Naming">Startup & Brand Naming</h3>
+                        <p data-en="Distinctive, memorable brand names backed by narrative and strategy."
+                            data-hi="Distinctive, memorable brand names backed by narrative and strategy.">Distinctive, memorable brand names backed by narrative and strategy.</p>
+                    </div>
+                    <div class="service-card"><i class="fa-solid fa-building"></i>
+                        <h3 data-en="Company & Institution Names" data-hi="Company & Institution Names">Company & Institution Names</h3>
+                        <p data-en="Professional naming for enterprises, schools, and organizations."
+                            data-hi="Professional naming for enterprises, schools, and organizations.">Professional naming for enterprises, schools, and organizations.</p>
+                    </div>
+                    <div class="service-card"><i class="fa-solid fa-globe"></i>
+                        <h3 data-en="Domain Naming Service" data-hi="Domain Naming Service">Domain Naming Service</h3>
+                        <p data-en="Domain-friendly options with clear spelling and global appeal."
+                            data-hi="Domain-friendly options with clear spelling and global appeal.">Domain-friendly options with clear spelling and global appeal.</p>
+                    </div>
+                    <div class="service-card"><i class="fa-solid fa-pen-nib"></i>
+                        <h3 data-en="Motto Creator" data-hi="Motto Creator">Motto Creator</h3>
+                        <p data-en="Craft taglines and mottos that communicate purpose in one line."
+                            data-hi="Craft taglines and mottos that communicate purpose in one line.">Craft taglines and mottos that communicate purpose in one line.</p>
+                    </div>
+                    <div class="service-card"><i class="fa-solid fa-file-lines"></i>
+                        <h3 data-en="Name Report" data-hi="Name Report">Name Report</h3>
+                        <p data-en="Meaning, origin, numerology, and pronunciation packed into a clean report."
+                            data-hi="Meaning, origin, numerology, and pronunciation packed into a clean report.">Meaning, origin, numerology, and pronunciation packed into a clean report.</p>
+                    </div>
+                    <div class="service-card"><i class="fa-solid fa-volume-high"></i>
+                        <h3 data-en="Pronunciation Support" data-hi="Pronunciation Support">Pronunciation Support</h3>
+                        <p data-en="Hear names, compare spellings, and choose what feels effortless."
+                            data-hi="Hear names, compare spellings, and choose what feels effortless.">Hear names, compare spellings, and choose what feels effortless.</p>
+                    </div>
+                    <div class="service-card"><i class="fa-solid fa-image"></i>
+                        <h3 data-en="Our Products" data-hi="Our Products">Our Products</h3>
+                        <p data-en="Posters, announcement kits, and identity assets â€” beautifully designed."
+                            data-hi="Posters, announcement kits, and identity assets — beautifully designed.">Posters, announcement kits, and identity assets â€” beautifully designed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="content-wrapper">
+                <h2 data-en="Testimonials" data-hi="Testimonials">Testimonials</h2>
+                <div class="testimonial-grid" data-rotate>
+                    <article class="testimonial-card active">
+                        <p data-en="â€œWe found a name that felt modern and traditional at once â€” and the meaning report sealed it.â€"
+                            data-hi="“We found a name that felt modern and traditional at once — and the meaning report sealed it.”">â€œWe found a name that felt modern and traditional at once â€” and the meaning report sealed it.â€</p>
+                        <h4 data-en="Aditi & Rohit, Hyderabad" data-hi="Aditi & Rohit, Hyderabad">Aditi & Rohit, Hyderabad</h4>
+                    </article>
+                    <article class="testimonial-card">
+                        <p data-en="â€œThe shortlist and pronunciation helped our entire family agree on one name.â€"
+                            data-hi="“The shortlist and pronunciation helped our entire family agree on one name.”">â€œThe shortlist and pronunciation helped our entire family agree on one name.â€</p>
+                        <h4 data-en="Meera, Jaipur" data-hi="Meera, Jaipur">Meera, Jaipur</h4>
+                    </article>
+                    <article class="testimonial-card">
+                        <p data-en="â€œLoved the numerology + nakshatra details â€” it made the choice feel confident.â€"
+                            data-hi="“Loved the numerology + nakshatra details — it made the choice feel confident.”">â€œLoved the numerology + nakshatra details â€” it made the choice feel confident.â€</p>
+                        <h4 data-en="Kunal, Delhi" data-hi="Kunal, Delhi">Kunal, Delhi</h4>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section counter-section">
+            <div class="content-wrapper">
+                <div class="section-header-center">
+                    <h2 data-en="Trusted Naming Scale" data-hi="Trusted Naming Scale">Trusted Naming Scale</h2>
+                    <p class="section-subtitle" data-en="Built on research, tradition, and modern brand craft."
+                        data-hi="Built on research, tradition, and modern brand craft.">Built on research, tradition, and modern brand craft.</p>
+                </div>
+                <div class="counter-grid">
+                    <div class="counter-card">
+                        <div class="counter-number" data-counter-target="100000" data-counter-format="indian" data-counter-suffix="+">0</div>
+                        <div class="counter-label">1 Lakh+ Names</div>
+                    </div>
+                    <div class="counter-card">
+                        <div class="counter-number" data-counter-target="50" data-counter-format="indian" data-counter-suffix="+">0</div>
+                        <div class="counter-label">50+ Verified Sources</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brand-story" class="section">
+            <div class="content-wrapper story-grid">
+                <div class="story-copy">
+                    <h2 data-en="How It Works" data-hi="How It Works">How It Works</h2>
+                    <p data-en="1) Tell us your category: baby, brand, startup, company, or institution. 2) Shortlist with meanings + insights. 3) Finalize with domain/motto options. 4) Download reports and assets."
+                        data-hi="1) Tell us your category: baby, brand, startup, company, or institution. 2) Shortlist with meanings + insights. 3) Finalize with domain/motto options. 4) Download reports and assets.">
+                        1) Tell us your category: baby, brand, startup, company, or institution. 2) Shortlist with meanings + insights. 3) Finalize with domain/motto options. 4) Download reports and assets.
+                    </p>
+                    <a href="services.html" class="btn btn-signup" data-en="Explore Services" data-hi="Explore Services">Explore Services</a>
+                </div>
+                <div class="story-image">
+                    <img src="baby_aabha_1768672098297.png" alt="Baby naming inspiration" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <section id="greeting-studio" class="greeting-studio-section" aria-label="Greeting card studio">
+            <div class="content-wrapper">
+                <div class="section-header-center">
+                    <h2 data-en="Greeting Card Studio" data-hi="Greeting Card Studio">Greeting Card Studio</h2>
+                    <p class="section-subtitle" data-en="Create a minimal announcement card (ACRD) like the classic paper note style — then copy, share, or download it."
+                        data-hi="Create a minimal announcement card (ACRD) like the classic paper note style — then copy, share, or download it.">Create a minimal announcement card (ACRD) like the classic paper note style — then copy, share, or download it.</p>
+                </div>
+
+                <div class="greeting-studio-grid">
+                    <div class="greeting-form-card" role="group" aria-label="Greeting card form">
+                        <div class="greeting-form-row">
+                            <label for="greeting-card-type" data-en="Card Type" data-hi="Card Type">Card Type</label>
+                            <select id="greeting-card-type" class="greeting-input">
+                                <option value="acrd">ACRD (Announcement)</option>
+                                <option value="arrival">Baby Arrival</option>
+                                <option value="introduction">Baby Introduction</option>
+                                <option value="blessings">Blessings Request</option>
+                                <option value="birthday">Birthday</option>
+                            </select>
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-card-design" data-en="Design" data-hi="Design">Design</label>
+                            <select id="greeting-card-design" class="greeting-input">
+                                <option value="design-11">Minimal Paper (Recommended)</option>
+                                <option value="design-1">Design 1</option>
+                                <option value="design-2">Design 2</option>
+                                <option value="design-3">Design 3</option>
+                                <option value="design-4">Design 4</option>
+                                <option value="design-5">Design 5</option>
+                                <option value="design-6">Design 6</option>
+                                <option value="design-7">Design 7</option>
+                                <option value="design-8">Design 8</option>
+                                <option value="design-9">Design 9</option>
+                                <option value="design-10">Design 10</option>
+                            </select>
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-baby-name" data-en="Baby / Person Name" data-hi="Baby / Person Name">Baby / Person Name</label>
+                            <input id="greeting-baby-name" class="greeting-input" type="text" autocomplete="name" placeholder="e.g., Aakay" />
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-baby-dob" data-en="Date" data-hi="Date">Date</label>
+                            <input id="greeting-baby-dob" class="greeting-input" type="date" />
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-sibling-name" data-en="Sibling Name (Optional)" data-hi="Sibling Name (Optional)">Sibling Name (Optional)</label>
+                            <input id="greeting-sibling-name" class="greeting-input" type="text" placeholder="e.g., Yami" />
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-parent-one" data-en="From (Parent 1)" data-hi="From (Parent 1)">From (Parent 1)</label>
+                            <input id="greeting-parent-one" class="greeting-input" type="text" placeholder="e.g., Parent 1" />
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-parent-two" data-en="From (Parent 2)" data-hi="From (Parent 2)">From (Parent 2)</label>
+                            <input id="greeting-parent-two" class="greeting-input" type="text" placeholder="e.g., Parent 2" />
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-family-name" data-en="Family Name (Optional)" data-hi="Family Name (Optional)">Family Name (Optional)</label>
+                            <input id="greeting-family-name" class="greeting-input" type="text" placeholder="e.g., Sharma Family" />
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-recipient-name" data-en="Recipient (Optional)" data-hi="Recipient (Optional)">Recipient (Optional)</label>
+                            <input id="greeting-recipient-name" class="greeting-input" type="text" placeholder="e.g., Friends & Family" />
+                        </div>
+
+                        <div class="greeting-form-row">
+                            <label for="greeting-message" data-en="Custom Note (Optional)" data-hi="Custom Note (Optional)">Custom Note (Optional)</label>
+                            <textarea id="greeting-message" class="greeting-input greeting-message-input" placeholder="Add a short note or leave blank to use the ACRD default…"></textarea>
+                        </div>
+
+                        <div class="greeting-form-actions">
+                            <button type="button" class="btn btn-signup" id="greeting-generate-btn" data-en="Update Preview" data-hi="Update Preview">Update Preview</button>
+                            <button type="button" class="btn btn-login" id="greeting-copy-btn" data-en="Copy Text" data-hi="Copy Text">Copy Text</button>
+                            <button type="button" class="btn btn-login" id="greeting-share-btn" data-en="Share" data-hi="Share">Share</button>
+                        </div>
+                    </div>
+
+                    <div id="greeting-preview-card" class="greeting-preview-card theme-acrd design-11" aria-label="Greeting card preview">
+                        <div class="greeting-ribbon" id="greeting-preview-badge">Announcement Card</div>
+                        <h3 id="greeting-preview-title">With Love &amp; Gratitude</h3>
+                        <p class="greeting-line greeting-subline" id="greeting-preview-subline">A simple note to share our happiness and ask for your kind blessings.</p>
+                        <p class="greeting-body" id="greeting-preview-message">With abundant happiness and hearts full of love, we are pleased to share that on a beautiful day, we welcomed our little one into this world.</p>
+                        <div class="greeting-divider" aria-hidden="true"></div>
+                        <p class="greeting-quote" id="greeting-preview-quote">"Love makes a home, a name, and a lifetime of memories."</p>
+                        <div class="greeting-signoff" id="greeting-preview-from">Love &amp; Gratitude,
+A Loving Family</div>
+                        <div class="greeting-date" id="greeting-preview-date"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3 data-en="Quick Links" data-hi="Quick Links">Quick Links</h3>
+                <a href="index.html" data-en="Home" data-hi="Home">Home</a>
+                <a href="about.html" data-en="About" data-hi="About">About</a>
+                <a href="services.html" data-en="Services" data-hi="Services">Services</a>
+                <a href="contact.html" data-en="Contact" data-hi="Contact">Contact</a>
+            </div>
+            <div>
+                <h3 data-en="Our Services" data-hi="Our Services">Our Services</h3>
+                <a href="services.html#consultation" data-en="Name Consultation" data-hi="Name Consultation">Name Consultation</a>
+                <a href="services.html#vedic" data-en="Vedic Guidance" data-hi="Vedic Guidance">Vedic Guidance</a>
+                <a href="services.html#posters" data-en="Our Products" data-hi="Our Products">Our Products</a>
+            </div>
+            <div>
+                <h3 data-en="Follow Us" data-hi="Follow Us">Follow Us</h3>
+                <div class="footer-social-icons" aria-label="Social links">
+                    <a class="social-icon-link" href="https://www.linkedin.com/company/naamin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://www.instagram.com/naamin.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://www.facebook.com/naamin.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://x.com/naamin_com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" title="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 data-en="Contact" data-hi="Contact">Contact</h3>
+                <p><a href="tel:+919413678955">+91 94136 78955</a></p>
+                <p><a href="mailto:naamin.com@gmail.com">naamin.com@gmail.com</a></p>
+                <p data-en="Hyderabad, Telangana, India" data-hi="Hyderabad, Telangana, India">Hyderabad, Telangana, India</p>
+            </div>
+        </div>
+        <p class="copyrights" data-en="© 2025 Naamin. All rights reserved."
+            data-hi="© 2025 Naamin. All rights reserved.">© 2025 Naamin. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/9413678955?text=Hello" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+        <span class="scroll-to-top-fallback" aria-hidden="true">↑</span>
+    </button>
+    <script>
+        (() => {
+            const scrollBtn = document.getElementById("scrollToTopBtn");
+            if (!scrollBtn) return;
+            const icon = scrollBtn.querySelector("i");
+            const fallback = scrollBtn.querySelector(".scroll-to-top-fallback");
+            if (fallback && icon) {
+                const before = window.getComputedStyle(icon, "::before").getPropertyValue("content");
+                const hasIcon = before && before !== "none" && before !== "\"\"" && before !== "''";
+                fallback.style.display = hasIcon ? "none" : "block";
+            }
+
+            const update = () => {
+                const show = window.scrollY > 300;
+                scrollBtn.classList.toggle("show", show);
+                scrollBtn.style.opacity = show ? "1" : "0";
+                scrollBtn.style.visibility = show ? "visible" : "hidden";
+            };
+
+            window.addEventListener("scroll", () => window.requestAnimationFrame(update), { passive: true });
+            update();
+            scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+        })();
+    </script>
+
+    <div id="fav-overlay" class="fav-overlay" style="display: none;">
+        <div class="fav-modal">
+            <div class="fav-header">
+                <h3 data-en="Your Shortlist" data-hi="Your Shortlist">Your Shortlist</h3>
+                <button id="close-fav-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="fav-body" id="fav-list-container">
+                <p style="text-align:center; color:var(--text-medium);">No names saved yet.</p>
+            </div>
+            <div class="fav-footer">
+                <button id="clear-fav-btn" data-en="Clear All" data-hi="Clear All">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Poster Generator -->
+    <div id="poster-generator-container" aria-hidden="true">
+        <div id="poster-card" class="premium-variant">
+            <!-- Decorative and watermark icons -->
+            <div class="p-seal">&#10003;</div>
+
+            <!-- TOP BRANDING SECTION -->
+            <div class="p-header">
+                <h1 class="p-brand-name">NAAMIN</h1>
+                <div class="p-subtitle">NAMING SOLUTIONS</div>
+            </div>
+
+            <!-- HERO NAME SECTION -->
+            <div class="p-hero-section">
+                <h2 class="p-name-en" id="poster-name-en" data-en="Name" data-hi="नाम">Name</h2>
+                <div class="p-name-hi" id="poster-name-hi">नाम</div>
+                <div class="p-meaning" id="poster-meaning">Meaning placeholder</div>
+            </div>
+
+            <!-- IDENTITY ROW (Grid with Icons) -->
+            <div class="p-identity-row">
+                <div class="p-identity-item">
+                    <i class="fas fa-venus-mars p-identity-icon"></i>
+                    <span class="p-identity-text" id="poster-gender">BOY</span>
+                </div>
+                <div class="p-identity-item">
+                    <i class="fas fa-book p-identity-icon"></i>
+                    <span class="p-identity-text" id="poster-origin">SANSKRIT</span>
+                </div>
+                <div class="p-identity-item">
+                    <i class="fas fa-star p-identity-icon"></i>
+                    <span class="p-identity-text" id="poster-nakshatra">ASHWANI</span>
+                </div>
+                <div class="p-identity-item">
+                    <i class="fas fa-moon p-identity-icon"></i>
+                    <span class="p-identity-text" id="poster-rashi">ARIES</span>
+                </div>
+            </div>
+
+            <!-- NUMEROLOGY SECTION -->
+            <div class="p-soft-panel">
+                <div class="p-panel-title">NUMEROLOGY</div>
+                <div class="p-numerology-content">
+                    Number <strong id="poster-number">3</strong> &nbsp;|&nbsp;
+                    Planet <strong id="poster-planet">Jupiter</strong> &nbsp;|&nbsp;
+                    Color <strong id="poster-color">Yellow</strong>
+                </div>
+            </div>
+
+            <!-- PREDICTION SECTION -->
+            <div class="p-prediction-section">
+                <div class="p-prediction-title"><span id="poster-year">2026</span> PREDICTION</div>
+                <div class="p-prediction-text" id="poster-prediction">
+                    Career growth will be steady through discipline. Rewards follow patience. Real estate investments
+                    look favorable.
+                </div>
+            </div>
+
+            <!-- FOOTER SECTION -->
+            <div class="p-footer">
+                <div class="p-quote">"A name is the first gift you give your child."</div>
+                <a href="https://naamin.com" class="p-cta">WWW.NAAMIN.COM</a>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal -->
+    <div class="hero-modal-overlay" id="search-modal-overlay">
+        <div class="hero-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+            <button class="hero-modal-close" id="close-search-modal" aria-label="Close modal">&times;</button>
+            <div class="hero-modal-content">
+                <h2 id="search-modal-title" data-en="Find the Perfect Name" data-hi="सही नाम खोजें">Find the Perfect Name</h2>
+                <p data-en="Search our curated collection of meaningful names" data-hi="हमारे चुनिंदा नामों के संग्रह में खोजें">Search our curated collection of meaningful names</p>
+                <div class="hero-modal-search">
+                    <div class="modal-search-input-wrap">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="modal-name-search" placeholder="Type a name (e.g., Aarav, Ananya...)" autofocus data-en-placeholder="Type a name (e.g., Aarav, Ananya...)" data-hi-placeholder="नाम टाइप करें (जैसे, आरव, अनन्या...)">
+                    </div>
+                    <button type="button" class="btn btn-signup" id="modal-search-btn" data-en="Search" data-hi="खोजें">Search</button>
+                </div>
+                <div class="hero-modal-gender">
+                    <span data-en="Filter by:" data-hi="फ़िल्टर:">Filter by:</span>
+                    <button type="button" class="modal-gender-btn active" data-gender="all" data-en="All" data-hi="सभी">All</button>
+                    <button type="button" class="modal-gender-btn" data-gender="Boy" data-en="Boy" data-hi="लड़का">Boy</button>
+                    <button type="button" class="modal-gender-btn" data-gender="Girl" data-en="Girl" data-hi="लड़की">Girl</button>
+                </div>
+                <div class="hero-modal-results" id="modal-search-results"></div>
+                <a href="popular-names.html" class="hero-modal-link" data-en="Browse All Names" data-hi="सभी नाम देखें"><i class="fas fa-arrow-right"></i> Browse All Names</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Modal -->
+    <div class="hero-modal-overlay" id="report-modal-overlay">
+        <div class="hero-modal" role="dialog" aria-modal="true" aria-labelledby="report-modal-title">
+            <button class="hero-modal-close" id="close-report-modal" aria-label="Close modal">&times;</button>
+            <div class="hero-modal-content">
+                <h2 id="report-modal-title" data-en="Generate Name Report" data-hi="नाम रिपोर्ट बनाएं">Generate Name Report</h2>
+                <p data-en="Get a detailed analysis with meaning, numerology, and more" data-hi="अर्थ, अंकशास्त्र और अधिक के साथ विस्तृत विश्लेषण प्राप्त करें">Get a detailed analysis with meaning, numerology, and more</p>
+                <div class="hero-modal-form">
+                    <div class="modal-form-group">
+                        <label for="report-name-input" data-en="Name" data-hi="नाम">Name</label>
+                        <input type="text" id="report-name-input" placeholder="Enter the name" data-en-placeholder="Enter the name" data-hi-placeholder="नाम दर्ज करें">
+                    </div>
+                    <div class="modal-form-group">
+                        <label for="report-dob-input" data-en="Date of Birth" data-hi="जन्म तिथि">Date of Birth</label>
+                        <input type="date" id="report-dob-input" required>
+                    </div>
+                    <div class="report-modal-actions">
+                        <button type="button" class="btn btn-signup modal-generate-btn" id="modal-generate-report-btn" data-en="Generate Report" data-hi="रिपोर्ट बनाएं">Generate Report</button>
+                        <button type="button" class="btn btn-login modal-download-btn" id="modal-download-report-btn" data-en="Download PDF" data-hi="पीडीएफ डाउनलोड करें">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i> Download PDF
+                        </button>
+                    </div>
+                    <p id="modal-report-status" class="modal-report-status" aria-live="polite"></p>
+                </div>
+                <a href="name-report.html" class="hero-modal-link" data-en="Learn More About Reports" data-hi="रिपोर्ट के बारे में अधिक जानें"><i class="fas fa-arrow-right"></i> Learn More About Reports</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="navbar-auth.js?v=navauth-20260330a"></script>
+</body>
+
+</html>

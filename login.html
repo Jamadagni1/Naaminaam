@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Naamin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=ui-20260519-script-fit">
+  <script src="js/common-layout.js?v=footer-static-social-20260516a" defer></script>
+  <script src="js/global-language-fab.js?v=langfab-20260519c" defer></script>
+ 
+  <style>
+    :root {
+      /* Default theme - Boy (Purple/Blue) */
+      --theme-bg: #EEF4FF;
+      --theme-gradient: linear-gradient(135deg, #C184F3, #6C2BD9);
+      --theme-gradient-hover: linear-gradient(135deg, #B173EE, #5B24B6);
+      --theme-primary: #6C2BD9;
+      --theme-glow: rgba(108, 43, 217, 0.35);
+    }
+
+    /* Girl theme - Pink */
+    /* Girl theme - Pink (Removed) */
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      height: auto;
+      background: var(--theme-bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 96px 16px 24px;
+      transition: background 0.3s ease;
+    }
+
+    /* BACK ARROW */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 42px;
+      height: 42px;
+      background: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 20px;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .back-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .auth-lang-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      color: #111827;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .card {
+      background: #ffffff;
+      width: min(380px, 100%);
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #1f2937;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    input:focus {
+      border-color: var(--theme-primary);
+      box-shadow: 0 0 0 3px var(--theme-glow);
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: var(--theme-gradient);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background: var(--theme-gradient-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px var(--theme-glow);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    .footer a {
+      color: var(--theme-primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    .google-btn {
+      width: 100%;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .google-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(108, 43, 217, 0.18);
+    }
+
+    #auth-message {
+      min-height: 18px;
+      margin: 12px 0 0;
+      font-size: 13px;
+      text-align: center;
+      color: #111827;
+    }
+
+    #auth-message[data-type="error"] {
+      color: #b91c1c;
+    }
+
+    #auth-message[data-type="success"] {
+      color: #166534;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        align-items: flex-start;
+        padding-top: 88px;
+        padding-bottom: 20px;
+      }
+
+      .back-btn {
+        top: 14px;
+        left: 14px;
+      }
+      .auth-lang-btn {
+        top: 14px;
+        right: 14px;
+      }
+
+      .card {
+        padding: 24px 18px;
+        border-radius: 14px;
+      }
+
+      h2 {
+        font-size: 1.35rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      body {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 82px;
+      }
+
+      .card {
+        padding: 20px 14px;
+      }
+
+      .back-btn {
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+  </style>
+
+  <script>
+    // Gender theme logic removed to enforce consistent purple theme
+    (function () {
+      // document.documentElement.removeAttribute('data-theme');
+    })();
+  </script>
+</head>
+
+<body data-auth="login">
+
+  <!-- BACK ARROW -->
+  <nav class="navbar" aria-label="Main navigation"></nav>
+
+  <div class="card">
+    <h2 data-en="Log in to Naamin" data-hi="Naamin में लॉग इन करें">Log in to Naamin</h2>
+
+    <form id="login-form">
+      <input id="login-email" type="email" placeholder="Email address" data-en-placeholder="Email address" data-hi-placeholder="ईमेल एड्रेस" required />
+      <input id="login-password" type="password" placeholder="Password" data-en-placeholder="Password" data-hi-placeholder="पासवर्ड" required />
+      <button type="submit" data-en="Log In" data-hi="लॉग इन">Log In</button>
+    </form>
+    <button id="google-auth-btn" class="google-btn" type="button">
+      <span data-en="Continue with Google" data-hi="Google के साथ जारी रखें">Continue with Google</span>
+    </button>
+    <p id="auth-message" role="alert" aria-live="polite"></p>
+
+    <div class="footer" data-en="Don't have an account?" data-hi="क्या आपका अकाउंट नहीं है?">
+      Don’t have an account?
+      <a href="/signup.html" data-en="Sign up" data-hi="साइन अप">Sign up</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module" src="auth.js?v=auth-20260404c"></script>
+  <script src="js/auth-page-i18n.js?v=i18n-20260420a"></script>
+  <footer></footer>
+
+  <a href="https://wa.me/9413678955?text=Hello" class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+  </a>
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

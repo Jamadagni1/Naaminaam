@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (() => {
+            const preferredLang = localStorage.getItem("language") || "en";
+            document.documentElement.lang = preferredLang;
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Name Generator - Naamin</title>
+    <meta name="description" content="Generate random brand and startup name ideas with keywords, style, and length controls.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;0,700&family=Poppins:wght@400;600;700&family=Noto+Sans+Devanagari:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/style.css?v=ui-20260519-script-fit">
+    <link rel="stylesheet" href="/more-unified.css?v=ui-20260510-header">
+    <link rel="stylesheet" href="/more/brand-name-generator/style.css?v=ui-20260519-script-fit">
+
+    <script src="/js/common-layout.js?v=footer-static-social-20260516a"></script>
+    <script src="/script.js?v=perf-20260510-menu" defer></script>
+    <script src="/js/global-language-fab.js?v=langfab-20260519c" defer></script>
+    <script src="/more/brand-name-generator/script.js?v=perf-20260510-menu" defer></script>
+</head>
+
+<body data-theme="light" class="more-unified-ui">
+    <nav class="navbar"></nav>
+
+    <main id="brand-name-generator-page" class="brandgen-page">
+        <section class="hero-section brandgen-hero">
+            <div class="brandgen-hero-inner">
+                <h1 class="page-title brandgen-title" data-en="Brand Names" data-hi="ब्रांड नाम">Brand Names</h1>
+                <p class="page-subtitle brandgen-subtitle" data-en="Add keywords, choose a style, and generate fresh ideas." data-hi="कीवर्ड डालें, स्टाइल चुनें और नए नाम पाएं।">
+                    Add keywords, choose a style, and generate fresh ideas.
+                </p>
+            </div>
+        </section>
+
+        <section class="brandgen-container filters-section">
+            <div class="brandgen-tool-card filters-container">
+                <form id="brandgen-form" autocomplete="off" aria-label="Brand name generator controls">
+                    <div class="brandgen-input-grid">
+                        <div class="brandgen-input-group">
+                            <label for="brandgen-industry" data-en="Industry (Optional)" data-hi="इंडस्ट्री (वैकल्पिक)">Industry (Optional)</label>
+                            <input id="brandgen-industry" type="text" placeholder="e.g. Fashion, Tech, Food" data-en-placeholder="e.g. Fashion, Tech, Food" data-hi-placeholder="जैसे: फैशन, टेक, फूड" autocomplete="off">
+                        </div>
+
+                        <div class="brandgen-input-group">
+                            <label for="brandgen-keywords" data-en="Keywords" data-hi="कीवर्ड">Keywords</label>
+                            <input id="brandgen-keywords" type="text" placeholder="e.g. solar, fresh, swift" data-en-placeholder="e.g. solar, fresh, swift" data-hi-placeholder="जैसे: सोलर, फ्रेश, स्विफ्ट" autocomplete="off">
+                            <div class="brandgen-hint" data-en="Tip: use 2-4 keywords (comma separated)." data-hi="टिप: 2-4 कीवर्ड डालें (कॉमा से अलग करें)।">Tip: use 2-4 keywords (comma separated).</div>
+                        </div>
+
+                        <div class="brandgen-input-group">
+                            <label for="brandgen-style" data-en="Style" data-hi="स्टाइल">Style</label>
+                            <select id="brandgen-style">
+                                <option value="modern" data-en="Modern" data-hi="मॉडर्न">Modern</option>
+                                <option value="classic" data-en="Classic" data-hi="क्लासिक">Classic</option>
+                                <option value="indian" data-en="Indian" data-hi="इंडियन">Indian</option>
+                                <option value="global" data-en="Global" data-hi="ग्लोबल">Global</option>
+                            </select>
+                        </div>
+
+                        <div class="brandgen-input-group">
+                            <label for="brandgen-length" data-en="Length" data-hi="लंबाई">Length</label>
+                            <select id="brandgen-length">
+                                <option value="short" data-en="Short" data-hi="शॉर्ट">Short</option>
+                                <option value="medium" data-en="Medium" data-hi="मीडियम">Medium</option>
+                                <option value="long" data-en="Long" data-hi="लॉन्ग">Long</option>
+                            </select>
+                        </div>
+
+                        <div class="brandgen-input-group">
+                            <label for="brandgen-count" data-en="How Many" data-hi="कितने">How Many</label>
+                            <select id="brandgen-count">
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                                <option value="24" selected>24</option>
+                                <option value="36">36</option>
+                            </select>
+                        </div>
+
+                        <div class="brandgen-input-group">
+                            <label for="brandgen-mode" data-en="Mode" data-hi="मोड">Mode</label>
+                            <select id="brandgen-mode">
+                                <option value="blend" selected data-en="Blend" data-hi="ब्लेंड">Blend</option>
+                                <option value="keyword" data-en="Keyword-led" data-hi="कीवर्ड आधारित">Keyword-led</option>
+                                <option value="syllable" data-en="Syllable-led" data-hi="सिलैबल आधारित">Syllable-led</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="brandgen-generate" class="brandgen-btn-generate" type="button">
+                        <span class="btn-text" data-en="Generate Names" data-hi="नाम जनरेट करें">Generate Names</span>
+                        <i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="brandgen-actions-row" aria-label="Secondary actions">
+                        <button id="brandgen-shuffle" class="brandgen-btn-secondary" type="button">
+                            <i class="fas fa-shuffle" aria-hidden="true"></i>
+                            <span data-en="Shuffle" data-hi="शफल">Shuffle</span>
+                        </button>
+                        <button id="brandgen-clear-saved" class="brandgen-btn-secondary danger" type="button">
+                            <i class="fas fa-trash" aria-hidden="true"></i>
+                            <span data-en="Clear Saved" data-hi="सेव हटाएँ">Clear Saved</span>
+                        </button>
+                    </div>
+
+                    <p id="brandgen-status" class="brandgen-status" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <section class="brandgen-results" aria-label="Generated names">
+                <div class="brandgen-results-head">
+                    <h2 data-en="Results" data-hi="रिज़ल्ट">Results</h2>
+                    <div class="brandgen-meta">
+                        <span id="brandgen-count-label">0</span>
+                        <span data-en="names" data-hi="नाम">names</span>
+                    </div>
+                </div>
+
+                <div id="brandgen-list" class="brandgen-list" aria-label="Brand name list"></div>
+            </section>
+
+            <section class="brandgen-saved" aria-label="Saved names">
+                <div class="brandgen-results-head">
+                    <h2 data-en="Saved" data-hi="सेव्ड">Saved</h2>
+                    <div class="brandgen-meta">
+                        <span id="brandgen-saved-count">0</span>
+                        <span data-en="saved" data-hi="सेव">saved</span>
+                    </div>
+                </div>
+                <div id="brandgen-saved-list" class="brandgen-saved-list" aria-label="Saved brand names"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <a href="https://wa.me/919413678955?text=Hello" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+</body>
+
+</html>

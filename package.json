@@ -1,0 +1,16 @@
+{
+  "name": "naaminlet1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Naamin naming service platform (static website served with Node.js).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node scripts/health-check.js",
+    "import:gdocs": "node scripts/import-gdocs-names.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

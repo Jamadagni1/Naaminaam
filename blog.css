@@ -1,0 +1,361 @@
+/* Blog page-specific styling (shared site chrome lives in style.css) */
+
+/* Fix: the global `header` selector in style.css is applied site-wide and
+   incorrectly makes the blog hero fixed. Override it for the blog page so
+   the `.blog-hero` behaves as a normal block and doesn't get hidden under
+   the fixed navbar. */
+body.blog-page header.blog-hero {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  width: 100% !important;
+  padding: 30px 20px !important;
+  margin-top: 0 !important;
+  background: rgba(255, 255, 255, 0.75);
+  display: block !important;
+  transform: none !important;
+}
+
+body.blog-page.more-unified-ui header.blog-hero {
+  width: auto !important;
+  padding: clamp(24px, 4vw, 44px) !important;
+}
+
+body.blog-page {
+  --blog-bg-gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedff 100%);
+  --blog-radius-lg: 24px;
+  --blog-shadow-premium: 0 12px 30px rgba(92, 103, 242, 0.05);
+  --blog-shadow-hover: 0 20px 40px rgba(92, 103, 242, 0.1);
+
+  background: var(--blog-bg-gradient);
+  background-attachment: fixed;
+  padding-top: var(--naamin-top-offset, var(--header-height)) !important;
+  min-height: 100vh;
+}
+
+body.blog-page .container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 52px) 24px 100px;
+  flex: 1;
+}
+
+body.blog-page .navbar {
+  z-index: 2000;
+  background: rgba(255, 255, 255, 0.92);
+  min-height: var(--header-height);
+}
+
+body.blog-page .blog-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body.blog-page .blog-hero h1 {
+  font-family: 'Lora', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+body.blog-page .blog-hero p {
+  color: var(--text-medium);
+  font-size: 1.25rem;
+}
+
+body.blog-page .blog-hero {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: var(--blog-shadow-premium);
+  border: 1px solid rgba(108, 43, 217, 0.08);
+}
+
+body.blog-page .blog-hero,
+body.blog-page .blog-list {
+  clear: both;
+}
+
+body.blog-page .blog-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+body.blog-page .blog-stats {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body.blog-page .blog-stat {
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-medium);
+  border: 1px solid rgba(108, 43, 217, 0.1);
+}
+
+body.blog-page .blog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 34px;
+}
+
+body.blog-page .blog-card {
+  width: 100%;
+}
+
+body.blog-page .blog-list {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body.blog-page .blog-card {
+  background: #ffffff;
+  border-radius: var(--blog-radius-lg);
+  padding: 44px;
+  min-height: 360px;
+  box-shadow: var(--blog-shadow-premium);
+  border: 1px solid var(--border-color-light);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+}
+
+body.blog-page .blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--blog-shadow-hover);
+}
+
+body.blog-page .blog-date {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-primary);
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: block;
+}
+
+body.blog-page .blog-title {
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  color: var(--text-dark);
+}
+
+body.blog-page .blog-excerpt {
+  color: var(--text-medium);
+  font-size: 1.15rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+body.blog-page .blog-full-content {
+  display: none;
+  opacity: 0;
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+}
+
+body.blog-page .blog-card.expanded .blog-excerpt {
+  display: none;
+}
+
+body.blog-page .blog-card.expanded .blog-full-content {
+  display: block;
+  opacity: 1;
+  animation: blogFadeIn 0.5s ease forwards;
+}
+
+@keyframes blogFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.blog-page .read-more-btn {
+  background: var(--accent-primary);
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px var(--accent-glow);
+}
+
+body.blog-page .read-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px var(--accent-glow);
+}
+
+/* Align the blog with the shared More-page visual system. */
+body.blog-page.more-unified-ui {
+  --blog-shadow-premium: 0 18px 40px rgba(31, 27, 46, 0.12);
+  --blog-shadow-hover: 0 22px 44px rgba(39, 19, 77, 0.16);
+  background:
+    radial-gradient(1200px 520px at 14% 0%, rgba(108, 43, 217, 0.18), transparent 62%),
+    radial-gradient(1100px 520px at 82% 0%, rgba(32, 125, 255, 0.14), transparent 60%),
+    radial-gradient(900px 520px at 50% 18%, rgba(236, 72, 153, 0.06), transparent 64%),
+    linear-gradient(120deg, #fdfbff 0%, #eef2ff 52%, #ffffff 100%);
+}
+
+body.blog-page.more-unified-ui .container {
+  max-width: 1280px;
+  padding: clamp(14px, 2.5vw, 26px) clamp(14px, 2.5vw, 26px) 100px;
+}
+
+body.blog-page.more-unified-ui .blog-hero {
+  margin: clamp(12px, 2.2vw, 24px) auto 28px;
+  max-width: 1280px;
+  border-radius: 24px;
+  border: 1px solid rgba(108, 43, 217, 0.16);
+  background:
+    linear-gradient(135deg, rgba(193, 132, 243, 0.94), rgba(108, 43, 217, 0.95)),
+    linear-gradient(135deg, #c184f3, #6c2bd9);
+  box-shadow: var(--more-shadow, var(--blog-shadow-premium));
+  color: #fff;
+}
+
+body.blog-page.more-unified-ui .blog-hero h1 {
+  color: #fff;
+  font-size: clamp(2.6rem, 4.6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+body.blog-page.more-unified-ui .blog-hero p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body.blog-page.more-unified-ui .blog-eyebrow {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+body.blog-page.more-unified-ui .blog-stat {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  color: #fff;
+  font-weight: 700;
+}
+
+body.blog-page.more-unified-ui .blog-list {
+  max-width: 1280px;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+}
+
+body.blog-page.more-unified-ui .blog-card {
+  min-height: 340px;
+  padding: 34px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(108, 43, 217, 0.16);
+  box-shadow: var(--blog-shadow-premium);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+body.blog-page.more-unified-ui .read-more-btn {
+  border-radius: 999px;
+  background: var(--accent-gradient);
+}
+
+@media (max-width: 768px) {
+  body.blog-page .container {
+    padding: 36px 20px 72px;
+  }
+
+  body.blog-page .blog-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  body.blog-page .blog-card {
+    padding: 35px;
+    min-height: 0;
+  }
+
+  body.blog-page .blog-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 520px) {
+  body.blog-page .container {
+    padding: 28px 14px 72px;
+  }
+
+  body.blog-page .blog-hero {
+    padding: 20px 14px;
+    border-radius: 16px;
+    margin-bottom: 22px;
+  }
+
+  body.blog-page .blog-hero h1 {
+    font-size: 2rem;
+  }
+
+  body.blog-page .blog-hero p {
+    font-size: 0.95rem;
+  }
+
+  body.blog-page .blog-list {
+    gap: 16px;
+  }
+
+  body.blog-page .blog-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  body.blog-page .blog-title {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  body.blog-page .blog-excerpt,
+  body.blog-page .blog-full-content {
+    font-size: 0.95rem;
+  }
+
+  body.blog-page .read-more-btn {
+    width: 100%;
+    padding: 12px 14px;
+  }
+}

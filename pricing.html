@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script>
+        (() => {
+            const preferredLang = localStorage.getItem("language") || "hi";
+            document.documentElement.lang = preferredLang;
+        })();
+    </script>
+    <style>
+        body {
+            visibility: hidden;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baby Naming Plans - Naamin</title>
+    <meta name="description" content="Explore baby naming plans: personalized name suggestions, meaning + origin, numerology, and Vedic guidance." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css?v=ui-20260519-script-fit">
+
+    <script src="js/common-layout.js?v=footer-static-social-20260516a"></script>
+</head>
+
+<body data-theme="light">
+
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="nav-brand-cluster">
+        <a href="/index.html" class="navbar-back-home" aria-label="Back to home">
+            <span class="navbar-back-icon" aria-hidden="true">&larr;</span>
+            <span class="navbar-back-label">Home</span>
+        </a>
+        <div class="logo">Naam<span class="logo-in">in</span></div>
+    </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links desktop-only">
+            <li><a href="index.html" data-en="Home" data-hi="Home">Home</a></li>
+            <li><a href="about.html" data-en="About" data-hi="About">About</a></li>
+            <li><a href="parents-mix.html" data-en="Parents to Child" data-hi="Parents to Child">Parents to
+                    Child</a></li>
+
+            <!-- Dropdown -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-en="More" data-hi="More">
+                    More<span class="arrow">&#9662;</span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="popular-names.html" data-en="Popular Names" data-hi="Popular Names">Popular Names</a>
+                    </li>
+                    <li><a href="unique-names.html" data-en="Unique Names" data-hi="Unique Names">Unique Names</a></li>
+                    <li><a href="famous-personalities.html" data-en="Famous Personalities"
+                            data-hi="Famous Personalities">Famous Personalities</a></li>
+                    <li><a href="more/motto-for-everything/index.html" data-en="Motto Creator"
+                            data-hi="Motto Creator">Motto Creator</a></li>
+                    <li><a href="more/zodiac-finder/index.html" data-en="Zodiac Finder" data-hi="Zodiac Finder">Zodiac
+                            Finder</a></li>
+                    <li><a href="product.html" data-en="Our Products" data-hi="Our Products">Our Products</a></li>
+
+
+
+                    <li><a href="services.html" data-en="Services" data-hi="Services">Services</a></li>
+                    <li><a href="pricing.html" class="active" data-en="Plans" data-hi="Plans">Plans</a></li>
+                    <li><a href="careers.html" data-en="Careers" data-hi="Careers">Careers</a></li>
+                    <li><a href="blog.html" data-en="Blog" data-hi="Blog">Blog</a></li>
+                    <li><a href="contact.html" data-en="Contact" data-hi="Contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Desktop Actions -->
+        <div class="nav-actions desktop-only">
+            <button id="language-toggle" class="btn btn-login btn-lang" title="Toggle language">ENG/HIN</button>
+            <button id="fav-view-btn" class="btn btn-fav" title="Wishlist">
+                <i class="fas fa-heart"></i>
+                <span id="fav-count">0</span>
+            </button>
+            <a href="login.html" class="btn btn-login">Log in</a>
+            <a href="signup.html" class="btn btn-signup">Sign up</a>
+        </div>
+
+        <!-- Hamburger Icon (Mobile Only) -->
+        <button class="hamburger-menu mobile-only" id="hamburger-menu" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" data-en="Home" data-hi="Home">Home</a></li>
+                <li><a href="about.html" data-en="About" data-hi="About">About</a></li>
+                <li><a href="parents-mix.html" data-en="Parents to Child" data-hi="Parents to Child">Parents to
+                        Child</a></li>
+
+                <!-- Mobile Dropdown -->
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle" data-en="More" data-hi="More">More<span
+                            class="arrow">&#9662;</span></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="popular-names.html" data-en="Popular Names" data-hi="Popular Names">Popular
+                                Names</a></li>
+                        <li><a href="unique-names.html" data-en="Unique Names" data-hi="Unique Names">Unique Names</a>
+                        </li>
+                        <li><a href="famous-personalities.html" data-en="Famous Personalities"
+                                data-hi="Famous Personalities">Famous Personalities</a></li>
+                        <li><a href="more/motto-for-everything/index.html" data-en="Motto Creator"
+                                data-hi="Motto Creator">Motto Creator</a></li>
+                        <li><a href="more/zodiac-finder/index.html" data-en="Zodiac Finder"
+                                data-hi="Zodiac Finder">Zodiac Finder</a></li>
+                        <li><a href="product.html" data-en="Our Products" data-hi="Our Products">Our Products</a></li>
+
+                        <li><a href="services.html" data-en="Services" data-hi="Services">Services</a></li>
+                        <li><a href="pricing.html" class="active" data-en="Plans" data-hi="Plans">Plans</a></li>
+                        <li><a href="careers.html" data-en="Careers" data-hi="Careers">Careers</a></li>
+                        <li><a href="blog.html" data-en="Blog" data-hi="Blog">Blog</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-hi="Contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+                <button id="language-toggle-mobile" class="btn mobile-btn">ENG/HIN</button>
+                <button id="fav-view-btn-mobile" class="btn btn-fav mobile-btn">
+                    <i class="fas fa-heart"></i>
+                    <span id="fav-count-mobile">0</span>
+                </button>
+                <a href="login.html" class="btn btn-login mobile-btn">Log in</a>
+                <a href="signup.html" class="btn btn-signup mobile-btn">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="pricing" class="section">
+            <div class="content-wrapper">
+                <h2 data-en="Baby Naming Plans" data-hi="Baby Naming Plans">Baby Naming Plans</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <div>
+                                <h3 data-en="Starter Plan" data-hi="Starter Plan">Starter Plan</h3>
+                            </div><i class="fas fa-chevron-down pricing-card-toggle-icon"></i>
+                        </div>
+                        <div class="pricing-card-details">
+                            <ul>
+                                <li data-en="3 Name Options" data-hi="3 Name Options"><i
+                                        class="fas fa-check-circle"></i> 3 Name Options</li>
+                                <li data-en="Meaning & Origin" data-hi="Meaning & Origin"><i
+                                        class="fas fa-check-circle"></i> Meaning & Origin</li>
+                                <li data-en="1 Revision" data-hi="1 Revision"><i class="fas fa-check-circle"></i> 1
+                                    Revision</li>
+                                <li data-en="Basic Numerology" data-hi="Basic Numerology"><i
+                                        class="fas fa-times-circle"></i> Basic Numerology</li>
+                            </ul><a href="contact.html" class="cta-button" data-en="Get Started" data-hi="Get Started">Get
+                                Started</a>
+                        </div>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <div>
+                                <h3 data-en="Plus Plan" data-hi="Plus Plan">Plus Plan</h3>
+                            </div><i class="fas fa-chevron-down pricing-card-toggle-icon"></i>
+                        </div>
+                        <div class="pricing-card-details">
+                            <ul>
+                                <li data-en="6 Name Suggestions" data-hi="6 Name Suggestions"><i
+                                        class="fas fa-check-circle"></i> 6 Name Suggestions</li>
+                                <li data-en="Detailed Meaning & Origin" data-hi="Detailed Meaning & Origin"><i
+                                        class="fas fa-check-circle"></i> Detailed Meaning & Origin</li>
+                                <li data-en="Basic Numerology" data-hi="Basic Numerology"><i
+                                        class="fas fa-check-circle"></i> Basic Numerology</li>
+                                <li data-en="2 Revisions" data-hi="2 Revisions"><i class="fas fa-check-circle"></i> 2
+                                    Revisions</li>
+                            </ul><a href="contact.html" class="cta-button" data-en="Choose Plan"
+                                data-hi="Choose Plan">Choose Plan</a>
+                        </div>
+                    </div>
+                    <div class="pricing-card highlight">
+                        <div class="ribbon" data-en="Popular" data-hi="Popular">Popular</div>
+                        <div class="pricing-card-header">
+                            <div>
+                                <h3 data-en="Premium Plan" data-hi="Premium Plan">Premium Plan</h3>
+                            </div><i class="fas fa-chevron-down pricing-card-toggle-icon"></i>
+                        </div>
+                        <div class="pricing-card-details">
+                            <ul>
+                                <li data-en="9 Name Suggestions" data-hi="9 Name Suggestions"><i
+                                        class="fas fa-check-circle"></i> 9 Name Suggestions</li>
+                                <li data-en="Numerology + Nakshatra Guidance" data-hi="Numerology + Nakshatra Guidance"><i
+                                        class="fas fa-check-circle"></i> Numerology + Nakshatra Guidance</li>
+                                <li data-en="Detailed Name Report (PDF)" data-hi="Detailed Name Report (PDF)"><i
+                                        class="fas fa-check-circle"></i> Detailed Name Report (PDF)</li>
+                                <li data-en="3 Revisions" data-hi="3 Revisions"><i class="fas fa-check-circle"></i> 3
+                                    Revisions</li>
+                            </ul><a href="contact.html" class="cta-button" data-en="Select Plan"
+                                data-hi="Select Plan">Select Plan</a>
+                        </div>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <div>
+                                <h3 data-en="Family Pack" data-hi="Family Pack">Family Pack</h3>
+                            </div><i class="fas fa-chevron-down pricing-card-toggle-icon"></i>
+                        </div>
+                        <div class="pricing-card-details">
+                            <ul>
+                                <li data-en="Sibling/Twin Name Sets" data-hi="Sibling/Twin Name Sets"><i
+                                        class="fas fa-check-circle"></i> Sibling/Twin Name Sets</li>
+                                <li data-en="Dedicated Consultant" data-hi="Dedicated Consultant"><i
+                                        class="fas fa-check-circle"></i> Dedicated Consultant</li>
+                                <li data-en="Poster + PDF Report Bundle" data-hi="Poster + PDF Report Bundle"><i
+                                        class="fas fa-check-circle"></i> Poster + PDF Report Bundle</li>
+                                <li data-en="Unlimited Revisions" data-hi="Unlimited Revisions"><i
+                                        class="fas fa-check-circle"></i> Unlimited Revisions</li>
+                            </ul><a href="contact.html" class="cta-button" data-en="Contact Us"
+                                data-hi="Contact Us">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3 data-en="Quick Links" data-hi="Quick Links">Quick Links</h3><a href="index.html" data-en="Home"
+                    data-hi="Home">Home</a><a href="about.html" data-en="About" data-hi="About">About</a><a
+                    href="services.html" data-en="Services" data-hi="Services">Services</a><a href="contact.html"
+                    data-en="Contact" data-hi="Contact">Contact</a>
+            </div>
+            <div>
+                <h3 data-en="Our Services" data-hi="Our Services">Our Services</h3><a href="services.html#consultation"
+                    data-en="Name Consultation" data-hi="Name Consultation">Name Consultation</a><a href="services.html#vedic"
+                    data-en="Vedic Guidance" data-hi="Vedic Guidance">Vedic Guidance</a><a href="services.html#posters"
+                    data-en="Our Products" data-hi="Our Products">Our Products</a>
+            </div>
+            <div>
+                <h3 data-en="Follow Us" data-hi="Follow Us">Follow Us</h3>
+                <div class="footer-social-icons" aria-label="Social links">
+                    <a class="social-icon-link" href="https://www.linkedin.com/company/naamin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://www.instagram.com/naamin.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://www.facebook.com/naamin.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon-link" href="https://x.com/naamin_com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" title="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 data-en="Contact" data-hi="Contact">Contact</h3>
+                <p><a href="tel:+919413678955">+91 94136 78955</a></p>
+                <p><a href="mailto:naamin.com@gmail.com">naamin.com@gmail.com</a></p>
+                <p data-en="Hyderabad, Telangana, India" data-hi="Hyderabad, Telangana, India">Hyderabad, Telangana, India
+                </p>
+            </div>
+        </div>
+        <p class="copyrights" data-en="© 2025 Naamin. All rights reserved."
+            data-hi="© 2025 Naamin. All rights reserved.">© 2025 Naamin. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/9413678955" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top"><i
+            class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js?v=perf-20260510-menu" defer></script>
+    <script src="navbar_fix.js?v=capture_fix"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="navbar-auth.js?v=navauth-20260330a"></script>
+  <script src="js/global-language-fab.js?v=langfab-20260519c"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

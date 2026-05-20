@@ -1,0 +1,3584 @@
+[
+    {
+        "name": "Ankit",
+        "hindiName": "अंकित",
+        "meaning": "One with good conduct, noble qualities, and auspicious traits.",
+        "meaning_hi": "अच्छे आचरण वाला, अच्छे गुणों वाला,शुभ लक्षणों से युक्त।",
+        "rashi": "मेष",
+        "meaning_en": "One with good conduct, noble qualities, and auspicious traits."
+    },
+    {
+        "name": "Akhilesh",
+        "hindiName": "अखिलेश",
+        "meaning": "A leader of all, a master, and one with good intellect.",
+        "meaning_hi": "सब के बोस,मालिक, अच्छी बुद्धि वाला",
+        "rashi": "मेष",
+        "meaning_en": "A leader of all, a master, and one with good intellect."
+    },
+    {
+        "name": "Ajay",
+        "hindiName": "अजय",
+        "meaning": "Invincible, strong, and intelligent.",
+        "meaning_hi": "जिसे कोई जीत नहीं सकता, बलवान, बुद्धिमान",
+        "rashi": "मेष",
+        "meaning_en": "Invincible, strong, and intelligent."
+    },
+    {
+        "name": "Ajit",
+        "hindiName": "अजित",
+        "meaning": "Invincible, highly knowledgeable, and powerful.",
+        "meaning_hi": "जिसे कोई जीत नहीं सकता, सबसे ज्यादा ज्ञानी, शक्तिशाली",
+        "rashi": "मेष",
+        "meaning_en": "Invincible, highly knowledgeable, and powerful."
+    },
+    {
+        "name": "Atalavihaaree",
+        "hindiName": "अटलविहारी",
+        "meaning": "Serious by nature, yet able to bring measured joy.",
+        "meaning_hi": "गंभीर रहनेवाला, ठीक ठीक मनोरंजन करने वाला",
+        "rashi": "मेष",
+        "meaning_en": "Serious by nature, yet able to bring measured joy."
+    },
+    {
+        "name": "Anil",
+        "hindiName": "अनिल",
+        "meaning": "A benevolent person who gives life and helps others.",
+        "meaning_hi": "दूसरे को जीवन दान करने वाला, परोपकारी इन्सान",
+        "rashi": "मेष",
+        "meaning_en": "A benevolent person who gives life and helps others."
+    },
+    {
+        "name": "Aneesh",
+        "hindiName": "अनीश",
+        "meaning": "Foremost, supreme, and seated in the highest place.",
+        "meaning_hi": "सबसे प्रमुख, सर्वोच्च पद पर आसीन",
+        "rashi": "मेष",
+        "meaning_en": "Foremost, supreme, and seated in the highest place."
+    },
+    {
+        "name": "Anuj",
+        "hindiName": "अनुज",
+        "meaning": "A younger sibling, born later, and loved by all.",
+        "meaning_hi": "भाई-बहनों में छोटे।बाद में जन्म लेने वाले,सबके प्रिय।",
+        "rashi": "मेष",
+        "meaning_en": "A younger sibling, born later, and loved by all."
+    },
+    {
+        "name": "Anubhav",
+        "hindiName": "अनुभव",
+        "meaning": "Experienced and wise through personal observation and practice.",
+        "meaning_hi": "अनुभवी,ज्ञानी,व्यक्तिगत निरीक्षण और प्रयोग से प्राप्त ज्ञान वाले।",
+        "rashi": "मेष",
+        "meaning_en": "Experienced and wise through personal observation and practice."
+    },
+    {
+        "name": "Abhay",
+        "hindiName": "अभय",
+        "meaning": "Fearless and powerful.",
+        "meaning_hi": "निडर, शक्तिमान",
+        "rashi": "मेष",
+        "meaning_en": "Fearless and powerful."
+    },
+    {
+        "name": "Abhishek",
+        "hindiName": "अभिषेक",
+        "meaning": "Pure in conduct, like sacred water.",
+        "meaning_hi": "पवित्र जल के जैसे शुद्ध पवित्र आचरण वाले",
+        "rashi": "मेष",
+        "meaning_en": "Pure in conduct, like sacred water."
+    },
+    {
+        "name": "Abhyuday",
+        "hindiName": "अभ्युदय",
+        "meaning": "Hardworking and dedicated to worldly progress.",
+        "meaning_hi": "सांसारिक उन्नति करने वाले, मेहनती, पुरुषार्थी",
+        "rashi": "मेष",
+        "meaning_en": "Hardworking and dedicated to worldly progress."
+    },
+    {
+        "name": "Amarendr",
+        "hindiName": "अमरेन्द्र",
+        "meaning": "A beloved devotee of the immortal Lord.",
+        "meaning_hi": "जिसका मालिक अमर है वह, भगवान के प्रिय भक्त",
+        "rashi": "मेष",
+        "meaning_en": "A beloved devotee of the immortal Lord."
+    },
+    {
+        "name": "Amit",
+        "hindiName": "अमित",
+        "meaning": "Large-hearted and full of limitless potential.",
+        "meaning_hi": "विशाल दिल वाले,असीम क्षमता वाले",
+        "rashi": "मेष",
+        "meaning_en": "Large-hearted and full of limitless potential."
+    },
+    {
+        "name": "Amitaabh",
+        "hindiName": "अमिताभ",
+        "meaning": "Highly radiant and energetic.",
+        "meaning_hi": "अधिक तेजस्वी, ओजस्वी",
+        "rashi": "मेष",
+        "meaning_en": "Highly radiant and energetic."
+    },
+    {
+        "name": "Aravind",
+        "hindiName": "अरविंद",
+        "meaning": "One who attains the company of wise and noble people.",
+        "meaning_hi": "ज्ञानी महापुरुषों को प्राप्त करने वाला",
+        "rashi": "मेष",
+        "meaning_en": "One who attains the company of wise and noble people."
+    },
+    {
+        "name": "Arush",
+        "hindiName": "अरुष",
+        "meaning": "Loving toward everyone, slow to anger, and free from needless harm.",
+        "meaning_hi": "जल्दी से किसी से नाराज न होने वाले,क्रोध, विना मतलब के हिंसा न करने वाले,सबसे प्रेम करने वाले।",
+        "rashi": "मेष",
+        "meaning_en": "Loving toward everyone, slow to anger, and free from needless harm."
+    },
+    {
+        "name": "Arjun",
+        "hindiName": "अर्जुन",
+        "meaning": "A courageous achiever of wealth, like the heroic son of Kunti.",
+        "meaning_hi": "धन संपत्ति कमाने वाला, कुन्ती पुत्र के समान पराक्रमी, गौर वर्ण वाला",
+        "rashi": "मेष",
+        "meaning_en": "A courageous achiever of wealth, like the heroic son of Kunti."
+    },
+    {
+        "name": "Arpan",
+        "hindiName": "अर्पण",
+        "meaning": "Generous by nature; one who likes to give.",
+        "meaning_hi": "दानी, कुछ न कुछ गिफ्ट देने के स्वभाववाला",
+        "rashi": "मेष",
+        "meaning_en": "Generous by nature; one who likes to give."
+    },
+    {
+        "name": "Avadhesh",
+        "hindiName": "अवधेश",
+        "meaning": "Possessing qualities like King Dasharatha of Ayodhya; skilled, wise, and loving toward all.",
+        "meaning_hi": "अयोध्या के राजा दशरथ के जैसे गुण वाले,राजनीति विशेषज्ञ,सभी से प्रेम करने वाले।",
+        "rashi": "मेष",
+        "meaning_en": "Possessing qualities like King Dasharatha of Ayodhya; skilled, wise, and loving toward all."
+    },
+    {
+        "name": "Ashok",
+        "hindiName": "अशोक",
+        "meaning": "Free from sorrow and carefree in spirit.",
+        "meaning_hi": "जिसके पास कोई शोक नहीं, बिंदास रहने वाला",
+        "rashi": "मेष",
+        "meaning_en": "Free from sorrow and carefree in spirit."
+    },
+    {
+        "name": "Ashvin",
+        "hindiName": "अश्विन्",
+        "meaning": "Fortunate, associated with horses, healing, and the Ashwini nakshatra.",
+        "meaning_hi": "घोड़ा फार्म के मालिक,घुड़ सवार करने वाले,देवताओं के वेद्य,जिनका जन्म अश्विनी नक्षत्र में हुआ हो सौभाग्यशाली,",
+        "rashi": "मेष",
+        "meaning_en": "Fortunate, associated with horses, healing, and the Ashwini nakshatra."
+    },
+    {
+        "name": "Aanvikaanvik",
+        "hindiName": "आण्विक/अण्विक",
+        "meaning": "A lover of physics, matter, and atomic science.",
+        "meaning_hi": "पदार्थ विज्ञान में विशेषज्ञ, भौतिकी प्रेमी, परमाणु विज्ञान प्रेमी।",
+        "rashi": "मेष",
+        "meaning_en": "A lover of physics, matter, and atomic science."
+    },
+    {
+        "name": "Aakarsh",
+        "hindiName": "आकर्ष",
+        "meaning": "Attractive, beautiful, knowledgeable, and powerful.",
+        "meaning_hi": "सबको अपनी ओर आकर्षित करने वाला, सुंदर,ज्ञानवान, शक्तिमान",
+        "rashi": "मेष",
+        "meaning_en": "Attractive, beautiful, knowledgeable, and powerful."
+    },
+    {
+        "name": "Aakaash",
+        "hindiName": "आकाश",
+        "meaning": "A famous person who gains recognition everywhere.",
+        "meaning_hi": "सब जगह से ख्याति प्राप्त करने वाला , प्रसिद्ध व्यक्ति",
+        "rashi": "मेष",
+        "meaning_en": "A famous person who gains recognition everywhere."
+    },
+    {
+        "name": "Aatmaanand",
+        "hindiName": "आत्मानंद",
+        "meaning": "One who lives joyfully and remains cheerful within himself.",
+        "meaning_hi": "अपने आप में आनंद रहने वाला,मौज मस्ती में रहने वाला",
+        "rashi": "मेष",
+        "meaning_en": "One who lives joyfully and remains cheerful within himself."
+    },
+    {
+        "name": "Aatmaaraam",
+        "hindiName": "आत्माराम",
+        "meaning": "One who lives joyfully and remains cheerful within himself.",
+        "meaning_hi": "अपने आप में आनंद रहने वाला,मौज मस्ती में रहने वाला",
+        "rashi": "मेष",
+        "meaning_en": "One who lives joyfully and remains cheerful within himself."
+    },
+    {
+        "name": "Aadarsh",
+        "hindiName": "आदर्श",
+        "meaning": "A thoughtful person who acts with care and guides others.",
+        "meaning_hi": "अच्छी तरह से देखकर विचारकर कार्य करने वाला व्यक्ति,लोगों के लिए पथ-प्रदर्शक।",
+        "rashi": "मेष",
+        "meaning_en": "A thoughtful person who acts with care and guides others."
+    },
+    {
+        "name": "Aadity",
+        "hindiName": "आदित्य",
+        "meaning": "Radiant and bright like the sun; divine in nature.",
+        "meaning_hi": "सूर्य के जैसे प्रकाशित, तेजस्वी,देव तुल्य",
+        "rashi": "मेष",
+        "meaning_en": "Radiant and bright like the sun; divine in nature."
+    },
+    {
+        "name": "Aadityanaath",
+        "hindiName": "आदित्यनाथ",
+        "meaning": "A worshipper of the sun; lord of those who help others like the sun.",
+        "meaning_hi": "सूर्य भगवान् के उपासक, सूर्य जैसे परोकार करने वालों का स्वामी",
+        "rashi": "मेष",
+        "meaning_en": "A worshipper of the sun; lord of those who help others like the sun."
+    },
+    {
+        "name": "Aadityapaal",
+        "hindiName": "आदित्यपाल",
+        "meaning": "A protector of the sun's light; scientific and radiant.",
+        "meaning_hi": "सूर्य के प्रकाश की रक्षा करने वाला वैज्ञानिक",
+        "rashi": "मेष",
+        "meaning_en": "A protector of the sun's light; scientific and radiant."
+    },
+    {
+        "name": "Aadityaprakaash",
+        "hindiName": "आदित्यप्रकाश",
+        "meaning": "Energetic and radiant like sunlight.",
+        "meaning_hi": "सूर्य के प्रकाश के जैसे ओजस्वी तेजस्वी",
+        "rashi": "मेष",
+        "meaning_en": "Energetic and radiant like sunlight."
+    },
+    {
+        "name": "Aanand",
+        "hindiName": "आनंद",
+        "meaning": "Cheerful, pleasant, and joyful.",
+        "meaning_hi": "खुश मिजाज, प्रसन्न रहनेवाला, आनंद में रहने वाला",
+        "rashi": "मेष",
+        "meaning_en": "Cheerful, pleasant, and joyful."
+    },
+    {
+        "name": "Aanandaprakaash",
+        "hindiName": "आनन्दप्रकाश",
+        "meaning": "One who enlightens others through his joy.",
+        "meaning_hi": "अपने आनंद से सबको प्रकाशित करने वाले",
+        "rashi": "मेष",
+        "meaning_en": "One who enlightens others through his joy."
+    },
+    {
+        "name": "Aarjav",
+        "hindiName": "आर्जव",
+        "meaning": "Honest, clear-spoken, generous-hearted, and good-natured.",
+        "meaning_hi": "ईमानदारी, स्पष्टवादी,उदार हृदय वाले, अच्छा स्वभाव वाला",
+        "rashi": "मेष",
+        "meaning_en": "Honest, clear-spoken, generous-hearted, and good-natured."
+    },
+    {
+        "name": "Aaryaprataap",
+        "hindiName": "आर्यप्रताप",
+        "meaning": "A noble person with excellent qualities and conduct.",
+        "meaning_hi": "श्रेष्ठ गुण, श्रेष्ठ आचरण से युक्त महापुरुष",
+        "rashi": "मेष",
+        "meaning_en": "A noble person with excellent qualities and conduct."
+    },
+    {
+        "name": "Aarshey",
+        "hindiName": "आर्षेय",
+        "meaning": "A child of sages; philosophical like a rishi.",
+        "meaning_hi": "ऋषि के संतान , ऋषि मुनि जैसे दार्शनिक",
+        "rashi": "मेष",
+        "meaning_en": "A child of sages; philosophical like a rishi."
+    },
+    {
+        "name": "Aalimpan",
+        "hindiName": "आलिम्पन",
+        "meaning": "Hardworking and fully dedicated to achieving his goal.",
+        "meaning_hi": "अपने लक्ष्य को पाने के लिये अच्छी तरह से लगे रहने वाला,मेहनती,पुरुषार्थी",
+        "rashi": "मेष",
+        "meaning_en": "Hardworking and fully dedicated to achieving his goal."
+    },
+    {
+        "name": "Aashutosh",
+        "hindiName": "आशुतोष",
+        "meaning": "A devotee of Lord Shiva who is easily pleased and content.",
+        "meaning_hi": "भगवान शिव का वह भक्त जो जल्दी प्रसन्न हो जाता है और संतुष्ट रहता है।",
+        "rashi": "मेष",
+        "meaning_en": "A devotee of Lord Shiva who is easily pleased and content."
+    },
+    {
+        "name": "Ikshvaaku",
+        "hindiName": "इक्ष्वाकु",
+        "meaning": "One who fulfills his wishes and achieves his goals.",
+        "meaning_hi": "अपनी इच्छा को पूरा करने वाला, अपने लक्ष्य को हासिल करने वाले",
+        "rashi": "वृष",
+        "meaning_en": "One who fulfills his wishes and achieves his goals."
+    },
+    {
+        "name": "Indr",
+        "hindiName": "इन्द्र",
+        "meaning": "Supremely prosperous and powerful.",
+        "meaning_hi": "परम् ऐश्वर्यशाली, सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "Supremely prosperous and powerful."
+    },
+    {
+        "name": "Indrajit",
+        "hindiName": "इन्द्रजित्",
+        "meaning": "Powerful enough to aspire to defeat even Indra, king of the gods.",
+        "meaning_hi": "इन्द्र जैसे देवराज को भी जीतने की इच्छा रखने वाले, सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "Powerful enough to aspire to defeat even Indra, king of the gods."
+    },
+    {
+        "name": "Indradev",
+        "hindiName": "इन्द्रदेव",
+        "meaning": "One who follows Indra as an ideal and shares his strength.",
+        "meaning_hi": "देवराज इन्द्र को आदर्श मानने वाले,उनके जैसे सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "One who follows Indra as an ideal and shares his strength."
+    },
+    {
+        "name": "Indramani",
+        "hindiName": "इन्द्रमणि",
+        "meaning": "A devotee of Lord Indra, powerful like him.",
+        "meaning_hi": "इन्द्र भगवान के भक्त,उनके जैसे सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "A devotee of Lord Indra, powerful like him."
+    },
+    {
+        "name": "Indramitr",
+        "hindiName": "इन्द्रमित्र",
+        "meaning": "A powerful friend, like Indra the king.",
+        "meaning_hi": "इन्द्रराज के जैसे सामर्थ्यवान मित्र वाले, सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "A powerful friend, like Indra the king."
+    },
+    {
+        "name": "Indraraaj",
+        "hindiName": "इन्द्रराज",
+        "meaning": "One who honors Indra as king and shares his strength.",
+        "meaning_hi": "देवराज इन्द्र को राजा मानने वाले, उनके जैसे सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "One who honors Indra as king and shares his strength."
+    },
+    {
+        "name": "Indraabh",
+        "hindiName": "इन्द्राभ",
+        "meaning": "Possessing radiance, vigor, and courage like Indra.",
+        "meaning_hi": "इन्द्र के जैसे ओज तेज और पराक्रम वाला",
+        "rashi": "वृष",
+        "meaning_en": "Possessing radiance, vigor, and courage like Indra."
+    },
+    {
+        "name": "Indresh",
+        "hindiName": "इन्द्रेश",
+        "meaning": "One who follows Indra as an ideal and shares his strength.",
+        "meaning_hi": "देवराज इन्द्र को आदर्श मानने वाले,उनके जैसे सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "One who follows Indra as an ideal and shares his strength."
+    },
+    {
+        "name": "Indhaan",
+        "hindiName": "इन्धान",
+        "meaning": "Radiant, energetic, and powerful.",
+        "meaning_hi": "ओजस्वी तेजस्वी शक्तिशाली",
+        "rashi": "वृष",
+        "meaning_en": "Radiant, energetic, and powerful."
+    },
+    {
+        "name": "Ilesh",
+        "hindiName": "इलेश",
+        "meaning": "A ruler on earth, kingly and devoted.",
+        "meaning_hi": "पृथ्वी पर राज करने वाले,राजा, गोभक्त",
+        "rashi": "वृष",
+        "meaning_en": "A ruler on earth, kingly and devoted."
+    },
+    {
+        "name": "Ishesh",
+        "hindiName": "इषेश",
+        "meaning": "Strong and powerful.",
+        "meaning_hi": "बलशाली, शक्तिशाली,",
+        "rashi": "वृष",
+        "meaning_en": "Strong and powerful."
+    },
+    {
+        "name": "Isht",
+        "hindiName": "इष्ट",
+        "meaning": "Beloved by all, dear, and wise.",
+        "meaning_hi": "सबके प्यारे,दुलारे,ज्ञानी",
+        "rashi": "वृष",
+        "meaning_en": "Beloved by all, dear, and wise."
+    },
+    {
+        "name": "Ukshan",
+        "hindiName": "उक्षन्",
+        "meaning": "Strong and powerful like a bull.",
+        "meaning_hi": "बैल के जैसे बलशाली शक्तिशाली",
+        "rashi": "वृष",
+        "meaning_en": "Strong and powerful like a bull."
+    },
+    {
+        "name": "Ugrasen",
+        "hindiName": "उग्रसेन",
+        "meaning": "A fierce king ready for battle and national protection.",
+        "meaning_hi": "उग्र, युद्ध के लिए या राष्ट्र रक्षा के लिए तत्पर सेना वाले राजा",
+        "rashi": "वृष",
+        "meaning_en": "A fierce king ready for battle and national protection."
+    },
+    {
+        "name": "Ujjval",
+        "hindiName": "उज्ज्वल",
+        "meaning": "Radiant and bright-faced.",
+        "meaning_hi": "ओजस्वी तेजस्वी मुखमंडल वाले",
+        "rashi": "वृष",
+        "meaning_en": "Radiant and bright-faced."
+    },
+    {
+        "name": "Uttam",
+        "hindiName": "उत्तम",
+        "meaning": "A superior person with good qualities.",
+        "meaning_hi": "अच्छे गुणों वाला श्रेष्ठ इन्सान",
+        "rashi": "वृष",
+        "meaning_en": "A superior person with good qualities."
+    },
+    {
+        "name": "Utteern",
+        "hindiName": "उत्तीर्ण",
+        "meaning": "Intelligent and always successful in his work.",
+        "meaning_hi": "अपने कार्य में सदा सफल रहने वाला, बुद्धिमान",
+        "rashi": "वृष",
+        "meaning_en": "Intelligent and always successful in his work."
+    },
+    {
+        "name": "Utsav",
+        "hindiName": "उत्सव",
+        "meaning": "Hardworking and joyful.",
+        "meaning_hi": "सबसे अधिक मेहनत करने वाले, आनंद में रहने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Hardworking and joyful."
+    },
+    {
+        "name": "Utsuk",
+        "hindiName": "उत्सुक",
+        "meaning": "Curious to learn new knowledge and understand new things.",
+        "meaning_hi": "किसी भी नया ज्ञान, पदार्थ को जानने की इच्छा रखने वाले, जिज्ञासु",
+        "rashi": "वृष",
+        "meaning_en": "Curious to learn new knowledge and understand new things."
+    },
+    {
+        "name": "Uday",
+        "hindiName": "उदय",
+        "meaning": "Wise and progressing toward growth.",
+        "meaning_hi": "उन्नति, प्रगति करने वाले, ज्ञानी",
+        "rashi": "वृष",
+        "meaning_en": "Wise and progressing toward growth."
+    },
+    {
+        "name": "Udayaveer",
+        "hindiName": "उदयवीर",
+        "meaning": "A wise, heroic, and progressive person who keeps moving toward advancement.",
+        "meaning_hi": "ज्ञान से वीर बने हुए व्यक्ति, ज्ञानी महापुरुष, प्रगति उन्नति करने के लिए हमेशा आगे बढ़ने वाले, प्रगतिशील इन्सान",
+        "rashi": "वृष",
+        "meaning_en": "A wise, heroic, and progressive person who keeps moving toward advancement."
+    },
+    {
+        "name": "Udgeeth",
+        "hindiName": "उद्गीथ",
+        "meaning": "A wise knower of the Sama Veda.",
+        "meaning_hi": "सामवेद को जानने वाले, ज्ञानी",
+        "rashi": "वृष",
+        "meaning_en": "A wise knower of the Sama Veda."
+    },
+    {
+        "name": "Upendr",
+        "hindiName": "उपेन्द्र",
+        "meaning": "Supremely prosperous and powerful.",
+        "meaning_hi": "परम् ऐश्वर्यशाली, सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "Supremely prosperous and powerful."
+    },
+    {
+        "name": "Umaakaant",
+        "hindiName": "उमाकांत",
+        "meaning": "A beloved devotee of Goddess Parvati, destined for fame.",
+        "meaning_hi": "पार्वती जी के प्रिय भक्त, प्रसिद्धि पानेवाले",
+        "rashi": "वृष",
+        "meaning_en": "A beloved devotee of Goddess Parvati, destined for fame."
+    },
+    {
+        "name": "Umaashankar",
+        "hindiName": "उमाशंकर",
+        "meaning": "One who gains fame and wishes good for everyone.",
+        "meaning_hi": "प्रसिद्धि पा कर सबके भला चाहने वाला,",
+        "rashi": "वृष",
+        "meaning_en": "One who gains fame and wishes good for everyone."
+    },
+    {
+        "name": "Umesh",
+        "hindiName": "उमेश",
+        "meaning": "Powerful and patriotic, like Lord Shankar; a leader who earns fame and honor.",
+        "meaning_hi": "यश, ख्याति, प्रसिद्धि आदि पाने वाले, शक्तिमान, राष्ट्र भक्त, सेना के लीडर, भगवान् शंकर के जैसे सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "Powerful and patriotic, like Lord Shankar; a leader who earns fame and honor."
+    },
+    {
+        "name": "Rigvid",
+        "hindiName": "ऋग्विद्",
+        "meaning": "A wise knower of the Rigveda.",
+        "meaning_hi": "ऋग्वेद को जानने वाले, ज्ञानी बुद्धिमान",
+        "rashi": "तुला",
+        "meaning_en": "A wise knower of the Rigveda."
+    },
+    {
+        "name": "Ritik",
+        "hindiName": "ऋतिक",
+        "meaning": "A true-hearted person.",
+        "meaning_hi": "सच्चे दिल वाले इन्सान",
+        "rashi": "तुला",
+        "meaning_en": "A true-hearted person."
+    },
+    {
+        "name": "Riten",
+        "hindiName": "ऋतेन",
+        "meaning": "A leader of true-hearted people.",
+        "meaning_hi": "सच्चे दिल वाले लोगों के लीडर",
+        "rashi": "तुला",
+        "meaning_en": "A leader of true-hearted people."
+    },
+    {
+        "name": "Ribhu",
+        "hindiName": "ऋभु",
+        "meaning": "One with divine qualities.",
+        "meaning_hi": "दिव्य गुणों वाले",
+        "rashi": "तुला",
+        "meaning_en": "One with divine qualities."
+    },
+    {
+        "name": "Rishabh",
+        "hindiName": "ऋषभ",
+        "meaning": "Powerful, strong, and noble in conduct.",
+        "meaning_hi": "श्रेष्ठ आचरण करने वाले, शक्तिशाली बलवान",
+        "rashi": "तुला",
+        "meaning_en": "Powerful, strong, and noble in conduct."
+    },
+    {
+        "name": "Rishi",
+        "hindiName": "ऋषि",
+        "meaning": "Wise, meditative, charitable, and scientific.",
+        "meaning_hi": "ज्ञानी,ध्यानी,परोपकारी,वैज्ञानिक",
+        "rashi": "तुला",
+        "meaning_en": "Wise, meditative, charitable, and scientific."
+    },
+    {
+        "name": "Rishik",
+        "hindiName": "ऋषिक",
+        "meaning": "Wise, meditative, charitable, and scientific.",
+        "meaning_hi": "ज्ञानी,ध्यानी,परोपकारी,वैज्ञानिक",
+        "rashi": "तुला",
+        "meaning_en": "Wise, meditative, charitable, and scientific."
+    },
+    {
+        "name": "Rishidev",
+        "hindiName": "ऋषिदेव",
+        "meaning": "A disciple of wise, meditative, charitable, and scientific people.",
+        "meaning_hi": "ज्ञानी,ध्यानी,परोपकारी, वैज्ञानिकों के शिष्य",
+        "rashi": "तुला",
+        "meaning_en": "A disciple of wise, meditative, charitable, and scientific people."
+    },
+    {
+        "name": "Rishipaal",
+        "hindiName": "ऋषिपाल",
+        "meaning": "A wise protector of sages.",
+        "meaning_hi": "ऋषि की रक्षा करने वाले, ज्ञानी, बुद्धिमान",
+        "rashi": "तुला",
+        "meaning_en": "A wise protector of sages."
+    },
+    {
+        "name": "Rishimohan",
+        "hindiName": "ऋषिमोहन",
+        "meaning": "A disciple of wise, meditative, charitable, and scientific people.",
+        "meaning_hi": "ज्ञानी,ध्यानी,परोपकारी, वैज्ञानिकों के शिष्य",
+        "rashi": "तुला",
+        "meaning_en": "A disciple of wise, meditative, charitable, and scientific people."
+    },
+    {
+        "name": "Rishiraaj",
+        "hindiName": "ऋषिराज",
+        "meaning": "Wise, meditative, charitable, and scientific.",
+        "meaning_hi": "ज्ञानी,ध्यानी,परोपकारी,वैज्ञानिक",
+        "rashi": "तुला",
+        "meaning_en": "Wise, meditative, charitable, and scientific."
+    },
+    {
+        "name": "Rishir",
+        "hindiName": "ऋषिर्",
+        "meaning": "Wise, meditative, charitable, and scientific.",
+        "meaning_hi": "ज्ञानी,ध्यानी,परोपकारी,वैज्ञानिक",
+        "rashi": "तुला",
+        "meaning_en": "Wise, meditative, charitable, and scientific."
+    },
+    {
+        "name": "Risheesh",
+        "hindiName": "ऋषीश",
+        "meaning": "A disciple of wise, meditative, charitable, and scientific people.",
+        "meaning_hi": "ज्ञानी,ध्यानी,परोपकारी, वैज्ञानिकों के शिष्य",
+        "rashi": "तुला",
+        "meaning_en": "A disciple of wise, meditative, charitable, and scientific people."
+    },
+    {
+        "name": "Ekakar",
+        "hindiName": "एककर",
+        "meaning": "Eka dhyeya rakhane ekaagra mana.",
+        "meaning_hi": "एक ध्येय रखने वाले, एकाग्र मन वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka dhyeya rakhane ekaagra mana."
+    },
+    {
+        "name": "Ekachar",
+        "hindiName": "एकचर",
+        "meaning": "Eka dhyeya rakhane ekaagra mana.",
+        "meaning_hi": "एक ध्येय रखने वाले, एकाग्र मन वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka dhyeya rakhane ekaagra mana."
+    },
+    {
+        "name": "Ekadrig",
+        "hindiName": "एकदृग्",
+        "meaning": "Eka dhyeya rakhane ekaagra mana.",
+        "meaning_hi": "एक ध्येय रखने वाले, एकाग्र मन वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka dhyeya rakhane ekaagra mana."
+    },
+    {
+        "name": "Ekadrishti",
+        "hindiName": "एकदृष्टि",
+        "meaning": "Eka dhyeya rakhane ekaagra mana.",
+        "meaning_hi": "एक ध्येय रखने वाले, एकाग्र मन वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka dhyeya rakhane ekaagra mana."
+    },
+    {
+        "name": "Ekadhyey",
+        "hindiName": "एकध्येय",
+        "meaning": "Eka dhyeya rakhane ekaagra mana.",
+        "meaning_hi": "एक ध्येय रखने वाले, एकाग्र मन वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka dhyeya rakhane ekaagra mana."
+    },
+    {
+        "name": "Ekanaath",
+        "hindiName": "एकनाथ",
+        "meaning": "Eka hee ishtadeva.",
+        "meaning_hi": "एक ही इष्टदेव वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka hee ishtadeva."
+    },
+    {
+        "name": "Ekaraaj",
+        "hindiName": "एकराज",
+        "meaning": "Devotee of one supreme lord; faithful servant of God.",
+        "meaning_hi": "एक स्वामी के भक्त, ईश्वर भक्त",
+        "rashi": "वृष",
+        "meaning_en": "Devotee of one supreme lord; faithful servant of God."
+    },
+    {
+        "name": "Ekarshi",
+        "hindiName": "एकर्षि",
+        "meaning": "A sage-like seeker devoted to one chosen ideal or knowledge.",
+        "meaning_hi": "अपने इष्ट किसी एक ज्ञान को पाने वाले, ऋषि मुनि वैज्ञानिक जैसे",
+        "rashi": "वृष",
+        "meaning_en": "A sage-like seeker devoted to one chosen ideal or knowledge."
+    },
+    {
+        "name": "Ekaveer",
+        "hindiName": "एकवीर",
+        "meaning": "A heroic devotee of one master, like a devotee of Hanuman.",
+        "meaning_hi": "एक स्वामी के भक्त, ईश्वर भक्त , हनुमान भक्त",
+        "rashi": "वृष",
+        "meaning_en": "A heroic devotee of one master, like a devotee of Hanuman."
+    },
+    {
+        "name": "Ekavrat",
+        "hindiName": "एकव्रत",
+        "meaning": "Eka dhyeya rakhane ekaagra mana.",
+        "meaning_hi": "एक ध्येय रखने वाले, एकाग्र मन वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka dhyeya rakhane ekaagra mana."
+    },
+    {
+        "name": "Ekaachaary",
+        "hindiName": "एकाचार्य",
+        "meaning": "Eka guru to maanane.",
+        "meaning_hi": "एक गुरु को मानने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Eka guru to maanane."
+    },
+    {
+        "name": "Ekesh",
+        "hindiName": "एकेश",
+        "meaning": "Devotee of one supreme lord; faithful servant of God.",
+        "meaning_hi": "एक स्वामी के भक्त, ईश्वर भक्त",
+        "rashi": "वृष",
+        "meaning_en": "Devotee of one supreme lord; faithful servant of God."
+    },
+    {
+        "name": "Elan",
+        "hindiName": "एलन",
+        "meaning": "Everyone preranaa dene.",
+        "meaning_hi": "सबको प्रेरणा देने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Everyone preranaa dene."
+    },
+    {
+        "name": "Elen",
+        "hindiName": "एलेन",
+        "meaning": "Motiveteda people of master.",
+        "meaning_hi": "मोटिवेटेड लोगों के मालिक",
+        "rashi": "वृष",
+        "meaning_en": "Motiveteda people of master."
+    },
+    {
+        "name": "Aishvary",
+        "hindiName": "ऐश्वर्य",
+        "meaning": "All-powerful, richly blessed with every noble quality.",
+        "meaning_hi": "सर्वशक्तिमान,सर्व गुण संपन्न, बहुत शक्तिशाली, गुणवान",
+        "rashi": "वृष",
+        "meaning_en": "All-powerful, richly blessed with every noble quality."
+    },
+    {
+        "name": "Onkaar",
+        "hindiName": "ओंकार",
+        "meaning": "Hara samaya Lord of bhakti doing.",
+        "meaning_hi": "हर समय भगवान् की भक्ति करने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Hara samaya Lord of bhakti doing."
+    },
+    {
+        "name": "Onkaaru",
+        "hindiName": "ओंकारु",
+        "meaning": "Hara samaya Lord of bhakti doing.",
+        "meaning_hi": "हर समय भगवान् की भक्ति करने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Hara samaya Lord of bhakti doing."
+    },
+    {
+        "name": "Onkrit",
+        "hindiName": "ओंकृत्",
+        "meaning": "Hara samaya Lord of bhakti doing.",
+        "meaning_hi": "हर समय भगवान् की भक्ति करने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Hara samaya Lord of bhakti doing."
+    },
+    {
+        "name": "Onvind",
+        "hindiName": "ओंविन्द",
+        "meaning": "A realized yogi or saint who has directly experienced the divine.",
+        "meaning_hi": "भगवान के साक्षात्कार करने वाले योगी, सिद्ध महात्मा",
+        "rashi": "वृष",
+        "meaning_en": "A realized yogi or saint who has directly experienced the divine."
+    },
+    {
+        "name": "Ojas",
+        "hindiName": "ओजस्",
+        "meaning": "ojasvee tejasvee shaktishaalee",
+        "meaning_hi": "ओजस्वी तेजस्वी शक्तिशाली",
+        "rashi": "वृष",
+        "meaning_en": "ojasvee tejasvee shaktishaalee"
+    },
+    {
+        "name": "Ojaspaa",
+        "hindiName": "ओजस्पा",
+        "meaning": "Oja teja bala of rakshaa doing radiant brahmachaaree.",
+        "meaning_hi": "ओज तेज बल की रक्षा करने वाले, तेजस्वी ब्रह्मचारी",
+        "rashi": "वृष",
+        "meaning_en": "Oja teja bala of rakshaa doing radiant brahmachaaree."
+    },
+    {
+        "name": "Ojodaa",
+        "hindiName": "ओजोदा",
+        "meaning": "Oja teja bala to dene.",
+        "meaning_hi": "ओज तेज बल को देने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Oja teja bala to dene."
+    },
+    {
+        "name": "Ojodhaa",
+        "hindiName": "ओजोधा",
+        "meaning": "Oja teja bala dhaarana doing radiant brahmachaaree.",
+        "meaning_hi": "ओज तेज बल धारण करने वाले, तेजस्वी ब्रह्मचारी",
+        "rashi": "वृष",
+        "meaning_en": "Oja teja bala dhaarana doing radiant brahmachaaree."
+    },
+    {
+        "name": "Ojobhoo",
+        "hindiName": "ओजोभू",
+        "meaning": "Oja teja bala dhaarana doing radiant brahmachaaree.",
+        "meaning_hi": "ओज तेज बल धारण करने वाले, तेजस्वी ब्रह्मचारी",
+        "rashi": "वृष",
+        "meaning_en": "Oja teja bala dhaarana doing radiant brahmachaaree."
+    },
+    {
+        "name": "Omaanand",
+        "hindiName": "ओमानन्द",
+        "meaning": "Lord of bhakti in aananda living.",
+        "meaning_hi": "भगवान् की भक्ति में आनंद रहने वाला",
+        "rashi": "वृष",
+        "meaning_en": "Lord of bhakti in aananda living."
+    },
+    {
+        "name": "Omeesh",
+        "hindiName": "ओमीश",
+        "meaning": "Om of stuti doing bhagavadbhakti doing.",
+        "meaning_hi": "ओम् की स्तुति करने वाले, भगवद्भक्ति करने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Om of stuti doing bhagavadbhakti doing."
+    },
+    {
+        "name": "Omendr",
+        "hindiName": "ओमेन्द्र",
+        "meaning": "A devotee whose true master is God.",
+        "meaning_hi": "भगवान के भक्त, भगवान ही जिसका मालिक है वह",
+        "rashi": "वृष",
+        "meaning_en": "A devotee whose true master is God."
+    },
+    {
+        "name": "Omraaj",
+        "hindiName": "ओम्राज",
+        "meaning": "Bhagavad saakshaatkaara from energetic radiant mukhanndala.",
+        "meaning_hi": "भगवद् साक्षात्कार से ओजस्वी तेजस्वी मुखमंडल वाले",
+        "rashi": "वृष",
+        "meaning_en": "Bhagavad saakshaatkaara from energetic radiant mukhanndala."
+    },
+    {
+        "name": "Kanaad",
+        "hindiName": "कणाद",
+        "meaning": "Wise knower of physics who understands the value of every particle.",
+        "meaning_hi": "कण कण के महत्व को समझने वाले, बुद्धिमान, फिजिक्स के ज्ञाता",
+        "rashi": "मिथुन",
+        "meaning_en": "Wise knower of physics who understands the value of every particle."
+    },
+    {
+        "name": "Kanishth",
+        "hindiName": "कनिष्ठ",
+        "meaning": "Sabase chhote para everyone?s kaama aane.",
+        "meaning_hi": "सबसे छोटे पर सबके काम आने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "Sabase chhote para everyone?s kaama aane."
+    },
+    {
+        "name": "Kapil",
+        "hindiName": "कपिल",
+        "meaning": "A learned ascetic like a sage, guiding people toward good deeds and happiness.",
+        "meaning_hi": "लोगों को सुख युक्त अच्छे कर्म में लगाने वाला,पीले वर्ण वाला,मुनि के जैसे विद्वान, तपस्वी",
+        "rashi": "मिथुन",
+        "meaning_en": "A learned ascetic like a sage, guiding people toward good deeds and happiness."
+    },
+    {
+        "name": "Kapeendr",
+        "hindiName": "कपींद्र",
+        "meaning": "Nirbalon of sahaayataa doing helpful.",
+        "meaning_hi": "निर्बलों की सहायता करने वाले, परोपकारी",
+        "rashi": "मिथुन",
+        "meaning_en": "Nirbalon of sahaayataa doing helpful."
+    },
+    {
+        "name": "Kamalajit",
+        "hindiName": "कमलजित्",
+        "meaning": "Jala of shuddhikarana doing paryaavaranavid.",
+        "meaning_hi": "जल के शुद्धिकरण करने वाले, पर्यावरणविद्",
+        "rashi": "मिथुन",
+        "meaning_en": "Jala of shuddhikarana doing paryaavaranavid."
+    },
+    {
+        "name": "Kamalesh",
+        "hindiName": "कमलेश",
+        "meaning": "Indriyon of lord everyone?s priy.",
+        "meaning_hi": "इन्द्रियों के स्वामी, सबके प्रिय",
+        "rashi": "मिथुन",
+        "meaning_en": "Indriyon of lord everyone?s priy."
+    },
+    {
+        "name": "Karanapreet",
+        "hindiName": "करणप्रीत",
+        "meaning": "Jeevanopayogee saadhana gaadaeeghara jameena jaayadaada aadi from prema doing.",
+        "meaning_hi": "जीवनोपयोगी साधन गाड़ी,घर, ज़मीन जायदाद आदि से प्रेम करने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "Jeevanopayogee saadhana gaadaeeghara jameena jaayadaada aadi from prema doing."
+    },
+    {
+        "name": "Karnajit",
+        "hindiName": "कर्णजित्",
+        "meaning": "One who aspires to surpass even the mighty Karna; deeply thoughtful and capable.",
+        "meaning_hi": "राजा कर्ण जैसे सामर्थ्यवान को भी जितने की इच्छा करने वाले,अति सोचने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "One who aspires to surpass even the mighty Karna; deeply thoughtful and capable."
+    },
+    {
+        "name": "Kalesh",
+        "hindiName": "कलेश",
+        "meaning": "kalaakaar",
+        "meaning_hi": "कलाकार",
+        "rashi": "मिथुन",
+        "meaning_en": "kalaakaar"
+    },
+    {
+        "name": "Kalpajit",
+        "hindiName": "कल्पजित्",
+        "meaning": "saamarthyavaana sabase shreshth",
+        "meaning_hi": "सामर्थ्यवान, सबसे श्रेष्ठ",
+        "rashi": "मिथुन",
+        "meaning_en": "saamarthyavaana sabase shreshth"
+    },
+    {
+        "name": "Kalyaan",
+        "hindiName": "कल्याण",
+        "meaning": "Saubhaagyashaalee sabere Lord kaa sumirana doing.",
+        "meaning_hi": "सौभाग्यशाली, सबेरे भगवान् का सुमिरन करने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "Saubhaagyashaalee sabere Lord kaa sumirana doing."
+    },
+    {
+        "name": "Kaveendr",
+        "hindiName": "कवीन्द्र",
+        "meaning": "A brilliant and learned person with strong knowledge and ability.",
+        "meaning_hi": "मेधावी, विद्वान्, ज्ञान, सामर्थ्यवान",
+        "rashi": "मिथुन",
+        "meaning_en": "A brilliant and learned person with strong knowledge and ability."
+    },
+    {
+        "name": "Kashyap",
+        "hindiName": "कश्यप",
+        "meaning": "A famous sage with the eye of knowledge.",
+        "meaning_hi": "ज्ञान चक्षु वाले, एक प्रसिद्ध ऋषि",
+        "rashi": "मिथुन",
+        "meaning_en": "A famous sage with the eye of knowledge."
+    },
+    {
+        "name": "Kaalajny",
+        "hindiName": "कालज्ञ",
+        "meaning": "ganitajny",
+        "meaning_hi": "गणितज्ञ",
+        "rashi": "मिथुन",
+        "meaning_en": "ganitajny"
+    },
+    {
+        "name": "Kumaar",
+        "hindiName": "कुमार",
+        "meaning": "A joyful person who enjoys comforts and is good at sports.",
+        "meaning_hi": "सुख सुविधाओं को भोगने वाला, अच्छे खिलाड़ी",
+        "rashi": "मिथुन",
+        "meaning_en": "A joyful person who enjoys comforts and is good at sports."
+    },
+    {
+        "name": "Krishn",
+        "hindiName": "कृष्ण",
+        "meaning": "Skilled in wise strategy like Lord Krishna; a good leader and administrator.",
+        "meaning_hi": "भगवान् कृष्ण के समान कुशल नीतियों को जानने वाले,अच्छे नेता, कुशल प्रशासक",
+        "rashi": "मिथुन",
+        "meaning_en": "Skilled in wise strategy like Lord Krishna; a good leader and administrator."
+    },
+    {
+        "name": "Krishnakishor",
+        "hindiName": "कृष्णकिशोर",
+        "meaning": "arth",
+        "meaning_hi": "1. अर्थ",
+        "rashi": "3. राशि",
+        "meaning_en": "arth"
+    },
+    {
+        "name": "Ketan",
+        "hindiName": "केतन",
+        "meaning": "chikitsaka vaidy",
+        "meaning_hi": "चिकित्सक, वैद्य",
+        "rashi": "मिथुन",
+        "meaning_en": "chikitsaka vaidy"
+    },
+    {
+        "name": "Kaustubh",
+        "hindiName": "कौस्तुभ",
+        "meaning": "Precious like the Kaustubha gem worn by Lord Vishnu.",
+        "meaning_hi": "समुद्र के रत्न(मणि) के जैसे बहुमूल्य इन्सान, विष्णु भगवान के वक्षस्थल पर धारण किया हुआ विशेष रत्न(मणि)।",
+        "rashi": "मिथुन",
+        "meaning_en": "Precious like the Kaustubha gem worn by Lord Vishnu."
+    },
+    {
+        "name": "Kshiteesh",
+        "hindiName": "क्षितीश",
+        "meaning": "Bahuta see bhoomiyon of svaameemaalik.",
+        "meaning_hi": "बहुत सी भूमियों के स्वामी,मालिक",
+        "rashi": "मिथुन",
+        "meaning_en": "Bahuta see bhoomiyon of svaameemaalik."
+    },
+    {
+        "name": "Khagendr",
+        "hindiName": "खगेन्द्र",
+        "meaning": "Bahuta from vaayuyaana of master dhanaadhy.",
+        "meaning_hi": "बहुत से वायुयान के मालिक, धनाढ्य",
+        "rashi": "मकर",
+        "meaning_en": "Bahuta from vaayuyaana of master dhanaadhy."
+    },
+    {
+        "name": "Khagesh",
+        "hindiName": "खगेश",
+        "meaning": "Bahuta from vaayuyaana of master dhanaadhy.",
+        "meaning_hi": "बहुत से वायुयान के मालिक, धनाढ्य",
+        "rashi": "मकर",
+        "meaning_en": "Bahuta from vaayuyaana of master dhanaadhy."
+    },
+    {
+        "name": "Khageshvar",
+        "hindiName": "खगेश्वर",
+        "meaning": "Bahuta from vaayuyaana of master dhanaadhy.",
+        "meaning_hi": "बहुत से वायुयान के मालिक, धनाढ्य",
+        "rashi": "मकर",
+        "meaning_en": "Bahuta from vaayuyaana of master dhanaadhy."
+    },
+    {
+        "name": "Khadgesh",
+        "hindiName": "खड्गेश",
+        "meaning": "hathiyaara vikretaa",
+        "meaning_hi": "हथियार विक्रेता",
+        "rashi": "मकर",
+        "meaning_en": "hathiyaara vikretaa"
+    },
+    {
+        "name": "Khelan",
+        "hindiName": "खेलन",
+        "meaning": "A good player and lover of games.",
+        "meaning_hi": "अच्छे खिलाड़ी",
+        "rashi": "मकर",
+        "meaning_en": "A good player and lover of games."
+    },
+    {
+        "name": "Khyaapaal",
+        "hindiName": "ख्यापाल",
+        "meaning": "Apane vachana to pooraa doing vachana paalana doing aajnyaakaaree.",
+        "meaning_hi": "अपने वचन को पूरा करने वाले, वचन पालन करने वाले, आज्ञाकारी",
+        "rashi": "मकर",
+        "meaning_en": "Apane vachana to pooraa doing vachana paalana doing aajnyaakaaree."
+    },
+    {
+        "name": "Gangaadhar",
+        "hindiName": "गंगाधर",
+        "meaning": "Gangaa nadee of saphaaee of lie nirantara prayaasa doing sankalpavaan.",
+        "meaning_hi": "गंगा नदी की सफाई के लिए निरंतर प्रयास करने वाले, संकल्पवान",
+        "rashi": "मकर",
+        "meaning_en": "Gangaa nadee of saphaaee of lie nirantara prayaasa doing sankalpavaan."
+    },
+    {
+        "name": "Gajaanan",
+        "hindiName": "गजानन",
+        "meaning": "Devotee of Lord Ganesha, the elephant-faced one.",
+        "meaning_hi": "हाथी के जैसे मुखवाले, गणेश भगवान के भक्त",
+        "rashi": "मकर",
+        "meaning_en": "Devotee of Lord Ganesha, the elephant-faced one."
+    },
+    {
+        "name": "Gajesh",
+        "hindiName": "गजेश",
+        "meaning": "Bahuta from haathion of master.",
+        "meaning_hi": "बहुत से हाथिओं के मालिक",
+        "rashi": "मकर",
+        "meaning_en": "Bahuta from haathion of master."
+    },
+    {
+        "name": "Ganendr",
+        "hindiName": "गणेंद्र",
+        "meaning": "Group leader.",
+        "meaning_hi": "ग्रूप लीडर",
+        "rashi": "मकर",
+        "meaning_en": "Group leader."
+    },
+    {
+        "name": "Ganesh",
+        "hindiName": "गणेश",
+        "meaning": "A group leader worthy of first respect, like Lord Ganesha.",
+        "meaning_hi": "ग्रूप लीडर, भगवान गणेश जैसे प्रथम पूजा, सम्मान के योग्य",
+        "rashi": "मकर",
+        "meaning_en": "A group leader worthy of first respect, like Lord Ganesha."
+    },
+    {
+        "name": "Gadaadhar",
+        "hindiName": "गदाधर",
+        "meaning": "shaktishaalee balavaana saamarthyavaan",
+        "meaning_hi": "शक्तिशाली बलवान सामर्थ्यवान",
+        "rashi": "मकर",
+        "meaning_en": "shaktishaalee balavaana saamarthyavaan"
+    },
+    {
+        "name": "Gandharv",
+        "hindiName": "गन्धर्व",
+        "meaning": "khyaati praapta prasiddha gaayaka sangeetakaar",
+        "meaning_hi": "ख्याति प्राप्त प्रसिद्ध गायक, संगीतकार",
+        "rashi": "मकर",
+        "meaning_en": "khyaati praapta prasiddha gaayaka sangeetakaar"
+    },
+    {
+        "name": "Gahan",
+        "hindiName": "गहन",
+        "meaning": "Gaharaa chintana doing ganbheera chintak.",
+        "meaning_hi": "गहरा चिंतन करने वाले, गंभीर चिंतक",
+        "rashi": "मकर",
+        "meaning_en": "Gaharaa chintana doing ganbheera chintak."
+    },
+    {
+        "name": "Gaangey",
+        "hindiName": "गांगेय",
+        "meaning": "Jisakee maan kaa naama gangaa hai vaha gangaa jala of samaana pavitranirmal.",
+        "meaning_hi": "जिसकी मां का नाम गंगा है वह, गंगा जल के समान पवित्र,निर्मल",
+        "rashi": "मकर",
+        "meaning_en": "Jisakee maan kaa naama gangaa hai vaha gangaa jala of samaana pavitranirmal."
+    },
+    {
+        "name": "Giridhar",
+        "hindiName": "गिरिधर",
+        "meaning": "Parvata of jaise badae badae kashton to sahane.",
+        "meaning_hi": "पर्वत के जैसे बड़े बड़े कष्टों को सहने वाले",
+        "rashi": "मकर",
+        "meaning_en": "Parvata of jaise badae badae kashton to sahane."
+    },
+    {
+        "name": "Gireesh",
+        "hindiName": "गिरीश",
+        "meaning": "Pahaada jaise badae badae people of leader.",
+        "meaning_hi": "पहाड़ जैसे बड़े बड़े लोगों के लीडर",
+        "rashi": "मकर",
+        "meaning_en": "Pahaada jaise badae badae people of leader."
+    },
+    {
+        "name": "Gunajny",
+        "hindiName": "गुणज्ञ",
+        "meaning": "Bahuta from gunon of jaanakaara wise.",
+        "meaning_hi": "बहुत से गुणों के जानकार, ज्ञानी",
+        "rashi": "कुम्भ",
+        "meaning_en": "Bahuta from gunon of jaanakaara wise."
+    },
+    {
+        "name": "Gunendr",
+        "hindiName": "गुणेन्द्र",
+        "meaning": "A good-hearted person with many virtues.",
+        "meaning_hi": "बहुत से गुणों वाला,अच्छे दिलवाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "A good-hearted person with many virtues."
+    },
+    {
+        "name": "Gunesh",
+        "hindiName": "गुणेश",
+        "meaning": "A good-hearted person with many virtues.",
+        "meaning_hi": "बहुत से गुणों वाला,अच्छे दिलवाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "A good-hearted person with many virtues."
+    },
+    {
+        "name": "Gaurav",
+        "hindiName": "गौरव",
+        "meaning": "One who thinks greatly, aspires high, and grows in knowledge, strength, and honor.",
+        "meaning_hi": "बड़ा, बड़े बनने की इच्छा वाला, बड़े-बड़े सोच विचार करने वाला, ज्ञान शक्ति सामर्थ्य में बड़े,गुरु की आज्ञा पालन करने वाले शिष्य,",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who thinks greatly, aspires high, and grows in knowledge, strength, and honor."
+    },
+    {
+        "name": "Ghatak",
+        "hindiName": "घटक",
+        "meaning": "Lagaataara prayaasa doing prayatnasheel.",
+        "meaning_hi": "लगातार प्रयास करने वाले, प्रयत्नशील",
+        "rashi": "मिथुन",
+        "meaning_en": "Lagaataara prayaasa doing prayatnasheel."
+    },
+    {
+        "name": "Ghanaraaj",
+        "hindiName": "घनराज",
+        "meaning": "Meghavidyaa to jaanane scientist.",
+        "meaning_hi": "मेघविद्या को जानने वाले वैज्ञानिक",
+        "rashi": "मिथुन",
+        "meaning_en": "Meghavidyaa to jaanane scientist."
+    },
+    {
+        "name": "Ghanashyaam",
+        "hindiName": "घनश्याम",
+        "meaning": "Dark like a cloud, knowledgeable about clouds, and noble like Lord Krishna.",
+        "meaning_hi": "बादल के समान कृष्ण वर्ण वाला,मेघ विद्या को जानने वाला, भगवान कृष्ण के समान आचरण वाला",
+        "rashi": "मिथुन",
+        "meaning_en": "Dark like a cloud, knowledgeable about clouds, and noble like Lord Krishna."
+    },
+    {
+        "name": "Ghanaalok",
+        "hindiName": "घनालोक",
+        "meaning": "Atyadhika energetic radiant mukhanndala.",
+        "meaning_hi": "अत्यधिक ओजस्वी तेजस्वी मुखमंडल वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "Atyadhika energetic radiant mukhanndala."
+    },
+    {
+        "name": "Gharmad",
+        "hindiName": "घर्मद",
+        "meaning": "Sun of jaise helpful.",
+        "meaning_hi": "सूर्य के जैसे परोपकारी",
+        "rashi": "मिथुन",
+        "meaning_en": "Sun of jaise helpful."
+    },
+    {
+        "name": "Gharmadh",
+        "hindiName": "घर्मध",
+        "meaning": "tejasvee shaktishaalee",
+        "meaning_hi": "तेजस्वी शक्तिशाली",
+        "rashi": "मिथुन",
+        "meaning_en": "tejasvee shaktishaalee"
+    },
+    {
+        "name": "Gharmesh",
+        "hindiName": "घर्मेश",
+        "meaning": "Tapasvee siddha yogeemeghavidyaa to jaanane scientist.",
+        "meaning_hi": "तपस्वी सिद्ध योगी,मेघविद्या को जानने वाले वैज्ञानिक",
+        "rashi": "मिथुन",
+        "meaning_en": "Tapasvee siddha yogeemeghavidyaa to jaanane scientist."
+    },
+    {
+        "name": "Chakresh",
+        "hindiName": "चक्रेश",
+        "meaning": "Hathiyaara vishesha of shaukeen.",
+        "meaning_hi": "हथियार विशेष के शौकीन",
+        "rashi": "मीन",
+        "meaning_en": "Hathiyaara vishesha of shaukeen."
+    },
+    {
+        "name": "Chandan",
+        "hindiName": "चन्दन",
+        "meaning": "Everyone aahlaadita doing cheerful person.",
+        "meaning_hi": "सबको आह्लादित करने वाले, खुशमिजाज आदमी",
+        "rashi": "मीन",
+        "meaning_en": "Everyone aahlaadita doing cheerful person."
+    },
+    {
+        "name": "Chandrakaant",
+        "hindiName": "चन्द्रकान्त",
+        "meaning": "Chandra of samaana light peaceful mridu nature.",
+        "meaning_hi": "चन्द्र के समान प्रकाश वाला, शान्त मृदु स्वभाव वाला",
+        "rashi": "मीन",
+        "meaning_en": "Chandra of samaana light peaceful mridu nature."
+    },
+    {
+        "name": "Chandrachooda",
+        "hindiName": "चन्द्रचूड़",
+        "meaning": "Cool-headed person.",
+        "meaning_hi": "ठण्डा दिमाग़ वाले इन्सान",
+        "rashi": "मीन",
+        "meaning_en": "Cool-headed person."
+    },
+    {
+        "name": "Chandrabh",
+        "hindiName": "चन्द्रभ",
+        "meaning": "Moon of jaise cool peaceful nature.",
+        "meaning_hi": "चंद्रमा के जैसे शीतल शान्त स्वभाव वाले",
+        "rashi": "मीन",
+        "meaning_en": "Moon of jaise cool peaceful nature."
+    },
+    {
+        "name": "Chandrabhaan",
+        "hindiName": "चन्द्रभान",
+        "meaning": "Cool and peaceful like the moon, bringing peace to everyone.",
+        "meaning_hi": "चन्द्र के जैसे शीतल शान्त स्वभाववाला,सबको शान्ति देने वाले",
+        "rashi": "मीन",
+        "meaning_en": "Cool and peaceful like the moon, bringing peace to everyone."
+    },
+    {
+        "name": "Chandrabhaanu",
+        "hindiName": "चन्द्रभानु",
+        "meaning": "Sun and moon of jaise helpful person.",
+        "meaning_hi": "सूर्य और चंद्रमा के जैसे परोपकारी इन्सान",
+        "rashi": "मीन",
+        "meaning_en": "Sun and moon of jaise helpful person."
+    },
+    {
+        "name": "Chandraraaj",
+        "hindiName": "चन्द्रराज",
+        "meaning": "Chandra of jaise cool light shaant.",
+        "meaning_hi": "चन्द्र के जैसे शीतल प्रकाश वाला, शान्त",
+        "rashi": "मीन",
+        "meaning_en": "Chandra of jaise cool light shaant."
+    },
+    {
+        "name": "Chandrashekhar",
+        "hindiName": "चन्द्रशेखर",
+        "meaning": "Cool-headed person.",
+        "meaning_hi": "ठण्डा दिमाग़ वाले इन्सान",
+        "rashi": "मीन",
+        "meaning_en": "Cool-headed person."
+    },
+    {
+        "name": "Chandresh",
+        "hindiName": "चन्द्रेश",
+        "meaning": "Moon visheshajnya chandra to lord maanane.",
+        "meaning_hi": "चंद्रमा विशेषज्ञ, चंद्र को स्वामी मानने वाले",
+        "rashi": "मीन",
+        "meaning_en": "Moon visheshajnya chandra to lord maanane."
+    },
+    {
+        "name": "Charan",
+        "hindiName": "चरण",
+        "meaning": "Wise bhramanasheel.",
+        "meaning_hi": "ज्ञानी, भ्रमणशील",
+        "rashi": "मीन",
+        "meaning_en": "Wise bhramanasheel."
+    },
+    {
+        "name": "Chaanaky",
+        "hindiName": "चाणक्य",
+        "meaning": "Generous and wise like Acharya Chanakya, helping the needy and supporting good deeds.",
+        "meaning_hi": "दानी,दीन दुखियों को देनेवाला,अच्छे कर्मों में सहयोग करने वाला, आचार्य चाणक्य के जैसे बुद्धिमान",
+        "rashi": "मीन",
+        "meaning_en": "Generous and wise like Acharya Chanakya, helping the needy and supporting good deeds."
+    },
+    {
+        "name": "Chinmay",
+        "hindiName": "चिन्मय",
+        "meaning": "Absorbed in knowledge and awareness.",
+        "meaning_hi": "ज्ञान में मग्न रहने वाला",
+        "rashi": "मीन",
+        "meaning_en": "Absorbed in knowledge and awareness."
+    },
+    {
+        "name": "Chiraayu",
+        "hindiName": "चिरायु",
+        "meaning": "Lanbee aayu to attaining doing.",
+        "meaning_hi": "लंबी आयु को प्राप्त करने वाला",
+        "rashi": "मीन",
+        "meaning_en": "Lanbee aayu to attaining doing."
+    },
+    {
+        "name": "Chaitany",
+        "hindiName": "चैतन्य",
+        "meaning": "Always conscious, alert, and wise.",
+        "meaning_hi": "सदैव संज्ञान में रहने वाला, जागरूक, ज्ञानी",
+        "rashi": "मेष",
+        "meaning_en": "Always conscious, alert, and wise."
+    },
+    {
+        "name": "Chyavan",
+        "hindiName": "च्यवन",
+        "meaning": "Bhramanasheeladesha videsha of yaatraa doing.",
+        "meaning_hi": "भ्रमणशील,देश विदेश की यात्रा करने वाले",
+        "rashi": "मीन",
+        "meaning_en": "Bhramanasheeladesha videsha of yaatraa doing."
+    },
+    {
+        "name": "Jagadeep",
+        "hindiName": "जगदीप",
+        "meaning": "One who gives knowledge and light to people.",
+        "meaning_hi": "लोगों को ज्ञान प्रदान करने वाले",
+        "rashi": "मकर",
+        "meaning_en": "One who gives knowledge and light to people."
+    },
+    {
+        "name": "Jagadeesh",
+        "hindiName": "जगदीश",
+        "meaning": "Jagat of lord leader group leader everyone?s lord master.",
+        "meaning_hi": "जगत् के स्वामी, लीडर, ग्रूप लीडर; सबके स्वामी, मालिक",
+        "rashi": "मकर",
+        "meaning_en": "Jagat of lord leader group leader everyone?s lord master."
+    },
+    {
+        "name": "Jagan",
+        "hindiName": "जगन्",
+        "meaning": "Bhramanasheela wise.",
+        "meaning_hi": "भ्रमणशील, ज्ञानी",
+        "rashi": "मकर",
+        "meaning_en": "Bhramanasheela wise."
+    },
+    {
+        "name": "Janak",
+        "hindiName": "जनक",
+        "meaning": "A capable person like King Janaka, blessed with good children.",
+        "meaning_hi": "अच्छी सन्तान पैदा करने वाले,राजा जनक के जैसे सामर्थ्यवान",
+        "rashi": "मकर",
+        "meaning_en": "A capable person like King Janaka, blessed with good children."
+    },
+    {
+        "name": "Janesh",
+        "hindiName": "जनेश",
+        "meaning": "Bahuta from people of leader.",
+        "meaning_hi": "बहुत से लोगों के लीडर",
+        "rashi": "मकर",
+        "meaning_en": "Bahuta from people of leader."
+    },
+    {
+        "name": "Jamadagni",
+        "hindiName": "जमदग्नि",
+        "meaning": "Victorious, one who defeats enemies.",
+        "meaning_hi": "विजेता, शत्रुओं को मटियामेट करने वाले",
+        "rashi": "मकर",
+        "meaning_en": "Victorious, one who defeats enemies."
+    },
+    {
+        "name": "Jay",
+        "hindiName": "जय",
+        "meaning": "Victorious, one who defeats enemies.",
+        "meaning_hi": "विजेता, शत्रुओं को मटियामेट करने वाले",
+        "meaning_en": "Victorious, one who defeats enemies."
+    },
+    {
+        "name": "Jayak",
+        "hindiName": "जयक",
+        "meaning": "Victorious, one who defeats enemies.",
+        "meaning_hi": "विजेता, शत्रुओं को मटियामेट करने वाले",
+        "rashi": "मकर",
+        "meaning_en": "Victorious, one who defeats enemies."
+    },
+    {
+        "name": "Jayad",
+        "hindiName": "जयद",
+        "meaning": "Vijetaashatruon to matiyaameta doing.",
+        "meaning_hi": "विजेता,शत्रुओं को मटियामेट करने वाले",
+        "rashi": "मकर",
+        "meaning_en": "Vijetaashatruon to matiyaameta doing."
+    },
+    {
+        "name": "Jayesh",
+        "hindiName": "जयेश",
+        "meaning": "Vijetaaon of leader.",
+        "meaning_hi": "विजेताओं के लीडर",
+        "rashi": "मकर",
+        "meaning_en": "Vijetaaon of leader."
+    },
+    {
+        "name": "Jalap",
+        "hindiName": "जलप",
+        "meaning": "Jala sanrakshana doing paryaavarana sanrakshana doing.",
+        "meaning_hi": "जल संरक्षण करने वाले, पर्यावरण संरक्षण करने वाले",
+        "rashi": "मकर",
+        "meaning_en": "Jala sanrakshana doing paryaavarana sanrakshana doing."
+    },
+    {
+        "name": "Jitaari",
+        "hindiName": "जितारि",
+        "meaning": "Enemies to paraasta doing.",
+        "meaning_hi": "शत्रुओं को परास्त करने वाले",
+        "rashi": "मकर",
+        "meaning_en": "Enemies to paraasta doing."
+    },
+    {
+        "name": "Jitendr",
+        "hindiName": "जितेंद्र",
+        "meaning": "Self-controlled; one who has mastery over the senses.",
+        "meaning_hi": "इन्द्रियों को वश में रखनेवाला, संयमी",
+        "rashi": "मकर",
+        "meaning_en": "Self-controlled; one who has mastery over the senses."
+    },
+    {
+        "name": "Jishnu",
+        "hindiName": "जिष्णु",
+        "meaning": "Enemies to paraasta doing victor.",
+        "meaning_hi": "शत्रुओं को परास्त करने वाले , विजेता",
+        "rashi": "मकर",
+        "meaning_en": "Enemies to paraasta doing victor."
+    },
+    {
+        "name": "Jaiminee",
+        "hindiName": "जैमिनी",
+        "meaning": "prakhyaata rishi daarshanika",
+        "meaning_hi": "प्रख्यात ऋषि, दार्शनिक,",
+        "rashi": "मकर",
+        "meaning_en": "prakhyaata rishi daarshanika"
+    },
+    {
+        "name": "Jnyaanad",
+        "hindiName": "ज्ञानद",
+        "meaning": "guru aachaarya adhyaapak",
+        "meaning_hi": "गुरु, आचार्य, अध्यापक",
+        "rashi": "मकर",
+        "meaning_en": "guru aachaarya adhyaapak"
+    },
+    {
+        "name": "Jnyaanesh",
+        "hindiName": "ज्ञानेश",
+        "meaning": "Wise learned scientist.",
+        "meaning_hi": "ज्ञानी, विद्वान्, वैज्ञानिक",
+        "rashi": "मकर",
+        "meaning_en": "Wise learned scientist."
+    },
+    {
+        "name": "Jyotishmaan",
+        "hindiName": "ज्योतिष्मान्",
+        "meaning": "Khagola scientist.",
+        "meaning_hi": "खगोल वैज्ञानिक",
+        "rashi": "मकर",
+        "meaning_en": "Khagola scientist."
+    },
+    {
+        "name": "Tatvajny",
+        "hindiName": "तत्वज्ञ",
+        "meaning": "Padaartha scientist.",
+        "meaning_hi": "पदार्थ वैज्ञानिक",
+        "rashi": "तुला",
+        "meaning_en": "Padaartha scientist."
+    },
+    {
+        "name": "Tatvavid",
+        "hindiName": "तत्वविद्",
+        "meaning": "Padaartha scientist.",
+        "meaning_hi": "पदार्थ वैज्ञानिक",
+        "rashi": "तुला",
+        "meaning_en": "Padaartha scientist."
+    },
+    {
+        "name": "Tatvesh",
+        "hindiName": "तत्वेश",
+        "meaning": "Tatvapadaartha scientist.",
+        "meaning_hi": "तत्व/पदार्थ वैज्ञानिक",
+        "rashi": "तुला",
+        "meaning_en": "Tatvapadaartha scientist."
+    },
+    {
+        "name": "Tanmay",
+        "hindiName": "तन्मय",
+        "meaning": "Apane lakshya of praapti of lie lage living mehanatee.",
+        "meaning_hi": "अपने लक्ष्य की प्राप्ति के लिए लगे रहने वाला, मेहनती",
+        "rashi": "तुला",
+        "meaning_en": "Apane lakshya of praapti of lie lage living mehanatee."
+    },
+    {
+        "name": "Tapas",
+        "hindiName": "तपस्",
+        "meaning": "Tapasvee ishta lakshya of lie mehanata doing.",
+        "meaning_hi": "तपस्वी, इष्ट लक्ष्य के लिए मेहनत करने वाले",
+        "rashi": "तुला",
+        "meaning_en": "Tapasvee ishta lakshya of lie mehanata doing."
+    },
+    {
+        "name": "Tarun",
+        "hindiName": "तरुण",
+        "meaning": "karmatha yuvaa",
+        "meaning_hi": "कर्मठ युवा",
+        "rashi": "तुला",
+        "meaning_en": "karmatha yuvaa"
+    },
+    {
+        "name": "Taapas",
+        "hindiName": "तापस्",
+        "meaning": "Tapasvee ishta lakshya of lie mehanata doing.",
+        "meaning_hi": "तपस्वी, इष्ट लक्ष्य के लिए मेहनत करने वाले",
+        "rashi": "तुला",
+        "meaning_en": "Tapasvee ishta lakshya of lie mehanata doing."
+    },
+    {
+        "name": "Titikshu",
+        "hindiName": "तितिक्षु",
+        "meaning": "Nyaaya of lie kshamaasheela sahanasheel.",
+        "meaning_hi": "न्याय के लिए क्षमाशील, सहनशील",
+        "rashi": "तुला",
+        "meaning_en": "Nyaaya of lie kshamaasheela sahanasheel."
+    },
+    {
+        "name": "Tejas",
+        "hindiName": "तेजस्",
+        "meaning": "Ojasveetejasveesahana doing kshamaa doing.",
+        "meaning_hi": "ओजस्वी,तेजस्वी,सहन करने वाला, क्षमा करने वाला",
+        "rashi": "तुला",
+        "meaning_en": "Ojasveetejasveesahana doing kshamaa doing."
+    },
+    {
+        "name": "Taijas",
+        "hindiName": "तैजस्",
+        "meaning": "ojasvee tejasvee vaktaa",
+        "meaning_hi": "ओजस्वी तेजस्वी वक्ता",
+        "rashi": "तुला",
+        "meaning_en": "ojasvee tejasvee vaktaa"
+    },
+    {
+        "name": "Tyajendr",
+        "hindiName": "त्यजेन्द्र",
+        "meaning": "One with a natural spirit of sacrifice for the nation.",
+        "meaning_hi": "राष्ट्र के लिए त्याग करने के स्वभाववाला",
+        "rashi": "तुला",
+        "meaning_en": "One with a natural spirit of sacrifice for the nation."
+    },
+    {
+        "name": "Tryanbak",
+        "hindiName": "त्र्यंबक",
+        "meaning": "Dooradarshee wise energetic radiant.",
+        "meaning_hi": "दूरदर्शी, ज्ञानी, ओजस्वी, तेजस्वी",
+        "rashi": "तुला",
+        "meaning_en": "Dooradarshee wise energetic radiant."
+    },
+    {
+        "name": "Daksh",
+        "hindiName": "दक्ष",
+        "meaning": "kushala nipuna tapasvee",
+        "meaning_hi": "कुशल, निपुण, तपस्वी",
+        "rashi": "मीन",
+        "meaning_en": "kushala nipuna tapasvee"
+    },
+    {
+        "name": "Dadheechi",
+        "hindiName": "दधीचि",
+        "meaning": "Paropakaara of lie sarva tyaaga doing mahaana person.",
+        "meaning_hi": "परोपकार के लिए सर्व त्याग करने वाले महान इंसान",
+        "rashi": "मीन",
+        "meaning_en": "Paropakaara of lie sarva tyaaga doing mahaana person."
+    },
+    {
+        "name": "Darpan",
+        "hindiName": "दर्पण",
+        "meaning": "Clear-hearted and good, like a clean mirror.",
+        "meaning_hi": "शीशा के जैसे साफ दिल वाले,अच्छे इंसान",
+        "rashi": "मीन",
+        "meaning_en": "Clear-hearted and good, like a clean mirror."
+    },
+    {
+        "name": "Darshan",
+        "hindiName": "दर्शन",
+        "meaning": "Wise learned helpful.",
+        "meaning_hi": "ज्ञानी, विद्वान्, परोपकारी",
+        "rashi": "मीन",
+        "meaning_en": "Wise learned helpful."
+    },
+    {
+        "name": "Dalajit",
+        "hindiName": "दलजित्",
+        "meaning": "Group vijetaasaba to haraane.",
+        "meaning_hi": "ग्रूप विजेता,सब को हराने वाले",
+        "rashi": "मीन",
+        "meaning_en": "Group vijetaasaba to haraane."
+    },
+    {
+        "name": "Digeesh",
+        "hindiName": "दिगीश",
+        "meaning": "sarvaadhika shaktishaalee",
+        "meaning_hi": "सर्वाधिक शक्तिशाली",
+        "rashi": "मीन",
+        "meaning_en": "sarvaadhika shaktishaalee"
+    },
+    {
+        "name": "Digvijay",
+        "hindiName": "दिग्विजय",
+        "meaning": "All tarapha jeetane intelligent.",
+        "meaning_hi": "सब तरफ जीतने वाला, बुद्धिमान",
+        "rashi": "मीन",
+        "meaning_en": "All tarapha jeetane intelligent."
+    },
+    {
+        "name": "Dinesh",
+        "hindiName": "दिनेश",
+        "meaning": "Sun of jaise teja energetic.",
+        "meaning_hi": "सूर्य के जैसे तेज वाले, ओजस्वी",
+        "rashi": "मीन",
+        "meaning_en": "Sun of jaise teja energetic."
+    },
+    {
+        "name": "Dileep",
+        "hindiName": "दिलीप",
+        "meaning": "Sooryannshee king of jaise saamarthya.",
+        "meaning_hi": "सूर्यवंशी राजा के जैसे सामर्थ्य वाले",
+        "rashi": "मीन",
+        "meaning_en": "Sooryannshee king of jaise saamarthya."
+    },
+    {
+        "name": "Divaakar",
+        "hindiName": "दिवाकर",
+        "meaning": "Radiant like the sun; giver of knowledge and light.",
+        "meaning_hi": "सूर्य के जैसे प्रकाशित,ज्ञान दाता",
+        "rashi": "मीन",
+        "meaning_en": "Radiant like the sun; giver of knowledge and light."
+    },
+    {
+        "name": "Divyaang",
+        "hindiName": "दिव्यांग",
+        "meaning": "Beautiful angon.",
+        "meaning_hi": "सुंदर अंगों वाले",
+        "rashi": "मीन",
+        "meaning_en": "Beautiful angon."
+    },
+    {
+        "name": "Deenesh",
+        "hindiName": "दीनेश",
+        "meaning": "Gareeba dukhiyon of sevaa doing helpful.",
+        "meaning_hi": "गरीब दुखियों की सेवा करने वाले, परोपकारी",
+        "rashi": "मीन",
+        "meaning_en": "Gareeba dukhiyon of sevaa doing helpful."
+    },
+    {
+        "name": "Deepak",
+        "hindiName": "दीपक",
+        "meaning": "Wise learned helpful.",
+        "meaning_hi": "ज्ञानी, विद्वान्, परोपकारी",
+        "rashi": "मीन",
+        "meaning_en": "Wise learned helpful."
+    },
+    {
+        "name": "Deepaabh",
+        "hindiName": "दीपाभ",
+        "meaning": "Deepaka of jaise light kaanti teja.",
+        "meaning_hi": "दीपक के जैसे प्रकाश कांति तेज वाले",
+        "rashi": "मीन",
+        "meaning_en": "Deepaka of jaise light kaanti teja."
+    },
+    {
+        "name": "Deependr",
+        "hindiName": "दीपेंद्र",
+        "meaning": "Lord of knowledge; one who gives wisdom to everyone.",
+        "meaning_hi": "ज्ञान के स्वामी,सब को ज्ञान देने वाले",
+        "rashi": "मीन",
+        "meaning_en": "Lord of knowledge; one who gives wisdom to everyone."
+    },
+    {
+        "name": "Deepen",
+        "hindiName": "दीपेन",
+        "meaning": "Lord of knowledge; one who gives wisdom to everyone.",
+        "meaning_hi": "ज्ञान के स्वामी,सब को ज्ञान देने वाले",
+        "rashi": "मीन",
+        "meaning_en": "Lord of knowledge; one who gives wisdom to everyone."
+    },
+    {
+        "name": "Deepesh",
+        "hindiName": "दीपेश",
+        "meaning": "Lord of knowledge; one who gives wisdom to everyone.",
+        "meaning_hi": "ज्ञान के स्वामी,सब को ज्ञान देने वाले",
+        "rashi": "मीन",
+        "meaning_en": "Lord of knowledge; one who gives wisdom to everyone."
+    },
+    {
+        "name": "Durgesh",
+        "hindiName": "दुर्गेश",
+        "meaning": "Powerful dharmapatnee of lord.",
+        "meaning_hi": "शक्तिशाली धर्मपत्नी के स्वामी",
+        "rashi": "मीन",
+        "meaning_en": "Powerful dharmapatnee of lord."
+    },
+    {
+        "name": "Devendr",
+        "hindiName": "देवेन्द्र",
+        "meaning": "Leader of good, divine-natured people.",
+        "meaning_hi": "देव तुल्य,अच्छे लोगों के स्वामी, लीडर",
+        "rashi": "मीन",
+        "meaning_en": "Leader of good, divine-natured people."
+    },
+    {
+        "name": "Devesh",
+        "hindiName": "देवेश",
+        "meaning": "Leader of good people.",
+        "meaning_hi": "अच्छे लोगों के लीडर",
+        "rashi": "मीन",
+        "meaning_en": "Leader of good people."
+    },
+    {
+        "name": "Dhanad",
+        "hindiName": "धनद",
+        "meaning": "daanee paropakaaree",
+        "meaning_hi": "दानी, परोपकारी",
+        "rashi": "धनु",
+        "meaning_en": "daanee paropakaaree"
+    },
+    {
+        "name": "Dhanap",
+        "hindiName": "धनप",
+        "meaning": "Dhana of rakshaa doing.",
+        "meaning_hi": "धन की रक्षा करने वाले",
+        "rashi": "धनु",
+        "meaning_en": "Dhana of rakshaa doing."
+    },
+    {
+        "name": "Dhanesh",
+        "hindiName": "धनेश",
+        "meaning": "Bahuta from dhana owner of wealth and resources.",
+        "meaning_hi": "बहुत से धन संपत्तियों के मालिक",
+        "rashi": "धनु",
+        "meaning_en": "Bahuta from dhana owner of wealth and resources."
+    },
+    {
+        "name": "Dharmaj",
+        "hindiName": "धर्मज",
+        "meaning": "Dhaarmika vyavahaara from utpanna hone.",
+        "meaning_hi": "धार्मिक व्यवहार से उत्पन्न होने वाले",
+        "rashi": "धनु",
+        "meaning_en": "Dhaarmika vyavahaara from utpanna hone."
+    },
+    {
+        "name": "Dharmaraaj",
+        "hindiName": "धर्मराज",
+        "meaning": "nyaaya ahinsaa satya paropakaara aadi vyavahaara kushal",
+        "meaning_hi": "न्याय अहिंसा सत्य परोपकार आदि व्यवहार कुशल",
+        "rashi": "धनु",
+        "meaning_en": "nyaaya ahinsaa satya paropakaara aadi vyavahaara kushal"
+    },
+    {
+        "name": "Dharmendr",
+        "hindiName": "धर्मेंद्र",
+        "meaning": "Lord of dharma; master of righteous conduct and good behavior.",
+        "meaning_hi": "धर्म के स्वामी, धार्मिक, अच्छे आचरण वाला, अच्छे आचरण के मालिक, अच्छे आचरण करने वाले के स्वामी",
+        "rashi": "धनु",
+        "meaning_en": "Lord of dharma; master of righteous conduct and good behavior."
+    },
+    {
+        "name": "Dheemay",
+        "hindiName": "धीमय",
+        "meaning": "Intelligent, wise, and knowledgeable.",
+        "meaning_hi": "बुद्धिमान ज्ञानी",
+        "rashi": "धनु",
+        "meaning_en": "Intelligent, wise, and knowledgeable."
+    },
+    {
+        "name": "Dheeraj",
+        "hindiName": "धीरज",
+        "meaning": "Saahasa saamarthya from utpanna hone.",
+        "meaning_hi": "साहस, सामर्थ्य से उत्पन्न होने वाले",
+        "rashi": "धनु",
+        "meaning_en": "Saahasa saamarthya from utpanna hone."
+    },
+    {
+        "name": "Dheerendr",
+        "hindiName": "धीरेन्द्र",
+        "meaning": "Patient and steady, a leader of good people.",
+        "meaning_hi": "धीरज, धैर्य रखने वाला,अच्छे लोगों के लीडर",
+        "rashi": "धनु",
+        "meaning_en": "Patient and steady, a leader of good people."
+    },
+    {
+        "name": "Dheeresh",
+        "hindiName": "धीरेश",
+        "meaning": "dhairyavaana saamarthyavaana bahaadura saahasee",
+        "meaning_hi": "धैर्यवान, सामर्थ्यवान, बहादुर, साहसी",
+        "rashi": "धनु",
+        "meaning_en": "dhairyavaana saamarthyavaana bahaadura saahasee"
+    },
+    {
+        "name": "Dhureen",
+        "hindiName": "धुरीण",
+        "meaning": "Mahatvapoorna kaaryon in niyukta adhikaaree nabhas dushton to danda dene aakaasha of jaise khulaa hridaya.",
+        "meaning_hi": "महत्वपूर्ण कार्यों में नियुक्त अधिकारी ,नभस् दुष्टों को दंड देने वाले, आकाश के जैसे खुला हृदय वाले",
+        "rashi": "धनु",
+        "meaning_en": "Mahatvapoorna kaaryon in niyukta adhikaaree nabhas dushton to danda dene aakaasha of jaise khulaa hridaya."
+    },
+    {
+        "name": "Dhairy",
+        "hindiName": "धैर्य",
+        "meaning": "bahaadura saahasee",
+        "meaning_hi": "बहादुर, साहसी",
+        "rashi": "धनु",
+        "meaning_en": "bahaadura saahasee"
+    },
+    {
+        "name": "Dhyey",
+        "hindiName": "ध्येय",
+        "meaning": "Chintaka vishleshakalakshya praapti in living.",
+        "meaning_hi": "चिंतक, विश्लेषक,लक्ष्य प्राप्ति में रहने वाले",
+        "rashi": "धनु",
+        "meaning_en": "Chintaka vishleshakalakshya praapti in living."
+    },
+    {
+        "name": "Nakul",
+        "hindiName": "नकुल",
+        "meaning": "Jisakaa koee ghara naheen aise tyaagee tapasvee paandavon of jaise powerful.",
+        "meaning_hi": "जिसका कोई घर नहीं ऐसे त्यागी तपस्वी, पांडवों के जैसे शक्तिशाली",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Jisakaa koee ghara naheen aise tyaagee tapasvee paandavon of jaise powerful."
+    },
+    {
+        "name": "Nadim",
+        "hindiName": "नदिम",
+        "meaning": "One who measures rivers; a naval leader or water traveler.",
+        "meaning_hi": "नदी को मापने वाला,नौसेना अध्यक्ष,जलयात्री",
+        "rashi": "वृश्चिक",
+        "meaning_en": "One who measures rivers; a naval leader or water traveler."
+    },
+    {
+        "name": "Namrak",
+        "hindiName": "नम्रक",
+        "meaning": "Humble and gentle by nature.",
+        "meaning_hi": "विनम्र स्वभाववाला",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Humble and gentle by nature."
+    },
+    {
+        "name": "Narendr",
+        "hindiName": "नरेंद्र",
+        "meaning": "Leader of people.",
+        "meaning_hi": "मनुष्यों के लीडर, नेता",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Leader of people."
+    },
+    {
+        "name": "Naresh",
+        "hindiName": "नरेश",
+        "meaning": "King leader netaa.",
+        "meaning_hi": "राजा, लीडर, नेता",
+        "rashi": "वृश्चिक",
+        "meaning_en": "King leader netaa."
+    },
+    {
+        "name": "Navadeep",
+        "hindiName": "नवदीप",
+        "meaning": "One with fresh knowledge and new sciences.",
+        "meaning_hi": "नये नये ज्ञान विज्ञान वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "One with fresh knowledge and new sciences."
+    },
+    {
+        "name": "Navaang",
+        "hindiName": "नवांग",
+        "meaning": "Beautiful angon beautiful person.",
+        "meaning_hi": "सुंदर अंगों वाला, सुंदर व्यक्ति",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Beautiful angon beautiful person."
+    },
+    {
+        "name": "Naveen",
+        "hindiName": "नवीन",
+        "meaning": "Nayaa nayaa pannda doing.",
+        "meaning_hi": "नया नया पसंद करने वाला",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Nayaa nayaa pannda doing."
+    },
+    {
+        "name": "Naagen",
+        "hindiName": "नागेन",
+        "meaning": "Balavaana shaktishaaliyon of leader.",
+        "meaning_hi": "बलवान शक्तिशालियों के लीडर",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Balavaana shaktishaaliyon of leader."
+    },
+    {
+        "name": "Naagendr",
+        "hindiName": "नागेन्द्र",
+        "meaning": "Balavaana shaktishaaliyon of leader.",
+        "meaning_hi": "बलवान शक्तिशालियों के लीडर",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Balavaana shaktishaaliyon of leader."
+    },
+    {
+        "name": "Naageshvar",
+        "hindiName": "नागेश्वर",
+        "meaning": "Balavaana shaktishaaliyon of leader.",
+        "meaning_hi": "बलवान शक्तिशालियों के लीडर",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Balavaana shaktishaaliyon of leader."
+    },
+    {
+        "name": "Naayak",
+        "hindiName": "नायक",
+        "meaning": "Netaaphauja leader.",
+        "meaning_hi": "नेता,फौज लीडर",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Netaaphauja leader."
+    },
+    {
+        "name": "Naaraayan",
+        "hindiName": "नारायण",
+        "meaning": "One who loves living among people, shares information, and has virtues like Lord Vishnu.",
+        "meaning_hi": "मनुष्यों के मध्य रहना जिसको प्रिय लगता हो,समूह मे रहकर सूचना को आदान-प्रदान करने वाला।भगवान् विष्णु के जैसे अच्छे गुणों वाला।",
+        "rashi": "वृश्चिक",
+        "meaning_en": "One who loves living among people, shares information, and has virtues like Lord Vishnu."
+    },
+    {
+        "name": "Nikhil",
+        "hindiName": "निखिल",
+        "meaning": "Vishaala mahaan person.",
+        "meaning_hi": "विशाल, महान् व्यक्ति",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Vishaala mahaan person."
+    },
+    {
+        "name": "Nirmaaly",
+        "hindiName": "निर्माल्य",
+        "meaning": "Pure-hearted, clean, and sacred.",
+        "meaning_hi": "स्वच्छ पवित्र हृदय वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Pure-hearted, clean, and sacred."
+    },
+    {
+        "name": "Nishshreyas",
+        "hindiName": "निश्श्रेयस्",
+        "meaning": "Svarga of jaise sukha to attaining of ichchhaa doing.",
+        "meaning_hi": "स्वर्ग के जैसे सुख को पाने की इच्छा करने वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Svarga of jaise sukha to attaining of ichchhaa doing."
+    },
+    {
+        "name": "Neeraj",
+        "hindiName": "नीरज",
+        "meaning": "Good-natured, one whose bad conduct has ended.",
+        "meaning_hi": "अच्छा स्वभाव वाला, जिसके खराब आचरण समाप्त हो गये ऐसा",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Good-natured, one whose bad conduct has ended."
+    },
+    {
+        "name": "Nriparaaj",
+        "hindiName": "नृपराज",
+        "meaning": "King king of jaise aishvaryashaalee.",
+        "meaning_hi": "राजा, राजा के जैसे ऐश्वर्यशाली",
+        "rashi": "वृश्चिक",
+        "meaning_en": "King king of jaise aishvaryashaalee."
+    },
+    {
+        "name": "Paramajit",
+        "hindiName": "परमजित्",
+        "meaning": "One who wins in the highest and most excellent way.",
+        "meaning_hi": "उत्कृष्ट तरीके से विजय पानेवाले",
+        "rashi": "कन्या",
+        "meaning_en": "One who wins in the highest and most excellent way."
+    },
+    {
+        "name": "Paramaanand",
+        "hindiName": "परमानंद",
+        "meaning": "Sadaa aananda in living utkrishta aananda.",
+        "meaning_hi": "सदा आनंद में रहने वाले, उत्कृष्ट आनंद वाले",
+        "rashi": "कन्या",
+        "meaning_en": "Sadaa aananda in living utkrishta aananda."
+    },
+    {
+        "name": "Paramendr",
+        "hindiName": "परमेन्द्र",
+        "meaning": "Everyone?s leader devaraaja indra of priy.",
+        "meaning_hi": "सबके लीडर, देवराज इन्द्र के प्रिय",
+        "rashi": "कन्या",
+        "meaning_en": "Everyone?s leader devaraaja indra of priy."
+    },
+    {
+        "name": "Paarth",
+        "hindiName": "पार्थ",
+        "meaning": "Radiant, powerful, skilled, and devoted like Arjuna, son of Kunti.",
+        "meaning_hi": "वह व्यक्ति जो कुंती पुत्र अर्जुन के समान ओजस्वी, उग्र, प्रतिभाशाली, शक्तिशाली, धनुष विद्या में निपुण और भगवान कृष्ण का भक्त हो।",
+        "rashi": "कन्या",
+        "meaning_en": "Radiant, powerful, skilled, and devoted like Arjuna, son of Kunti."
+    },
+    {
+        "name": "Peeyoosh",
+        "hindiName": "पीयूष",
+        "meaning": "Amara fame glory.",
+        "meaning_hi": "अमर यश कीर्ति वाले",
+        "rashi": "कन्या",
+        "meaning_en": "Amara fame glory."
+    },
+    {
+        "name": "Prakaash",
+        "hindiName": "प्रकाश",
+        "meaning": "One who comes into prominence with a bright and radiant presence.",
+        "meaning_hi": "अच्छी तरह से सुर्खियों में आने वाला, प्रकाशित मुखमंडल वाला",
+        "rashi": "कन्या",
+        "meaning_en": "One who comes into prominence with a bright and radiant presence."
+    },
+    {
+        "name": "Praneet",
+        "hindiName": "प्रणीत",
+        "meaning": "A leader who guides people forward in the right way.",
+        "meaning_hi": "अच्छी तरह से लोगों को आगे बढ़ाने वाले, नेता",
+        "rashi": "कन्या",
+        "meaning_en": "A leader who guides people forward in the right way."
+    },
+    {
+        "name": "Prateek",
+        "hindiName": "प्रतीक",
+        "meaning": "Padhaen hue paatha to yaada doing pahachaanane in madada doing.",
+        "meaning_hi": "पढ़ें हुए पाठ को याद करने वाले, पहचानने में मदद करने वाले",
+        "rashi": "कन्या",
+        "meaning_en": "Padhaen hue paatha to yaada doing pahachaanane in madada doing."
+    },
+    {
+        "name": "Pratham",
+        "hindiName": "प्रथम",
+        "meaning": "Prakhyaata attaining prathama living.",
+        "meaning_hi": "प्रख्यात पाने वाले, प्रथम रहने वाले",
+        "rashi": "कन्या",
+        "meaning_en": "Prakhyaata attaining prathama living."
+    },
+    {
+        "name": "Pradyumn",
+        "hindiName": "प्रद्युम्न",
+        "meaning": "Strong, powerful, and noble.",
+        "meaning_hi": "अच्छा बलवान, शक्तिमान",
+        "rashi": "कन्या",
+        "meaning_en": "Strong, powerful, and noble."
+    },
+    {
+        "name": "Prabhaakar",
+        "hindiName": "प्रभाकर",
+        "meaning": "Everyone shikshita doing.",
+        "meaning_hi": "सबको शिक्षित करने वाले",
+        "rashi": "कन्या",
+        "meaning_en": "Everyone shikshita doing."
+    },
+    {
+        "name": "Prabhaat",
+        "hindiName": "प्रभात",
+        "meaning": "Wise and illuminated by the light of knowledge.",
+        "meaning_hi": "ज्ञान रूपी प्रकाश से आलोकित, ज्ञानी",
+        "rashi": "कन्या",
+        "meaning_en": "Wise and illuminated by the light of knowledge."
+    },
+    {
+        "name": "Prabhaas",
+        "hindiName": "प्रभास",
+        "meaning": "One who comes into prominence with a bright and radiant presence.",
+        "meaning_hi": "अच्छी तरह से सुर्खियों में आने वाला, प्रकाशित मुखमंडल वाला",
+        "rashi": "कन्या",
+        "meaning_en": "One who comes into prominence with a bright and radiant presence."
+    },
+    {
+        "name": "Prasiddh",
+        "hindiName": "प्रसिद्ध",
+        "meaning": "Famous, respected by all, well-known in every field, and knowledgeable.",
+        "meaning_hi": "अच्छी तरह से सभी से मान सम्मान पाने वाला,हर क्षेत्र में गमन करने वाला,ज्ञानी,नामी,ख्याती वाला व्यक्ति।",
+        "rashi": "कन्या",
+        "meaning_en": "Famous, respected by all, well-known in every field, and knowledgeable."
+    },
+    {
+        "name": "Praanjal",
+        "hindiName": "प्रांजल",
+        "meaning": "eemaanadaara spashta vaktaa",
+        "meaning_hi": "ईमानदार, स्पष्ट वक्ता",
+        "rashi": "कन्या",
+        "meaning_en": "eemaanadaara spashta vaktaa"
+    },
+    {
+        "name": "Prem",
+        "hindiName": "प्रेम",
+        "meaning": "Sabase prema doing.",
+        "meaning_hi": "सबसे प्रेम करने वाले",
+        "rashi": "कन्या",
+        "meaning_en": "Sabase prema doing."
+    },
+    {
+        "name": "Bandhul",
+        "hindiName": "बन्धुल",
+        "meaning": "Phrendalee jaldee mila jhoola kara living.",
+        "meaning_hi": "फ्रेंडली, जल्दी मिल झूल कर रहने वाले",
+        "rashi": "मकर",
+        "meaning_en": "Phrendalee jaldee mila jhoola kara living."
+    },
+    {
+        "name": "Balajeet",
+        "hindiName": "बलजीत",
+        "meaning": "A wrestler-like victor who can defeat even the strong.",
+        "meaning_hi": "बलशाली लोगों को भी जीतने वाला,रेसलर",
+        "rashi": "मकर",
+        "meaning_en": "A wrestler-like victor who can defeat even the strong."
+    },
+    {
+        "name": "Balad",
+        "hindiName": "बलद",
+        "meaning": "balavaana saamarthyavaan",
+        "meaning_hi": "बलवान सामर्थ्यवान",
+        "rashi": "मकर",
+        "meaning_en": "balavaana saamarthyavaan"
+    },
+    {
+        "name": "Balap",
+        "hindiName": "बलप",
+        "meaning": "balavaana saamarthyavaan",
+        "meaning_hi": "बलवान सामर्थ्यवान",
+        "rashi": "मकर",
+        "meaning_en": "balavaana saamarthyavaan"
+    },
+    {
+        "name": "Balaraam",
+        "hindiName": "बलराम",
+        "meaning": "Strong, capable, and powerful like Lord Krishna?s elder brother Balarama.",
+        "meaning_hi": "भगवान कृष्ण के बड़े भाई के जैसे बलवान, सामर्थ्यवान, शक्तिमान",
+        "rashi": "मकर",
+        "meaning_en": "Strong, capable, and powerful like Lord Krishna?s elder brother Balarama."
+    },
+    {
+        "name": "Balaveendr",
+        "hindiName": "बलवीन्द्र",
+        "meaning": "Strong, capable, powerful, and lordly among all.",
+        "meaning_hi": "बलवान, सामर्थ्यवान, शक्तिमान , सबके स्वामी",
+        "rashi": "मकर",
+        "meaning_en": "Strong, capable, powerful, and lordly among all."
+    },
+    {
+        "name": "Balaveer",
+        "hindiName": "बलवीर",
+        "meaning": "balavaana shaktishaalee",
+        "meaning_hi": "बलवान, शक्तिशाली",
+        "rashi": "मकर",
+        "meaning_en": "balavaana shaktishaalee"
+    },
+    {
+        "name": "Bahujny",
+        "hindiName": "बहुज्ञ",
+        "meaning": "Bahuta wise learned.",
+        "meaning_hi": "बहुत ज्ञानी, विद्वान्",
+        "rashi": "मकर",
+        "meaning_en": "Bahuta wise learned."
+    },
+    {
+        "name": "Baahuk",
+        "hindiName": "बाहुक",
+        "meaning": "Vishaala bhujaaon strong.",
+        "meaning_hi": "विशाल भुजाओं वाले, बलवान",
+        "rashi": "मकर",
+        "meaning_en": "Vishaala bhujaaon strong."
+    },
+    {
+        "name": "Baahubalee",
+        "hindiName": "बाहुबली",
+        "meaning": "Strong-armed, mighty, and powerful.",
+        "meaning_hi": "बलशाली भुजाओं वाला, बलवान, शक्तिमान",
+        "rashi": "मकर",
+        "meaning_en": "Strong-armed, mighty, and powerful."
+    },
+    {
+        "name": "Buddh",
+        "hindiName": "बुद्ध",
+        "meaning": "Wise energetic radiant.",
+        "meaning_hi": "ज्ञानी, ओजस्वी तेजस्वी",
+        "rashi": "मकर",
+        "meaning_en": "Wise energetic radiant."
+    },
+    {
+        "name": "Budh",
+        "hindiName": "बुध",
+        "meaning": "Samajhadaara intelligent.",
+        "meaning_hi": "समझदार, बुद्धिमान",
+        "rashi": "मकर",
+        "meaning_en": "Samajhadaara intelligent."
+    },
+    {
+        "name": "Brahmad",
+        "hindiName": "ब्रह्मद",
+        "meaning": "siddhayogee tapasvee",
+        "meaning_hi": "सिद्धयोगी, तपस्वी",
+        "rashi": "मकर",
+        "meaning_en": "siddhayogee tapasvee"
+    },
+    {
+        "name": "Bhaktaraaj",
+        "hindiName": "भक्तराज",
+        "meaning": "Foremost among devotees; king of devotees.",
+        "meaning_hi": "भक्तों में श्रेष्ठ",
+        "rashi": "धनु",
+        "meaning_en": "Foremost among devotees; king of devotees."
+    },
+    {
+        "name": "Bhajin",
+        "hindiName": "भजिन्",
+        "meaning": "One who serves others and does charitable work.",
+        "meaning_hi": "सेवा परोपकार करने वाले",
+        "rashi": "धनु",
+        "meaning_en": "One who serves others and does charitable work."
+    },
+    {
+        "name": "Bhadrabaahu",
+        "hindiName": "भद्रबाहु",
+        "meaning": "paropakaaree balavaana saamarthyavaana bahaadura insaan",
+        "meaning_hi": "परोपकारी बलवान सामर्थ्यवान बहादुर इन्सान",
+        "rashi": "धनु",
+        "meaning_en": "paropakaaree balavaana saamarthyavaana bahaadura insaan"
+    },
+    {
+        "name": "Bhadresh",
+        "hindiName": "भद्रेश",
+        "meaning": "Leader of good people.",
+        "meaning_hi": "अच्छे लोगों के लीडर",
+        "rashi": "धनु",
+        "meaning_en": "Leader of good people."
+    },
+    {
+        "name": "Bharat",
+        "hindiName": "भरत",
+        "meaning": "One who supports and nurtures peoplebrave like King Bharata.",
+        "meaning_hi": "लोगों के भरण पोषण करने वाला,राजा भरत के जैसे पराक्रमी",
+        "rashi": "धनु",
+        "meaning_en": "One who supports and nurtures peoplebrave like King Bharata."
+    },
+    {
+        "name": "Bhavishnu",
+        "hindiName": "भविष्णु",
+        "meaning": "One with an enduring nature.",
+        "meaning_hi": "विद्यमान रहने के स्वभाव वाले",
+        "rashi": "धनु",
+        "meaning_en": "One with an enduring nature."
+    },
+    {
+        "name": "Bhavy",
+        "hindiName": "भव्य",
+        "meaning": "sundara darshaneeya bhavy",
+        "meaning_hi": "सुंदर, दर्शनीय भव्य",
+        "rashi": "धनु",
+        "meaning_en": "sundara darshaneeya bhavy"
+    },
+    {
+        "name": "Bhavyesh",
+        "hindiName": "भव्येश",
+        "meaning": "Bhavya beautiful leader of good people.",
+        "meaning_hi": "भव्य सुंदर अच्छे लोगों के लीडर",
+        "rashi": "धनु",
+        "meaning_en": "Bhavya beautiful leader of good people."
+    },
+    {
+        "name": "Bhaanu",
+        "hindiName": "भानु",
+        "meaning": "Radiant-faced and bright like the sun.",
+        "meaning_hi": "सूर्य के जैसे ओजस्वी तेजस्वी मुखमंडल वाले",
+        "rashi": "धनु",
+        "meaning_en": "Radiant-faced and bright like the sun."
+    },
+    {
+        "name": "Bhaaravi",
+        "hindiName": "भारवि",
+        "meaning": "One who attains light and knowledgeskilled in care, support, and management.",
+        "meaning_hi": "प्रकाश, ज्ञान को पाने वाला,भरण पोषण मैनेजमेंट को जानने वाला",
+        "rashi": "धनु",
+        "meaning_en": "One who attains light and knowledgeskilled in care, support, and management."
+    },
+    {
+        "name": "Bhaaskar",
+        "hindiName": "भास्कर",
+        "meaning": "One who spreads the light of knowledge.",
+        "meaning_hi": "ज्ञानरूपी प्रकाश को बांटने वाले",
+        "rashi": "धनु",
+        "meaning_en": "One who spreads the light of knowledge."
+    },
+    {
+        "name": "Bheem",
+        "hindiName": "भीम",
+        "meaning": "Strong and powerful, one whom enemies fear.",
+        "meaning_hi": "जिससे लोग डरते हैं, बलशाली, शक्तिमान",
+        "rashi": "धनु",
+        "meaning_en": "Strong and powerful, one whom enemies fear."
+    },
+    {
+        "name": "Bhuvan",
+        "hindiName": "भुवन",
+        "meaning": "One who maintains his authority.",
+        "meaning_hi": "अपनी सत्ता को बनाए रखने वाला",
+        "rashi": "धनु",
+        "meaning_en": "One who maintains his authority."
+    },
+    {
+        "name": "Bhuvaneshvar",
+        "hindiName": "भुवनेश्वर",
+        "meaning": "Leader of the whole world.",
+        "meaning_hi": "सम्पूर्ण जगत के लीडर, विश्वनेता",
+        "rashi": "धनु",
+        "meaning_en": "Leader of the whole world."
+    },
+    {
+        "name": "Bhoopaal",
+        "hindiName": "भूपाल",
+        "meaning": "King, guide, and leader.",
+        "meaning_hi": "राजा,नेता, लीडर",
+        "rashi": "धनु",
+        "meaning_en": "King, guide, and leader."
+    },
+    {
+        "name": "Bhoopen",
+        "hindiName": "भूपेन",
+        "meaning": "King of kingssabake leader.",
+        "meaning_hi": "राजाओं के भी राजा,सबके लीडर",
+        "rashi": "धनु",
+        "meaning_en": "King of kingssabake leader."
+    },
+    {
+        "name": "Bhogad",
+        "hindiName": "भोगद",
+        "meaning": "A helpful person who shares comfort and resources.",
+        "meaning_hi": "सुख सुविधाएं बांटने वाले परोपकारी व्यक्ति",
+        "rashi": "मकर",
+        "meaning_en": "A helpful person who shares comfort and resources."
+    },
+    {
+        "name": "Manggal",
+        "hindiName": "मङ्गल",
+        "meaning": "Always ready to do beneficial workconstantly striving to achieve his chosen goal.",
+        "meaning_hi": "सदैव हित कार्य के लिये अग्रसर रहने वाले,अपने इष्ट लक्ष्य की प्राप्ति के लिये सतत् प्रयत्नशील",
+        "rashi": "सिंह",
+        "meaning_en": "Always ready to do beneficial workconstantly striving to achieve his chosen goal."
+    },
+    {
+        "name": "Manapreet",
+        "hindiName": "मनप्रीत",
+        "meaning": "One who loves from the heartunited in thought, word, and action.",
+        "meaning_hi": "मन से प्रेम करने वाले,मन वचन और कर्म से एक",
+        "rashi": "सिंह",
+        "meaning_en": "One who loves from the heartunited in thought, word, and action."
+    },
+    {
+        "name": "Maneesh",
+        "hindiName": "मनीश",
+        "meaning": "A leader among thinkers and contemplative people.",
+        "meaning_hi": "चिंतन मनन करने वाले के भी लीडर, नेता",
+        "rashi": "सिंह",
+        "meaning_en": "A leader among thinkers and contemplative people."
+    },
+    {
+        "name": "Manoj",
+        "hindiName": "मनोज",
+        "meaning": "One who conquers the mind born from the imagination of the mind.",
+        "meaning_hi": "मन के उपर विजय पाने वाले, मन की सोच अनुसार पैदा होने वाले",
+        "rashi": "सिंह",
+        "meaning_en": "One who conquers the mind born from the imagination of the mind."
+    },
+    {
+        "name": "Manohar",
+        "hindiName": "मनोहर",
+        "meaning": "One with an attractive personality liked by everyoneaa beautiful person who wins hearts.",
+        "meaning_hi": "आकर्षक व्यक्तित्व वाले, सबके लिए पसंदीदा,मन को हरने वाले, सुंदर व्यक्ति",
+        "rashi": "सिंह",
+        "meaning_en": "One with an attractive personality liked by everyoneaa beautiful person who wins hearts."
+    },
+    {
+        "name": "Mahaaveer",
+        "hindiName": "महावीर",
+        "meaning": "Devotee of Lord Mahavira strong, capable, and powerful like Lord Hanuman.",
+        "meaning_hi": "भगवान महावीर के भक्त, भगवान् हनुमान के जैसे सबसे बलवान, सामर्थ्यवान, शक्तिमान",
+        "rashi": "सिंह",
+        "meaning_en": "Devotee of Lord Mahavira strong, capable, and powerful like Lord Hanuman."
+    },
+    {
+        "name": "Mahendr",
+        "hindiName": "महेन्द्र",
+        "meaning": "Leader of great people.",
+        "meaning_hi": "बड़े बड़े लोगों के मालिक, लीडर",
+        "rashi": "सिंह",
+        "meaning_en": "Leader of great people."
+    },
+    {
+        "name": "Mahesh",
+        "hindiName": "महेश",
+        "meaning": "Leader of great people.",
+        "meaning_hi": "बड़े बड़े लोगों के मालिक, लीडर",
+        "rashi": "सिंह",
+        "meaning_en": "Leader of great people."
+    },
+    {
+        "name": "Milan",
+        "hindiName": "मिलन",
+        "meaning": "A friendly person who lives harmoniously with everyone one with a sociable nature.",
+        "meaning_hi": "सबसे मिलकर रहने वाले, मिलनसार व्यक्ति, सबसे मिलने के स्वभाववाला",
+        "rashi": "सिंह",
+        "meaning_en": "A friendly person who lives harmoniously with everyone one with a sociable nature."
+    },
+    {
+        "name": "Mukund",
+        "hindiName": "मुकुंद",
+        "meaning": "Compassionate, one who frees others from bondage.",
+        "meaning_hi": "दयालु, बंधन से मुक्त करने वाले",
+        "rashi": "सिंह",
+        "meaning_en": "Compassionate, one who frees others from bondage."
+    },
+    {
+        "name": "Mukul",
+        "hindiName": "मुकुल",
+        "meaning": "Fresh like a new budliked by everyone.",
+        "meaning_hi": "कली की भांति नया,सब को पसंद आने वाले",
+        "rashi": "सिंह",
+        "meaning_en": "Fresh like a new budliked by everyone."
+    },
+    {
+        "name": "Mukesh",
+        "hindiName": "मुकेश",
+        "meaning": "duhkha mukti daataa sabake maalik",
+        "meaning_hi": "दुःख मुक्ति दाता , सबके मालिक",
+        "rashi": "सिंह",
+        "meaning_en": "duhkha mukti daataa sabake maalik"
+    },
+    {
+        "name": "Mrigaank",
+        "hindiName": "मृगांक",
+        "meaning": "Calm and cool-natured like the moonmarked with graceful, deer-like beauty.",
+        "meaning_hi": "चंद्रमा के जैसे शीतल शान्त स्वभाव वाला,मृग के जैसे सुंदर चिह्न लक्षण वाला",
+        "rashi": "सिंह",
+        "meaning_en": "Calm and cool-natured like the moonmarked with graceful, deer-like beauty."
+    },
+    {
+        "name": "Mrinaal",
+        "hindiName": "मृणाल",
+        "meaning": "One who helps others even after bearing hardships himself.",
+        "meaning_hi": "खुद कष्टों सह कर भी दूसरों की मदद करने वाले",
+        "rashi": "सिंह",
+        "meaning_en": "One who helps others even after bearing hardships himself."
+    },
+    {
+        "name": "Modee",
+        "hindiName": "मोदी",
+        "meaning": "Cheerful and able to keep others happy.",
+        "meaning_hi": "खुशमिजाज, लोगों को खुश रखने वाला",
+        "rashi": "सिंह",
+        "meaning_en": "Cheerful and able to keep others happy."
+    },
+    {
+        "name": "Mohan",
+        "hindiName": "मोहन",
+        "meaning": "Attractive in personality; one who charms everyone.",
+        "meaning_hi": "आकर्षक व्यक्तित्व वाला,सब को मोहित करने वाले",
+        "rashi": "सिंह",
+        "meaning_en": "Attractive in personality; one who charms everyone."
+    },
+    {
+        "name": "Yaksh",
+        "hindiName": "यक्ष",
+        "meaning": "Respectable, honorable, and worthy of reverence.",
+        "meaning_hi": "आदरणीय, सम्मान के योग्य, पूजनीय, सत्कार योग्य",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Respectable, honorable, and worthy of reverence."
+    },
+    {
+        "name": "Yajin",
+        "hindiName": "यजिन्",
+        "meaning": "dhaarmikayajnya premee",
+        "meaning_hi": "धार्मिक,यज्ञ प्रेमी",
+        "rashi": "वृश्चिक",
+        "meaning_en": "dhaarmikayajnya premee"
+    },
+    {
+        "name": "Yathaarth",
+        "hindiName": "यथार्थ",
+        "meaning": "Possessing real wealth and resources.",
+        "meaning_hi": "वास्तविक धन संपत्तियों वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Possessing real wealth and resources."
+    },
+    {
+        "name": "Yaduvindr",
+        "hindiName": "यदुविन्द्र",
+        "meaning": "Powerful and virtuous like the kings of the Yadu dynasty.",
+        "meaning_hi": "यदु वंश के राजाओं के जैसे शक्तिशाली गुणवान",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Powerful and virtuous like the kings of the Yadu dynasty."
+    },
+    {
+        "name": "Yashapaal",
+        "hindiName": "यशपाल",
+        "meaning": "One who protects earned fame, honor, and glory.",
+        "meaning_hi": "मिले हुए यश, कीर्ति, सम्मान को सुरक्षित रखने वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "One who protects earned fame, honor, and glory."
+    },
+    {
+        "name": "Yashasy",
+        "hindiName": "यशस्य",
+        "meaning": "Progressing toward honor and fame.",
+        "meaning_hi": "सम्मान और यश की ओर प्रगति करने वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Progressing toward honor and fame."
+    },
+    {
+        "name": "Yaajnyik",
+        "hindiName": "याज्ञिक",
+        "meaning": "Performer of sacred rituals.",
+        "meaning_hi": "यज्ञ करने वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Performer of sacred rituals."
+    },
+    {
+        "name": "Yaask",
+        "hindiName": "यास्क",
+        "meaning": "Linguistic scholar.",
+        "meaning_hi": "भाषा वैज्ञानिक",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Linguistic scholar."
+    },
+    {
+        "name": "Yug",
+        "hindiName": "युग",
+        "meaning": "One who lives harmoniously with everyone.",
+        "meaning_hi": "सबसे मिलकर रहने वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "One who lives harmoniously with everyone."
+    },
+    {
+        "name": "Yugal",
+        "hindiName": "युगल",
+        "meaning": "One who likes companionship cooperative by nature.",
+        "meaning_hi": "जोड़े में रहना पसंद करने वाले, सहयोग करने के स्वभाव वाले",
+        "rashi": "वृश्चिक",
+        "meaning_en": "One who likes companionship cooperative by nature."
+    },
+    {
+        "name": "Yuvaraaj",
+        "hindiName": "युवराज",
+        "meaning": "Prince one who gains knowledge at a young age.",
+        "meaning_hi": "राजकुमार, अल्पायु में ही ज्ञान प्राप्त करने वाला",
+        "rashi": "वृश्चिक",
+        "meaning_en": "Prince one who gains knowledge at a young age."
+    },
+    {
+        "name": "Yogaraaj",
+        "hindiName": "योगराज",
+        "meaning": "yoga vidyaa visheshajny",
+        "meaning_hi": "योग विद्या विशेषज्ञ",
+        "rashi": "धनु",
+        "meaning_en": "yoga vidyaa visheshajny"
+    },
+    {
+        "name": "Yogendr",
+        "hindiName": "योगेन्द्र",
+        "meaning": "Yoga expert leader in yogaexpert in the science of yoga.",
+        "meaning_hi": "योग विशेषज्ञ, योगा के लीडर,योग विद्या विशेषज्ञ",
+        "rashi": "धनु",
+        "meaning_en": "Yoga expert leader in yogaexpert in the science of yoga."
+    },
+    {
+        "name": "Yogesh",
+        "hindiName": "योगेश",
+        "meaning": "A yogi knowledgeable in yoga expert in the science of yoga.",
+        "meaning_hi": "योग के जानकार, योगी, योग विद्या विशेषज्ञ",
+        "rashi": "धनु",
+        "meaning_en": "A yogi knowledgeable in yoga expert in the science of yoga."
+    },
+    {
+        "name": "Ranajit",
+        "hindiName": "रणजित्",
+        "meaning": "Victorious in battlebrave and powerful.",
+        "meaning_hi": "युद्ध में विजय पानेवाला,वीर, शक्तिशाली",
+        "rashi": "तुला",
+        "meaning_en": "Victorious in battlebrave and powerful."
+    },
+    {
+        "name": "Raman",
+        "hindiName": "रमण",
+        "meaning": "One who mingles easily with everyonelover of play and sports.",
+        "meaning_hi": "सबके साथ घुल-मिल करने वाले,खेल प्रेमी",
+        "rashi": "तुला",
+        "meaning_en": "One who mingles easily with everyonelover of play and sports."
+    },
+    {
+        "name": "Raveendr",
+        "hindiName": "रवीन्द्र",
+        "meaning": "Devotee of the sun god.",
+        "meaning_hi": "सूर्य भगवान् के भक्त",
+        "rashi": "तुला",
+        "meaning_en": "Devotee of the sun god."
+    },
+    {
+        "name": "Rashmi",
+        "hindiName": "रश्मि",
+        "meaning": "Active like a ray of sunlight.",
+        "meaning_hi": "सूर्य किरण के जैसे गतिशील रहने वाले",
+        "rashi": "तुला",
+        "meaning_en": "Active like a ray of sunlight."
+    },
+    {
+        "name": "Raseek",
+        "hindiName": "रसीक",
+        "meaning": "Joy-giving and full of refined taste.",
+        "meaning_hi": "रसवाले,सब को आनन्द देने वाले",
+        "rashi": "तुला",
+        "meaning_en": "Joy-giving and full of refined taste."
+    },
+    {
+        "name": "Raakesh",
+        "hindiName": "राकेश",
+        "meaning": "Moon jaise cool peaceful nature.",
+        "meaning_hi": "चंद्रमा जैसे शीतल शान्त स्वभाव वाले",
+        "rashi": "तुला",
+        "meaning_en": "Moon jaise cool peaceful nature."
+    },
+    {
+        "name": "Raajaa",
+        "hindiName": "राजा",
+        "meaning": "raashtra sevaka aishvaryashaalee",
+        "meaning_hi": "राष्ट्र सेवक, ऐश्वर्यशाली",
+        "rashi": "तुला",
+        "meaning_en": "raashtra sevaka aishvaryashaalee"
+    },
+    {
+        "name": "Raajendr",
+        "hindiName": "राजेन्द्र",
+        "meaning": "King of kings universal emperor.",
+        "meaning_hi": "राजाओं के भी राजा, चक्रवर्ती सम्राट",
+        "rashi": "तुला",
+        "meaning_en": "King of kings universal emperor."
+    },
+    {
+        "name": "Raajesh",
+        "hindiName": "राजेश",
+        "meaning": "King of kings universal emperor.",
+        "meaning_hi": "राजाओं के भी राजा, चक्रवर्ती सम्राट",
+        "rashi": "तुला",
+        "meaning_en": "King of kings universal emperor."
+    },
+    {
+        "name": "Raamadev",
+        "hindiName": "रामदेव",
+        "meaning": "Devotee of Lord Rama famous yoga teacher.",
+        "meaning_hi": "भगवान् राम के भक्त, प्रसिद्ध योग गुरु",
+        "rashi": "तुला",
+        "meaning_en": "Devotee of Lord Rama famous yoga teacher."
+    },
+    {
+        "name": "Raamaprakaash",
+        "hindiName": "रामप्रकाश",
+        "meaning": "One who spreads the name and light of Lord Rama.",
+        "meaning_hi": "भगवान राम के नाम को फ़ैलाने वाले,राम भक्त",
+        "rashi": "तुला",
+        "meaning_en": "One who spreads the name and light of Lord Rama."
+    },
+    {
+        "name": "Raamaprasaad",
+        "hindiName": "रामप्रसाद",
+        "meaning": "Lord raama of prasaada svaroopacheerful person.",
+        "meaning_hi": "भगवान् राम के प्रसाद स्वरूप,खुशमिजाज आदमी",
+        "rashi": "तुला",
+        "meaning_en": "Lord raama of prasaada svaroopacheerful person."
+    },
+    {
+        "name": "Raashid",
+        "hindiName": "राशिद",
+        "meaning": "A noble giver and social worker who generously helps those in need.",
+        "meaning_hi": "बड़े दानी सज्जन,जरूरतमंद लोगों को बहुत अधिक देने वाले,समाज सेवी।",
+        "rashi": "तुला",
+        "meaning_en": "A noble giver and social worker who generously helps those in need."
+    },
+    {
+        "name": "Raahul",
+        "hindiName": "राहुल",
+        "meaning": "Friendly and sociable, one who enjoys meeting people and making friends.",
+        "meaning_hi": "दानी लोगों से मिलने वाला, मिलनसार,एक ऐसा व्यक्ति जो लोगों से मिलने में रुचि रखता हो, सामाजिक कार्यों में भाग लेता हो, दोस्तों और परिवार के साथ समय बिताने में मजा लेने वाला, नए लोगों से मिलने और दोस्त बनाने में रुचि रखने वाला।",
+        "rashi": "तुला",
+        "meaning_en": "Friendly and sociable, one who enjoys meeting people and making friends."
+    },
+    {
+        "name": "Roopesh",
+        "hindiName": "रूपेश",
+        "meaning": "One with a beautiful form.",
+        "meaning_hi": "सुंदर स्वरूप वाले",
+        "rashi": "तुला",
+        "meaning_en": "One with a beautiful form."
+    },
+    {
+        "name": "Roman",
+        "hindiName": "रोमन",
+        "meaning": "A good speaker and orator.",
+        "meaning_hi": "अच्छा बोलने वाले वक्ता, प्रवक्ता",
+        "rashi": "तुला",
+        "meaning_en": "A good speaker and orator."
+    },
+    {
+        "name": "Rohit",
+        "hindiName": "रोहित",
+        "meaning": "Jahaan jaroorata padae vahaan prakata hone social worker.",
+        "meaning_hi": "जहां जरूरत पड़े वहां प्रकट होने वाला, समाजसेवी",
+        "rashi": "तुला",
+        "meaning_en": "Jahaan jaroorata padae vahaan prakata hone social worker."
+    },
+    {
+        "name": "Lakshman",
+        "hindiName": "लक्ष्मण",
+        "meaning": "Fortunate prosperousblessed with auspicious qualities.",
+        "meaning_hi": "अच्छी किस्मत वाला, समृद्धशाली,शुभ लक्षणों से युक्त",
+        "rashi": "मेष",
+        "meaning_en": "Fortunate prosperousblessed with auspicious qualities."
+    },
+    {
+        "name": "Lakshy",
+        "hindiName": "लक्ष्य",
+        "meaning": "One who moves steadily toward desired goals.",
+        "meaning_hi": "इच्छित प्राप्ति को देखकर चलने वाले",
+        "rashi": "मेष",
+        "meaning_en": "One who moves steadily toward desired goals."
+    },
+    {
+        "name": "Lakshyad",
+        "hindiName": "लक्ष्यद",
+        "meaning": "A teacher who helps others achieve their chosen goal.",
+        "meaning_hi": "अभीष्ट लक्ष्य को प्राप्त कराने वाले अध्यापक",
+        "rashi": "मेष",
+        "meaning_en": "A teacher who helps others achieve their chosen goal."
+    },
+    {
+        "name": "Lalit",
+        "hindiName": "ललित",
+        "meaning": "Destroyer of negativityone with positive thinking.",
+        "meaning_hi": "नेगेटिविटी को नाश करने वाला,सकारात्मक सोच वाला",
+        "rashi": "मेष",
+        "meaning_en": "Destroyer of negativityone with positive thinking."
+    },
+    {
+        "name": "Lav",
+        "hindiName": "लव",
+        "meaning": "Destroyer of negativityone with positive thinking.",
+        "meaning_hi": "नेगेटिविटी को नाश करने वाला,सकारात्मक सोच वाला",
+        "meaning_en": "Destroyer of negativityone with positive thinking."
+    },
+    {
+        "name": "Lavanesh",
+        "hindiName": "लवणेश",
+        "meaning": "Wealthy owner of a salt factory.",
+        "meaning_hi": "नमक फैक्ट्री के मालिक, धनाढ्य",
+        "rashi": "मेष",
+        "meaning_en": "Wealthy owner of a salt factory."
+    },
+    {
+        "name": "Laavany",
+        "hindiName": "लावण्य",
+        "meaning": "Beautiful and charming person.",
+        "meaning_hi": "सुंदर, मनोहर व्यक्ति",
+        "rashi": "मेष",
+        "meaning_en": "Beautiful and charming person."
+    },
+    {
+        "name": "Leelaadhar",
+        "hindiName": "लीलाधर",
+        "meaning": "One filled with many arts and playful talents.",
+        "meaning_hi": "विविध लीला कला से परिपूर्ण व्यक्ति",
+        "rashi": "मेष",
+        "meaning_en": "One filled with many arts and playful talents."
+    },
+    {
+        "name": "Lokap",
+        "hindiName": "लोकप",
+        "meaning": "Leader, king, and minister.",
+        "meaning_hi": "नेता राजा, मंत्री",
+        "rashi": "मेष",
+        "meaning_en": "Leader, king, and minister."
+    },
+    {
+        "name": "Lokamani",
+        "hindiName": "लोकमणि",
+        "meaning": "Popular and liked by everyone.",
+        "meaning_hi": "लोकप्रिय, सबके पसंदीदा व्यक्ति",
+        "rashi": "मेष",
+        "meaning_en": "Popular and liked by everyone."
+    },
+    {
+        "name": "Lokaraaj",
+        "hindiName": "लोकराज",
+        "meaning": "netaaraajaa mantree",
+        "meaning_hi": "नेता,राजा , मंत्री",
+        "rashi": "मेष",
+        "meaning_en": "netaaraajaa mantree"
+    },
+    {
+        "name": "Loken",
+        "hindiName": "लोकेन",
+        "meaning": "Leader, king, and minister.",
+        "meaning_hi": "नेता राजा मंत्री",
+        "rashi": "मेष",
+        "meaning_en": "Leader, king, and minister."
+    },
+    {
+        "name": "Lokendr",
+        "hindiName": "लोकेन्द्र",
+        "meaning": "Leader, king, and minister.",
+        "meaning_hi": "नेता राजा मंत्री",
+        "rashi": "मेष",
+        "meaning_en": "Leader, king, and minister."
+    },
+    {
+        "name": "Lokesh",
+        "hindiName": "लोकेश",
+        "meaning": "Leader of people.",
+        "meaning_hi": "मनुष्यों के लीडर, नेता",
+        "rashi": "मेष",
+        "meaning_en": "Leader of people."
+    },
+    {
+        "name": "Lohit",
+        "hindiName": "लोहित",
+        "meaning": "One with a reddish complexion.",
+        "meaning_hi": "रक्त वर्ण वाले व्यक्ति",
+        "rashi": "मेष",
+        "meaning_en": "One with a reddish complexion."
+    },
+    {
+        "name": "Vanshap",
+        "hindiName": "वंशप",
+        "meaning": "Brave protector of family and lineage.",
+        "meaning_hi": "वंश,कुल, परिवार की रक्षा करने वाले वीर",
+        "rashi": "वृष",
+        "meaning_en": "Brave protector of family and lineage."
+    },
+    {
+        "name": "Vachan",
+        "hindiName": "वचन",
+        "meaning": "Gifted in expression.",
+        "meaning_hi": "अभिव्यक्ति के सामर्थ्य वाले",
+        "rashi": "वृष",
+        "meaning_en": "Gifted in expression."
+    },
+    {
+        "name": "Vats",
+        "hindiName": "वत्स",
+        "meaning": "pyaaraabholaa kartavyanishtha baalak",
+        "meaning_hi": "प्यारा,भोला, कर्तव्यनिष्ठ बालक",
+        "rashi": "वृष",
+        "meaning_en": "pyaaraabholaa kartavyanishtha baalak"
+    },
+    {
+        "name": "Vandan",
+        "hindiName": "वन्दन",
+        "meaning": "aadaraneeya maanyavar",
+        "meaning_hi": "आदरणीय मान्यवर",
+        "rashi": "वृष",
+        "meaning_en": "aadaraneeya maanyavar"
+    },
+    {
+        "name": "Varan",
+        "hindiName": "वरण",
+        "meaning": "sabake priya insaan",
+        "meaning_hi": "सबके प्रिय इन्सान",
+        "rashi": "वृष",
+        "meaning_en": "sabake priya insaan"
+    },
+    {
+        "name": "Varun",
+        "hindiName": "वरुण",
+        "meaning": "Helpful like the wind.",
+        "meaning_hi": "वायु के जैसे परोपकारी इन्सान",
+        "rashi": "वृष",
+        "meaning_en": "Helpful like the wind."
+    },
+    {
+        "name": "Vareny",
+        "hindiName": "वरेण्य",
+        "meaning": "sabake priya insaan",
+        "meaning_hi": "सबके प्रिय इन्सान",
+        "rashi": "वृष",
+        "meaning_en": "sabake priya insaan"
+    },
+    {
+        "name": "Vikaash",
+        "hindiName": "विकाश",
+        "meaning": "One who performs well one who remains happy.",
+        "meaning_hi": "अच्छी तरह से प्रदर्शन करने वाले, खुशी रहने वाला",
+        "rashi": "वृष",
+        "meaning_en": "One who performs well one who remains happy."
+    },
+    {
+        "name": "Vikaas",
+        "hindiName": "विकास",
+        "meaning": "Always active in gaining special knowledge, achieving goals, and guiding others with discipline.",
+        "meaning_hi": "ऐसा व्यक्ति जो अपने लक्ष्य को प्राप्त करने के लिए, कुछ विशेष ज्ञान प्राप्त करने के लिए सदैव सक्रिय रहता है और जो अपने ज्ञान से दूसरों को अनुशासित करता है।",
+        "rashi": "वृष",
+        "meaning_en": "Always active in gaining special knowledge, achieving goals, and guiding others with discipline."
+    },
+    {
+        "name": "Vikram",
+        "hindiName": "विक्रम",
+        "meaning": "Valiant one who moves toward his goal with focus.",
+        "meaning_hi": "पराक्रमी, ध्यान से अपने लक्ष्य की ओर बढ़ने वाला",
+        "rashi": "वृष",
+        "meaning_en": "Valiant one who moves toward his goal with focus."
+    },
+    {
+        "name": "Vighnesh",
+        "hindiName": "विघ्नेश",
+        "meaning": "Remover of obstacles and troublesdoora kara dene prosperousshaktishaaleesaamarthyavaana social worker person.",
+        "meaning_hi": "विघ्न ,कष्ट,बाधायें हटाने वाले,दूर कर देने वाले, ऐश्वर्यवान,शक्तिशाली,सामर्थ्यवान समाजसेवी व्यक्ति।",
+        "rashi": "वृष",
+        "meaning_en": "Remover of obstacles and troublesdoora kara dene prosperousshaktishaaleesaamarthyavaana social worker person."
+    },
+    {
+        "name": "Vijay",
+        "hindiName": "विजय",
+        "meaning": "Especially capable of victory.",
+        "meaning_hi": "विशेष रूप से जीतने वाले, सामर्थ्यवान",
+        "rashi": "वृष",
+        "meaning_en": "Especially capable of victory."
+    },
+    {
+        "name": "Vijayendr",
+        "hindiName": "विजयेन्द्र",
+        "meaning": "One who achieves victoryleader of all.",
+        "meaning_hi": "जीत हासिल करने वाले,सब के बोस",
+        "rashi": "वृष",
+        "meaning_en": "One who achieves victoryleader of all."
+    },
+    {
+        "name": "Vinod",
+        "hindiName": "विनोद",
+        "meaning": "Sabase ghulane milane one who brings joy.",
+        "meaning_hi": "सबसे घुलने मिलने वाले, आनंद कराने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Sabase ghulane milane one who brings joy."
+    },
+    {
+        "name": "Vipratosh",
+        "hindiName": "विप्रतोष",
+        "meaning": "One who satisfies learned and noble people through sincere effort.",
+        "meaning_hi": "विद्वान् महापुरुषों को संतुष्ट करने वाले, विशेष रूप से अच्छी तरह से पुरुषार्थ कर संतुष्ट रहने वाले",
+        "rashi": "वृष",
+        "meaning_en": "One who satisfies learned and noble people through sincere effort."
+    },
+    {
+        "name": "Vimal",
+        "hindiName": "विमल",
+        "meaning": "A good person with a pure heart.",
+        "meaning_hi": "पवित्र हृदय वाले, अच्छा इंसान",
+        "rashi": "वृष",
+        "meaning_en": "A good person with a pure heart."
+    },
+    {
+        "name": "Viraat",
+        "hindiName": "विराट",
+        "meaning": "One who gains special fameone with a great personality.",
+        "meaning_hi": "विशेष रूप से प्रसिद्धि पाने वाला,बड़ा व्यक्तित्व वाला",
+        "rashi": "वृष",
+        "meaning_en": "One who gains special fameone with a great personality."
+    },
+    {
+        "name": "Vivek",
+        "hindiName": "विवेक",
+        "meaning": "One with special knowledge one who accurately knows right and wrong.",
+        "meaning_hi": "विशेष ज्ञान वाला, सही ग़लत को ठीक ठीक जानने वाले",
+        "rashi": "वृष",
+        "meaning_en": "One with special knowledge one who accurately knows right and wrong."
+    },
+    {
+        "name": "Vishvanaath",
+        "hindiName": "विश्वनाथ",
+        "meaning": "sabase adhika saamarthya shaalee",
+        "meaning_hi": "सबसे अधिक सामर्थ्य शाली",
+        "rashi": "वृष",
+        "meaning_en": "sabase adhika saamarthya shaalee"
+    },
+    {
+        "name": "Vishvanaathan",
+        "hindiName": "विश्वनाथन",
+        "meaning": "sabase adhika saamarthya shaalee",
+        "meaning_hi": "सबसे अधिक सामर्थ्य शाली",
+        "rashi": "वृष",
+        "meaning_en": "sabase adhika saamarthya shaalee"
+    },
+    {
+        "name": "Vishvaamitr",
+        "hindiName": "विश्वामित्र",
+        "meaning": "Friend of all sabase milane.",
+        "meaning_hi": "सबके मित्र, सबसे मिलने वाले",
+        "rashi": "वृष",
+        "meaning_en": "Friend of all sabase milane."
+    },
+    {
+        "name": "Vishvaas",
+        "hindiName": "विश्वास",
+        "meaning": "Vishesha prana lene trusted by everyone.",
+        "meaning_hi": "विशेष प्रण लेने वाले, सबके भरोसेमंद",
+        "rashi": "वृष",
+        "meaning_en": "Vishesha prana lene trusted by everyone."
+    },
+    {
+        "name": "Shankar",
+        "hindiName": "शंकर",
+        "meaning": "One who wishes welfare for everyone one who brings welfare to all giver of happiness.",
+        "meaning_hi": "सबके कल्याण चाहने वाले, सबको कल्याण करने वाला, सुख देने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who wishes welfare for everyone one who brings welfare to all giver of happiness."
+    },
+    {
+        "name": "Shankesh",
+        "hindiName": "शंकेश",
+        "meaning": "Curious by nature.",
+        "meaning_hi": "जिज्ञासु स्वभाव वाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "Curious by nature."
+    },
+    {
+        "name": "Shaktidhar",
+        "hindiName": "शक्तिधर",
+        "meaning": "shaktishaalee balavaan",
+        "meaning_hi": "शक्तिशाली, बलवान",
+        "rashi": "कुम्भ",
+        "meaning_en": "shaktishaalee balavaan"
+    },
+    {
+        "name": "Shaktinandan",
+        "hindiName": "शक्तिनंदन",
+        "meaning": "One who delights others through his strength shanvaan one who wishes welfare bhalaaee of chaahata rakhane.",
+        "meaning_hi": "अपनी शक्ति से दूसरों को आनंदित करने वाले ,शंवान् कल्याण चाहने वाला, भलाई की चाहत रखने वाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who delights others through his strength shanvaan one who wishes welfare bhalaaee of chaahata rakhane."
+    },
+    {
+        "name": "Shataghn",
+        "hindiName": "शतघ्न",
+        "meaning": "Capable of defeating hundreds.",
+        "meaning_hi": "सैकड़ों लोगों को पराजित करने का सामर्थ्य वाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "Capable of defeating hundreds."
+    },
+    {
+        "name": "Shatrunjay",
+        "hindiName": "शत्रुंजय",
+        "meaning": "Destroyer of enemiesveer.",
+        "meaning_hi": "शत्रुओं को मटियामेट करने वाला,वीर",
+        "rashi": "कुम्भ",
+        "meaning_en": "Destroyer of enemiesveer."
+    },
+    {
+        "name": "Shabdajny",
+        "hindiName": "शब्दज्ञ",
+        "meaning": "Wise knower of word formation.",
+        "meaning_hi": "शब्दों की रचना को जानकार, ज्ञानी",
+        "rashi": "कुम्भ",
+        "meaning_en": "Wise knower of word formation."
+    },
+    {
+        "name": "Shashaank",
+        "hindiName": "शशांक",
+        "meaning": "Moon of samaana cool nature person helpful and social worker person.",
+        "meaning_hi": "चंद्रमा के समान शीतल स्वभाव वाला व्यक्ति, परोपकारी और समाजसेवी व्यक्ति।",
+        "rashi": "कुम्भ",
+        "meaning_en": "Moon of samaana cool nature person helpful and social worker person."
+    },
+    {
+        "name": "Shashee",
+        "hindiName": "शशी",
+        "meaning": "Joyful, calm, and cool-natured like the moon.",
+        "meaning_hi": "आनंद में रहने वाले, चंद्र के जैसे शान्त, शीतल स्वभाववाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "Joyful, calm, and cool-natured like the moon."
+    },
+    {
+        "name": "Shaandily",
+        "hindiName": "शांडिल्य",
+        "meaning": "Son of a sage rishi muni of jaise of good conduct.",
+        "meaning_hi": "ऋषि पुत्र, ऋषि मुनि के जैसे अच्छे आचरण वाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "Son of a sage rishi muni of jaise of good conduct."
+    },
+    {
+        "name": "Shaantanu",
+        "hindiName": "शान्तनु",
+        "meaning": "Beneficialone who guides for public welfare.",
+        "meaning_hi": "कल्याणकारी,लोक हित,लाभदायक मार्गदर्शन करने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "Beneficialone who guides for public welfare."
+    },
+    {
+        "name": "Shaamak",
+        "hindiName": "शामक",
+        "meaning": "Peaceful and gentle by nature vyaktione who calms others.",
+        "meaning_hi": "शान्त,कोमल स्वभाव वाले व्यक्ति।दूसरों को शान्त कराने वाले।",
+        "rashi": "कुम्भ",
+        "meaning_en": "Peaceful and gentle by nature vyaktione who calms others."
+    },
+    {
+        "name": "Shaarangg",
+        "hindiName": "शारङ्ग",
+        "meaning": "Strong and powerful like an elephant.",
+        "meaning_hi": "हाथी के जैसे बलवान, शक्तिमान",
+        "rashi": "कुम्भ",
+        "meaning_en": "Strong and powerful like an elephant."
+    },
+    {
+        "name": "Shaarngg",
+        "hindiName": "शार्ङ्ग",
+        "meaning": "One who reaches the goal like Lord Vishnu's bow.",
+        "meaning_hi": "भगवान विष्णु के धनुष के जैसे लक्ष्य प्राप्ति करने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who reaches the goal like Lord Vishnu's bow."
+    },
+    {
+        "name": "Shekhar",
+        "hindiName": "शेखर",
+        "meaning": "One who holds the highest position like a crown highest and best person.",
+        "meaning_hi": "मुकुट के समान सर्वोच्च पद पर रहने वाले, सर्वोच्च सर्वोत्तम इन्सान",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who holds the highest position like a crown highest and best person."
+    },
+    {
+        "name": "Shailendr",
+        "hindiName": "शैलेन्द्र",
+        "meaning": "Steadfast like a mountain capable.",
+        "meaning_hi": "पर्वत के समान अडिग रहने वाला, सामर्थ्यवान",
+        "rashi": "कुम्भ",
+        "meaning_en": "Steadfast like a mountain capable."
+    },
+    {
+        "name": "Shyaamak",
+        "hindiName": "श्यामक",
+        "meaning": "Wise and dynamicapane lakshya of praapti of liye always alertprosperous like a brother of the gods.",
+        "meaning_hi": "ज्ञानी, गतिशील,अपने लक्ष्य की प्राप्ति के लिये सदैव जागरूक रहने वाला।देवताओं के भ्राता के समान ऐश्वर्यशाली",
+        "rashi": "कुम्भ",
+        "meaning_en": "Wise and dynamicapane lakshya of praapti of liye always alertprosperous like a brother of the gods."
+    },
+    {
+        "name": "Shreejan",
+        "hindiName": "श्रीजन",
+        "meaning": "Friend of good people and well-wisher of all.",
+        "meaning_hi": "अच्छे लोगों के मित्र, सबके हितैषी",
+        "rashi": "कुम्भ",
+        "meaning_en": "Friend of good people and well-wisher of all."
+    },
+    {
+        "name": "Shreedhar",
+        "hindiName": "श्रीधर",
+        "meaning": "samriddha aishvaryashaalee bhaagyashaalee dhanavaana devee lakshmee kaa mahaana bhakta",
+        "meaning_hi": "समृद्ध, ऐश्वर्यशाली, भाग्यशाली, धनवान, देवी लक्ष्मी का महान भक्त।",
+        "rashi": "कुम्भ",
+        "meaning_en": "samriddha aishvaryashaalee bhaagyashaalee dhanavaana devee lakshmee kaa mahaana bhakta"
+    },
+    {
+        "name": "Sanjay",
+        "hindiName": "संजय",
+        "meaning": "One who achieves victory well one who wins with justice guide.",
+        "meaning_hi": "अच्छी तरह से विजय प्राप्त करने वाला, न्याय के साथ विजय पानेवाला, मार्गदर्शक",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who achieves victory well one who wins with justice guide."
+    },
+    {
+        "name": "Sanjeev",
+        "hindiName": "संजीव",
+        "meaning": "One who lives well, fulfills duties sincerely, and carries radiant energy.",
+        "meaning_hi": "अच्छी तरह से जीवन यापन करने वाले,अच्छे लक्ष्य को लेकर जीने की इच्छा करने वाला, अपने कर्तव्य को अच्छी तरह से निर्वहन करने वाला, ओजस्वी, तेजस्वी व्यक्ति।",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who lives well, fulfills duties sincerely, and carries radiant energy."
+    },
+    {
+        "name": "Sanvit",
+        "hindiName": "संवित्",
+        "meaning": "Wise, intelligent, and brilliantone who understands well good thinker and contemplative personknower and expert.",
+        "meaning_hi": "ज्ञानी,बुद्धिमान,मेधावी,अच्छी तरह से जानने वाला, अच्छा विचारक,मननशील,ज्ञाता, विशेषज्ञ",
+        "rashi": "कुम्भ",
+        "meaning_en": "Wise, intelligent, and brilliantone who understands well good thinker and contemplative personknower and expert."
+    },
+    {
+        "name": "Sanvid",
+        "hindiName": "संविद्",
+        "meaning": "Wise, intelligent, and brilliantone who understands well good thinker and contemplative personknower and expert.",
+        "meaning_hi": "ज्ञानी,बुद्धिमान,मेधावी,अच्छी तरह से जानने वाला, अच्छा विचारक,मननशील,ज्ञाता, विशेषज्ञ",
+        "rashi": "कुम्भ",
+        "meaning_en": "Wise, intelligent, and brilliantone who understands well good thinker and contemplative personknower and expert."
+    },
+    {
+        "name": "Sacheen",
+        "hindiName": "सचीन",
+        "meaning": "Leader of those who seek unity unity-loving milanasaar.",
+        "meaning_hi": "एकता चाहने वालों के लीडर, एकता प्रिय, मिलनसार",
+        "rashi": "कुम्भ",
+        "meaning_en": "Leader of those who seek unity unity-loving milanasaar."
+    },
+    {
+        "name": "Sajeev",
+        "hindiName": "सजीव",
+        "meaning": "One who lives with good purpose, fulfills duties sincerely, and carries radiant energy.",
+        "meaning_hi": "अच्छे लक्ष्य को लेकर जीने की इच्छा करने वाला, अपने कर्तव्य को अच्छी तरह से निर्वहन करने वाला, ओजस्वी, तेजस्वी व्यक्ति।",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who lives with good purpose, fulfills duties sincerely, and carries radiant energy."
+    },
+    {
+        "name": "Sateesh",
+        "hindiName": "सतीश",
+        "meaning": "One who deeply loves his wife.",
+        "meaning_hi": "धर्मपत्नी को बहुत ज्यादा प्रेम करने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who deeply loves his wife."
+    },
+    {
+        "name": "Sateeshachandr",
+        "hindiName": "सतीशचन्द्र",
+        "meaning": "One who deeply loves his wifesimple, peaceful, and joyful by nature.",
+        "meaning_hi": "धर्मपत्नी को बहुत ज्यादा प्रेम करने वाले,सरल शान्त आनंदित स्वभाव वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who deeply loves his wifesimple, peaceful, and joyful by nature."
+    },
+    {
+        "name": "Satnaam",
+        "hindiName": "सत्नाम",
+        "meaning": "One with a truthful name one who chants God's name.",
+        "meaning_hi": "सत्य नाम वाले, भगवान् के नाम जप करने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One with a truthful name one who chants God's name."
+    },
+    {
+        "name": "Satyendr",
+        "hindiName": "सत्येन्द्र",
+        "meaning": "Lord of those who speak truth and justice.",
+        "meaning_hi": "सत्य, उचित बोलने वाले के स्वामी",
+        "rashi": "कुम्भ",
+        "meaning_en": "Lord of those who speak truth and justice."
+    },
+    {
+        "name": "Santosh",
+        "hindiName": "सन्तोष",
+        "meaning": "One who remains deeply content.",
+        "meaning_hi": "अच्छी तरह से संतुष्ट रहने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who remains deeply content."
+    },
+    {
+        "name": "Sameer",
+        "hindiName": "समीर",
+        "meaning": "Wise, one who gains good knowledge.",
+        "meaning_hi": "अच्छा ज्ञान पाने वाला, ज्ञानी",
+        "rashi": "कुम्भ",
+        "meaning_en": "Wise, one who gains good knowledge."
+    },
+    {
+        "name": "Sampoornaanand",
+        "hindiName": "सम्पूर्णानंद",
+        "meaning": "Jisake paasa one with no lack of joy full of joy.",
+        "meaning_hi": "जिसके पास आनंद की कोई कमी नहीं, पूर्ण आनंद वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "Jisake paasa one with no lack of joy full of joy."
+    },
+    {
+        "name": "Samyag",
+        "hindiName": "सम्यग्",
+        "meaning": "Good person.",
+        "meaning_hi": "अच्छा इंसान",
+        "rashi": "कुम्भ",
+        "meaning_en": "Good person."
+    },
+    {
+        "name": "Sahadev",
+        "hindiName": "सहदेव",
+        "meaning": "One who always remembers God.",
+        "meaning_hi": "हर समय भगवान का सुमिरन करने वाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who always remembers God."
+    },
+    {
+        "name": "Saajan",
+        "hindiName": "साजन",
+        "meaning": "One who lives among friends ekataa priy.",
+        "meaning_hi": "मित्रों के साथ रहने वाला, एकता प्रिय",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who lives among friends ekataa priy."
+    },
+    {
+        "name": "Siddhaarth",
+        "hindiName": "सिद्धार्थ",
+        "meaning": "One who strives to fulfill his purpose and goal yaa phira one whose purpose has been fulfilled aise hardworking and purposeful personone through whom people's purposes are fulfilled aise helpful person.",
+        "meaning_hi": "जो अपने प्रयोजन(लक्ष्य) को सफल करने में लगा हो या फिर जिसका प्रयोजन सफल हो चुका हो ऐसे मेहनती,पुरुषार्थी व्यक्ति।जिससे लोगों का प्रयोजन सिद्ध होता हो ऐसे परोपकारी व्यक्ति।",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who strives to fulfill his purpose and goal yaa phira one whose purpose has been fulfilled aise hardworking and purposeful personone through whom people's purposes are fulfilled aise helpful person."
+    },
+    {
+        "name": "Seetaaraam",
+        "hindiName": "सीताराम",
+        "meaning": "One who takes Lord Rama and Mother Sita as ideals one who behaves like them.",
+        "meaning_hi": "मर्यादा पुरुषोत्तम भगवान राम और माता सीता को आदर्श मानने वाले, उनके जैसे आचरण करने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who takes Lord Rama and Mother Sita as ideals one who behaves like them."
+    },
+    {
+        "name": "Sutapaa",
+        "hindiName": "सुतपा",
+        "meaning": "Wise ascetic.",
+        "meaning_hi": "ज्ञानी, तपस्वी",
+        "rashi": "कुम्भ",
+        "meaning_en": "Wise ascetic."
+    },
+    {
+        "name": "Sudarshan",
+        "hindiName": "सुदर्शन",
+        "meaning": "Divyaone with a beautiful form.",
+        "meaning_hi": "दिव्य,सुंदर स्वरूप वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "Divyaone with a beautiful form."
+    },
+    {
+        "name": "Sudeep",
+        "hindiName": "सुदीप",
+        "meaning": "One who comes into prominence positively wise.",
+        "meaning_hi": "अच्छी तरह से सुर्खियों में आने वाले, ज्ञानी",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who comes into prominence positively wise."
+    },
+    {
+        "name": "Suneel",
+        "hindiName": "सुनील",
+        "meaning": "One who helps people achieve their goals well.",
+        "meaning_hi": "अच्छी तरह से लोगों के लक्ष्य को हासिल कराने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who helps people achieve their goals well."
+    },
+    {
+        "name": "Subhaash",
+        "hindiName": "सुभाष",
+        "meaning": "One who speaks sweetly.",
+        "meaning_hi": "मधुर, मीठी मीठी बातें बोलने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who speaks sweetly."
+    },
+    {
+        "name": "Subhaashachandr",
+        "hindiName": "सुभाषचन्द्र",
+        "meaning": "One who helps others with sweet speech and a calm, moon-like nature.",
+        "meaning_hi": "मीठी बातें बोलते हुए परोपकार करने वाले,शीतल शान्त स्वभाववाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who helps others with sweet speech and a calm, moon-like nature."
+    },
+    {
+        "name": "Sumit",
+        "hindiName": "सुमित",
+        "meaning": "One who behaves with balance and measure.",
+        "meaning_hi": "माप तौल कर व्यवहार करने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "One who behaves with balance and measure."
+    },
+    {
+        "name": "Suvaas",
+        "hindiName": "सुवास",
+        "meaning": "One with good dwelling places owner of grand homes.",
+        "meaning_hi": "अच्छे निवास स्थान वाले, बड़े बड़े घरों वाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "One with good dwelling places owner of grand homes."
+    },
+    {
+        "name": "Srijan",
+        "hindiName": "सृजन",
+        "meaning": "Creator of new things inventive person.",
+        "meaning_hi": "नये नये चीजें बनाने वाले, आविष्कार करने वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "Creator of new things inventive person."
+    },
+    {
+        "name": "Somadev",
+        "hindiName": "सोमदेव",
+        "meaning": "Gentle-natured like the moon.",
+        "meaning_hi": "चन्द्रमा के जैसे सौम्य स्वभाव वाले",
+        "rashi": "कुम्भ",
+        "meaning_en": "Gentle-natured like the moon."
+    },
+    {
+        "name": "Somanaath",
+        "hindiName": "सोमनाथ",
+        "meaning": "Leader of peace-loving people.",
+        "meaning_hi": "शान्ति प्रिय समुदाय के लीडर",
+        "rashi": "कुम्भ",
+        "meaning_en": "Leader of peace-loving people."
+    },
+    {
+        "name": "Somashekhar",
+        "hindiName": "सोमशेखर",
+        "meaning": "Cool-headed peaceful by nature.",
+        "meaning_hi": "ठंडा दिमाग़ वाले, शान्त स्वभाव वाला",
+        "rashi": "कुम्भ",
+        "meaning_en": "Cool-headed peaceful by nature."
+    },
+    {
+        "name": "Saurabh",
+        "hindiName": "सौरभ",
+        "meaning": "Apane famous through great deeds one whose deeds spread fragrance everywherefamous and renowned person.",
+        "meaning_hi": "अपने विशेष महान् कर्म से विख्यात व्यक्ति। सुगन्ध के जैसे अपने कर्म से सब जगह महकने वाले,प्रसिद्ध ख्याति प्राप्त व्यक्ति।",
+        "rashi": "कुम्भ",
+        "meaning_en": "Apane famous through great deeds one whose deeds spread fragrance everywherefamous and renowned person."
+    },
+    {
+        "name": "Hanumaan",
+        "hindiName": "हनुमान्",
+        "meaning": "Great and strong in build powerful like Hanuman, son of the wind.",
+        "meaning_hi": "द ग्रेट खली के जैसे बड़ी ठोड़ी वाले, पवनसुत हनुमान के जैसे सामर्थ्यवान",
+        "rashi": "मिथुन",
+        "meaning_en": "Great and strong in build powerful like Hanuman, son of the wind."
+    },
+    {
+        "name": "Haradeep",
+        "hindiName": "हरदीप",
+        "meaning": "Devotee of Lord Shiva one who spreads his name.",
+        "meaning_hi": "भगवान शिव के भक्त, उनके नाम को फ़ैलाने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "Devotee of Lord Shiva one who spreads his name."
+    },
+    {
+        "name": "Harabhajan",
+        "hindiName": "हरभजन",
+        "meaning": "One who sings praises of Lord Shankardevotee of God.",
+        "meaning_hi": "शंकर भगवान के भजन करने वाले,प्रभु भक्त",
+        "rashi": "मिथुन",
+        "meaning_en": "One who sings praises of Lord Shankardevotee of God."
+    },
+    {
+        "name": "Hareen",
+        "hindiName": "हरीन",
+        "meaning": "Lord of lions.",
+        "meaning_hi": "शेरों के मालिक",
+        "rashi": "मिथुन",
+        "meaning_en": "Lord of lions."
+    },
+    {
+        "name": "Hareesh",
+        "hindiName": "हरीश",
+        "meaning": "Devotee of Lord Vishnu person with a spirit of service.",
+        "meaning_hi": "भगवान विष्णु के भक्त, सेवा भाव वाले इन्सान",
+        "rashi": "मिथुन",
+        "meaning_en": "Devotee of Lord Vishnu person with a spirit of service."
+    },
+    {
+        "name": "Harsh",
+        "hindiName": "हर्ष",
+        "meaning": "khushamijaaja aadamee",
+        "meaning_hi": "खुशमिजाज आदमी",
+        "rashi": "मिथुन",
+        "meaning_en": "khushamijaaja aadamee"
+    },
+    {
+        "name": "Harshadeep",
+        "hindiName": "हर्षदीप",
+        "meaning": "Khushamijaaja rahate hue one who makes everyone wise.",
+        "meaning_hi": "खुशमिजाज रहते हुए सब को ज्ञानी बनाने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "Khushamijaaja rahate hue one who makes everyone wise."
+    },
+    {
+        "name": "Harshavardhan",
+        "hindiName": "हर्षवर्धन",
+        "meaning": "One who increases people's happiness.",
+        "meaning_hi": "लोगों की खुशी को बढ़ाने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "One who increases people's happiness."
+    },
+    {
+        "name": "Haveendr",
+        "hindiName": "हवींद्र",
+        "meaning": "Bahuta from owner of excellent things.",
+        "meaning_hi": "बहुत से उत्तम पदार्थों के मालिक",
+        "rashi": "मिथुन",
+        "meaning_en": "Bahuta from owner of excellent things."
+    },
+    {
+        "name": "Haardik",
+        "hindiName": "हार्दिक",
+        "meaning": "One who follows the heartone who listens to the heart.",
+        "meaning_hi": "हृदय अनुकूल चलने वाले,मन की सुनने वाले",
+        "rashi": "मिथुन",
+        "meaning_en": "One who follows the heartone who listens to the heart."
+    },
+    {
+        "name": "Hitaanand",
+        "hindiName": "हितानंद",
+        "meaning": "One whose joy lies in helping people vaha social worker.",
+        "meaning_hi": "लोगों के हित करना ही जिसके लिए आनंद है वह, समाजसेवी",
+        "rashi": "कर्क",
+        "meaning_en": "One whose joy lies in helping people vaha social worker."
+    },
+    {
+        "name": "Hitesh",
+        "hindiName": "हितेष",
+        "meaning": "Well-wisher of everyone leader of helpful people.",
+        "meaning_hi": "सबके हित चाहने वाला, परोपकारी लोगों के लीडर",
+        "rashi": "कर्क",
+        "meaning_en": "Well-wisher of everyone leader of helpful people."
+    },
+    {
+        "name": "Hriday",
+        "hindiName": "हृदय",
+        "meaning": "One inclined to give, receive, and exchange things.",
+        "meaning_hi": "पदार्थ ले जाने,ले आने और देने के स्वभाव वाला",
+        "rashi": "कर्क",
+        "meaning_en": "One inclined to give, receive, and exchange things."
+    },
+    {
+        "name": "Hrideesh",
+        "hindiName": "हृदीश",
+        "meaning": "One who follows the heart.",
+        "meaning_hi": "हृदय अनुकूल चलने वाले",
+        "rashi": "कर्क",
+        "meaning_en": "One who follows the heart."
+    },
+    {
+        "name": "Hemant",
+        "hindiName": "हेमन्त",
+        "meaning": "Cool-minded like the winter season.",
+        "meaning_hi": "शीत ऋतु के जैसे ठंडे दिमाग वाले",
+        "rashi": "कर्क",
+        "meaning_en": "Cool-minded like the winter season."
+    },
+    {
+        "name": "Hemaraaj",
+        "hindiName": "हेमराज",
+        "meaning": "Bahuta from owner of wealth and resources.",
+        "meaning_hi": "बहुत से संपत्तियों के मालिक",
+        "rashi": "कर्क",
+        "meaning_en": "Bahuta from owner of wealth and resources."
+    }
+]

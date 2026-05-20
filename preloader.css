@@ -1,0 +1,130 @@
+/* =========================
+   Naamin Preloader
+========================= */
+
+#naamin-preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-main-light);
+  background-image: linear-gradient(135deg, #F8F2FF 0%, #EEF4FF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.naamin-inner {
+  text-align: center;
+  animation: floatUp 2.4s ease-in-out 1;
+}
+
+.naamin-logo {
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+  font-weight: 800;
+  color: var(--text-dark);
+  font-size: clamp(2.6rem, 8vw, 4.2rem);
+  display: flex;
+  align-items: baseline;
+  letter-spacing: 0.4px;
+  position: relative;
+  animation: logoPulse 2.4s ease-in-out 1;
+}
+
+/* color the trailing "in" to match the homepage logo */
+.naamin-logo .logo-in { background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* Letters */
+.logo-letter {
+  opacity: 0;
+  transform: translateY(8px);
+  line-height: 1;
+}
+
+.logo-letter:nth-child(1){animation:letterIn .32s ease .02s forwards}
+.logo-letter:nth-child(2){animation:letterIn .32s ease .06s forwards}
+.logo-letter:nth-child(3){animation:letterIn .32s ease .10s forwards}
+.logo-letter:nth-child(4){animation:letterIn .32s ease .14s forwards}
+.logo-letter:nth-child(5){animation:letterIn .32s ease .18s forwards}
+.logo-letter:nth-child(6){animation:letterIn .32s ease .22s forwards}
+
+@keyframes letterIn {
+  to { opacity: 1; transform: none; }
+}
+
+/* i-dot */
+.i-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.i-dot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: .36em;
+  height: .36em;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  transform: translate(-50%, -30%);
+  opacity: 0;
+  animation: iDotIn .24s ease forwards .22s;
+}
+
+@keyframes iDotIn {
+  to { opacity: 1; }
+}
+
+.i-dot.animate {
+  animation: iDotMove 1.4s ease-in-out infinite;
+}
+
+@keyframes iDotMove {
+  50% { transform: translate(-50%, -45%) scale(1.05); }
+}
+
+/* Progress bar */
+.preloader-bar {
+  margin: 1rem auto 0;
+  width: 220px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(31, 27, 46, 0.08);
+  overflow: hidden;
+}
+
+.preloader-progress {
+  height: 100%;
+  width: 0;
+  background: var(--accent-primary);
+  animation: progressAnim .85s ease forwards;
+}
+
+@keyframes progressAnim {
+  to { width: 100%; }
+}
+
+/* Subtle motion */
+@keyframes logoPulse {
+  50% { transform: scale(1.02); }
+}
+
+@keyframes floatUp {
+  50% { transform: translateY(-3px); }
+}
+
+/* Fade out */
+#naamin-preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .42s ease, visibility .42s ease;
+}
+
+/* Stop animations on exit */
+#naamin-preloader.fade-out * {
+  animation-play-state: paused !important;
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .naamin-logo { font-size: 2rem; }
+}
